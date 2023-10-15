@@ -10,8 +10,8 @@ const Header = () => {
         </Link>
       </div>
       <div className="">
-        <Link className="text-xl" to="/project">
-          Click to Project page
+        <Link className="text-xl" to="/programs">
+          Click to Programs page
         </Link>
       </div>
     </div>

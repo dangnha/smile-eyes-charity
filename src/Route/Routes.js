@@ -1,11 +1,7 @@
 import React from "react";
-import {
-  createBrowserRouter,
-  redirect,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../Pages/Home";
-import Project from "../Pages/Project";
+import Programs from "../Pages/Programs";
 import Layout from "../Components/Layout";
 
 const router = createBrowserRouter([
@@ -22,8 +18,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/project",
-        element: <Project />,
+        path: "/programs",
+        element: <Programs />,
       },
       // {
       //   path: "/project/feed",

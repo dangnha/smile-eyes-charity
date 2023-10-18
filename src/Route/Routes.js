@@ -2,6 +2,9 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../Pages/Home";
 import Programs from "../Pages/Programs";
+import About from "../Pages/About"
+import Contact from "../Pages/Contact"
+import Sponsor from "../Pages/Sponsor"
 import Layout from "../Components/Layout";
 
 const router = createBrowserRouter([
@@ -21,10 +24,18 @@ const router = createBrowserRouter([
         path: "/programs",
         element: <Programs />,
       },
-      // {
-      //   path: "/project/feed",
-      //   component: Feed,
-      // },
+      {
+        path: "/aboutus",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/sponsor",
+        element: <Sponsor />,
+      }
     ],
   },
 ]);

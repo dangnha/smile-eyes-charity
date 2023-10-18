@@ -1,0 +1,155 @@
+#navbar-language{
+    background: #005000;
+    /* width: 170px; */
+    height: 50px;
+    padding: 0 70px;
+}
+
+#language{
+    display: block;
+    width: 170px;
+    float: right;
+}
+
+#language img{
+    width: 35px;
+    height: 25px;
+    border: 1px solid rgb(110, 105, 105);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.language-defaut{
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 50px;
+}
+
+.language-defaut i{
+    margin: 0 10px 0 auto;
+    color: #000;
+}
+
+.language-content{
+    position: absolute;
+    z-index: 10;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.2);
+}
+
+.language-item{
+    width: 170px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 50px;
+    cursor: pointer;
+}
+
+.language-item:hover{
+    background: #d7d7d7;
+}
+
+#navbar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #396D00;
+    padding: 15px 0px;
+    padding-right: 70px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 60px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+#logo img{
+    padding-right: 20px;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title li {
+    text-align: center;
+    list-style: none;
+    padding-left: 70px;
+    position: relative;
+}
+
+#title li p{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff
+}
+
+#title li p:hover::after,
+#title li p.active::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -1px;
+    left: 70px;
+}
+
+
+#mobile{
+    display: none;
+}
+
+#mobile i{
+    color: #fff;
+    align-items: center;
+}
+
+@media screen and (max-width:1125px){
+    #title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 158px;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background: #699836;
+        /* box-shadow: 0 0 70px rgba(0, 0, 0, 0.4); */
+        padding-top: 40px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #title.active{
+        right: 0px;
+    }
+
+    #title li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: block;
+    }
+
+    #mobile i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+}

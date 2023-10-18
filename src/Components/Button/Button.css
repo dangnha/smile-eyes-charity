@@ -1,0 +1,60 @@
+/* Button.css */
+
+/* Styles for the default button */
+.button {
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex; 
+  align-items: center; 
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* No Need styles for the "normal" button type */
+/* .btn_normal {
+
+} */
+
+/* Styles for the "arrow-right" button type */
+.btn_arrow-right {
+  font-size: 1px;
+}
+
+/* Styles for the "small" size */
+.sz-small {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+/* Styles for the "medium" size */
+.sz-medium {
+  font-size: 18px;
+  padding: 10px 34px;
+}
+
+/* Styles for the "large" size */
+.sz-large {
+    font-size: 24px;
+    padding: 10px 100px;
+}
+
+/* Styles for the "green" color */
+.cl-green {
+  background-color: #396D00;
+  color: #fff;
+}
+
+.cl-white {
+    background-color: #fff;
+    color: #101E5F;
+}
+
+/* Add styles for the arrow icon */
+.arrow-icon {
+  margin-left: 10px; 
+}

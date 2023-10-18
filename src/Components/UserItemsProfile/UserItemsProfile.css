@@ -1,0 +1,76 @@
+.userItemsCardContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+}
+
+.userItemsCardContainer .userItemsCard {
+	position: relative;
+	width: 300px;
+	height: 350px;
+	background: #F6FFF6;
+	border-radius: 30px;
+	box-shadow: 0 31px 80px rgba(0, 0, 0, 0.15);
+}
+
+.userItemsCardContainer .userItemsCard .boxItemsCard {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 170px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.userItemsCardContainer .userItemsCard .boxItemsCard img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.userItemsCardContainer .userItemsCard .userItemsContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userItemsCardContainer .userItemsCard .userItemsContent .detailContent {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.userItemsCardContainer .userItemsCard .userItemsContent .detailContent h2 {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.userItemsCardContainer .userItemsCard .userItemsContent .detailContent p {
+    font-size: 20px;
+    color: rgb(148, 112, 112);
+}
+
+
+.userItemsCardContainer .userItemsCard .userItemsSocials {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.userItemsCardContainer .userItemsCard .userItemsSocials a {
+    padding: 14px
+}

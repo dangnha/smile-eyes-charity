@@ -1,0 +1,17 @@
+.program-item {
+    max-width: 540px;
+    min-width: 350px;
+    background-color: rgb(237, 237, 237); /*tạm thời để vậy cho dễ nhìn*/
+}
+
+.video iframe{
+    border-radius: 20px;
+}
+
+.button {
+    font-size: 25px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #396D00;
+}

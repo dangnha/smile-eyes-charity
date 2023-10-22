@@ -5,16 +5,18 @@ import "tippy.js/dist/tippy.css";
 import "./program_item.css";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
-function ProgramItem(props) {
+
+function ProgramItem({props}) {
+
   return (
-    <div className="program-item">
+    <div className="program-item mb-6">
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
           <h2 className="text-2xl font-medium">{props.title}</h2>
           <img
             src={iconShare}
-            className="w-10 h-10 hover:cursor-pointer"
+            className="w-10 h-10 ms-5 hover:cursor-pointer"
             alt="icon share"
           />
         </div>
@@ -27,13 +29,14 @@ function ProgramItem(props) {
       {/* video */}
       <div className="video w-full mb-6">
         <iframe
+          loading="lazy"
           width="500"
           height="300"
           src={props.linkYT}
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
 

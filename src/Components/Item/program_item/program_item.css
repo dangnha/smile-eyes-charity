@@ -2,7 +2,7 @@
   max-width: 540px;
   min-width: 350px;
   padding: 0 15px;
-  background-color: rgb(237, 237, 237); /*tạm thời để vậy cho dễ nhìn*/
+  background-color: rgb(255, 255, 255); /*tạm thời để vậy cho dễ nhìn*/
 }
 
 .video iframe {

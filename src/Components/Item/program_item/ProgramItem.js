@@ -27,6 +27,7 @@ function ProgramItem(props) {
       {/* video */}
       <div className="video w-full mb-6">
         <iframe
+          width="500"
           height="300"
           src={props.linkYT}
           title="YouTube video player"
@@ -38,7 +39,7 @@ function ProgramItem(props) {
 
       {/* contents */}
       <div className="contents">
-        <p className="contents_description text-xl text-justify mb-3">
+        <p className="contents_description text-xl text-left mb-3">
           {props.des}
         </p>
 

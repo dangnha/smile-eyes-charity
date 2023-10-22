@@ -10,7 +10,8 @@ import UserItemsProfile from "../Components/UserItemsProfile/UserItemsProfile";
 import ContactForm from "../Components/Item/ContactForm";
 import Button from "../Components/Button/Button";
 import NormalBtn from "../Components/Button/NormalBtn";
-
+import ProgramItem from "../Components/Item/program_item/ProgramItem";
+import LargeProgramItem from "../Components/Item/program_item/LargeProgramItem";
 const router = createBrowserRouter([
   // {
   //   path: "/home",
@@ -64,6 +65,30 @@ const router = createBrowserRouter([
   {
     path: "/button1",
     element: <NormalBtn text="Join now" />,
+  },
+  {
+    path: "/item",
+    element: (
+      <ProgramItem
+        title="Teaching children"
+        date="22/10/2023"
+        linkYT="https://www.youtube.com/embed/6_y5q9wtNtI"
+        des="Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development."
+        amoutOfLikes="300"
+      />
+    ),
+  },
+  {
+    path: "/large-item",
+    element: (
+      <LargeProgramItem
+        title="Teaching children"
+        date="22/10/2023"
+        linkYT="https://www.youtube.com/embed/6_y5q9wtNtI"
+        des="Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development."
+        amoutOfLikes="300"
+      />
+    ),
   },
 ]);
 

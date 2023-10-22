@@ -1,17 +1,78 @@
 .program-item {
-    max-width: 540px;
-    min-width: 350px;
-    background-color: rgb(237, 237, 237); /*tạm thời để vậy cho dễ nhìn*/
+  max-width: 540px;
+  min-width: 350px;
+  padding: 0 15px;
+  background-color: rgb(237, 237, 237); /*tạm thời để vậy cho dễ nhìn*/
 }
 
-.video iframe{
-    border-radius: 20px;
+.video iframe {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.contents_description {
+  /* hidden text when it overflow 3 lines */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  @supports (-webkit-line-clamp: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.contents_progress progress {
+  width: 100%;
+  height: 15px;
+}
+
+.contents_progress progress::-webkit-progress-bar {
+  background-color: #c5c5c5;
+}
+
+.contents_progress progress::-webkit-progress-value {
+  background-color: #396d00;
 }
 
 .button {
-    font-size: 25px;
-    padding: 0px 20px;
-    border-radius: 20px;
-    color: white;
-    background-color: #396D00;
+  font-size: 20px;
+  padding: 10px 20px;
+  height: 55px;
+  border-radius: 20px;
+  color: white;
+  background-color: #396d00;
+}
+
+/* Tippy */
+.tippy-box {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #396d00;
+}
+
+.tippy-arrow {
+  color: #396d00;
+}
+
+.tippy-box[data-placement^="top"] > .tippy-arrow:before {
+  bottom: -9px;
+}
+
+/* large program item */
+.large-program-item {
+  width: 100%;
+}
+
+.large-program-item .video {
+  width: 70%;
+}
+
+.large-Contents {
+  max-width: calc(100% - 700px);
 }

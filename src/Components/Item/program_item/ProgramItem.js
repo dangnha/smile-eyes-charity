@@ -6,8 +6,7 @@ import "./program_item.css";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
 
-function ProgramItem({props}) {
-
+function ProgramItem({ props }) {
   return (
     <div className="program-item mb-6">
       {/* header */}
@@ -64,7 +63,7 @@ function ProgramItem({props}) {
           </Tippy>
         </div>
 
-        <div className="contents_bottom flex justify-between">
+        <div className="contents_bottom flex gap-12">
           <div className="likes flex flex-col items-center ms-4">
             <span className="iconLove block">
               <img src={iconHeart} className="w-14 h-14" alt="icon love" />

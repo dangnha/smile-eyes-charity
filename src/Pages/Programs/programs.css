@@ -1,0 +1,64 @@
+.top_image {
+    max-width: 1200px;
+} 
+
+.intro {
+    max-width: 1080px;
+}
+
+.paragraph {
+    background-color: #F7F5F3;
+}
+
+.paragraph p {
+    max-width: 1080px;
+}
+
+.programs {
+    max-width: 1200px;
+}
+
+.programs_filter {
+    width: 90%;
+    border-radius: 15px;
+    background-color: #eff3f9;
+}
+
+.programs_filter-button {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.programs_filter .active {
+    color: #FFFFFF;
+    background-color: #396D00;
+}
+
+.programs_filter .active:hover {
+    opacity: 0.85;
+}
+
+.mini_programs-items {
+    max-width: 1080px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.icon_load {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+    animation: rotation 2s infinite linear;
+    display: none;
+}
+
+

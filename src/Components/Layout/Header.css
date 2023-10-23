@@ -5,6 +5,10 @@
 }
 #nav {
   width: 100vw;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5;
 }
 
 #navbar-language {
@@ -72,6 +76,10 @@
   padding: 15px 0px;
   padding-right: 70px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5;
 }
 
 #logo {
@@ -89,6 +97,7 @@
 
 #title {
   display: flex;
+  gap: 60px;
   align-items: center;
   justify-content: center;
 }
@@ -96,7 +105,7 @@
 #title li {
   text-align: center;
   list-style: none;
-  padding-left: 70px;
+  /* padding-left: 70px; */
   position: relative;
 }
 
@@ -107,15 +116,20 @@
   color: #fff;
 }
 
-#title li p:hover::after,
+#title li p::after,
 #title li p.active::after {
   content: "";
-  width: 40%;
+  width: 0;
   height: 2px;
   background: #fff;
   position: absolute;
   bottom: -1px;
-  left: 70px;
+  left: 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+#title li p:hover::after {
+  width: 100%;
 }
 
 #mobile {

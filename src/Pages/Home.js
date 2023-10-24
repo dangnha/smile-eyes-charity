@@ -4,9 +4,13 @@ import ProgramItem from "../Components/Item/program_item/ProgramItem";
 import ProjectDone from "../Components/Item/program_item/ProjectDone";
 import Button from "../Components/Button/Button";
 import "./Home.css";
+import { useTranslation } from "react-i18next";
+
 const Home = () => {
+  const { t } = useTranslation();
+
   const video_introduce = {
-    title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
+    title: t("item_title"),
     date: "20/10/2022",
     linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
     des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",

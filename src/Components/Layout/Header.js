@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import Language from "./Language";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const [selected, setSelected] = useState({
     image: "./image/vietnam.png",
     language: "Vietnamese",
@@ -28,30 +31,30 @@ const Header = () => {
         </div>
 
         <div>
-          <ul id="title" className={clicked ? "#title active" : "title"}>
+          <ul id="title" className={clicked ? "active" : "title"}>
             <li>
               <Link to="/">
-                <p>Home</p>
+                <p>{t("home")}</p>
               </Link>
             </li>
             <li>
               <Link to="/programs">
-                <p>Project</p>
+                <p>{t("projects")}</p>
               </Link>
             </li>
             <li>
               <Link to="/aboutus">
-                <p>About Us</p>
+                <p>{t("about")}</p>
               </Link>
             </li>
             <li>
               <Link to="/contact">
-                <p>Contact</p>
+                <p>{t("contact")}</p>
               </Link>
             </li>
             <li>
               <Link to="/sponsor">
-                <p>Sponsor</p>
+                <p>{t("sponsor")}</p>
               </Link>
             </li>
           </ul>

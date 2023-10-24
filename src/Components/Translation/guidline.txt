@@ -1,0 +1,6 @@
+Làm thế nào để cài đặt ngôn ngữ:
+Bước 1: Vào 3 file vi.json, en.json, jp.json để thêm 3 version của 1 string 
+        Quy ước: Trước khi thêm 1 phần mới phải có 1 phần object comment vs {"the next part": "text of item",}
+Bước 2: Vào file muốn thực hiện thay đổi ngôn ngữ, import { useTranslation } from "react-i18next";, sau đó khai báo const { t } = useTranslation(); trong component.
+Bước 3: Thay đổi text mà bạn muốn nó đa dạng ngôn ngữ bằng cú pháp: t("ten_bien_o_file_json"), chú ý nếu đang ở trong html tag bọc {t("ten_bien_o_file_json")}
+Tham khảo header và home component để biết thêm

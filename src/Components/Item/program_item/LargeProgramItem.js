@@ -71,9 +71,9 @@ function LargeProgramItem(props) {
                 {props.amoutOfLikes}
               </span>
             </div>
-            
+
             <div className="button_sponsors">
-              <NormalBtn text="Be a contributor or sponsor"/>
+              <NormalBtn text="Be a contributor or sponsor" />
             </div>
           </div>
         </div>

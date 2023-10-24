@@ -17,7 +17,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex-aboutUs2 basis-[33%] flex flex-col justify-center gap-5">
-              <h3 class="title-page text-center">About Us</h3>
+              <h3 className="title-page text-center">About Us</h3>
               <h4 className="text-heading">
                 Step Forward Serve The Humanity Reach Out
               </h4>
@@ -40,7 +40,7 @@ const About = () => {
               <div className="volunteer-container-tel">
                 <Button text="JOIN NOW" size="sz-small" color="cl-green" />
                 <div className="volunteer-tel">
-                  <i class="icon-tel fa-solid fa-phone"></i>
+                  <i className="icon-tel fa-solid fa-phone"></i>
                   <div>
                     <p>Contact Us</p>
                     <p>+123456789</p>
@@ -58,13 +58,13 @@ const About = () => {
           <div className="row-founder flex items-center justify-evenly">
             <div className="flex-founder basis-[45%] mt-8">
               <p className="text-sub-founder p-12 text-left">
-                <i class="fa-solid fa-quote-left text-xl"></i>
+                <i className="fa-solid fa-quote-left text-xl"></i>
                 We provide opportunity support for children living in the
                 highlands, mountains and disadvantaged areas in Nam Giang. Our
                 main goal is to improve the quality of life of children so that
                 they develop comprehensively physically, mentally and
                 educationally.
-                <i class="fa-solid fa-quote-right text-xl"></i>
+                <i className="fa-solid fa-quote-right text-xl"></i>
               </p>
             </div>
             <div className="flex-founder basis[50%] ">

@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css";
 
 import "./program_item.css";
 import iconShare from "../../../images/share.png";
@@ -43,16 +41,12 @@ function ProjectDone(props) {
           {props.des}
         </p>
 
-        <div className="contents_files text-2xl mb-3">
+        <div className="contents_files text-2xl mb-3 flex flex-row justify-between">
           <Link to="">
-            <span className="underline underline-offset-2 mr-7">
-            Introduce
-            </span>
-            </Link>
+            <span className="underline underline-offset-2">Introduce</span>
+          </Link>
           <Link to="">
-            <span className="underline underline-offset-2 mr-7">
-              Pitch file
-            </span>
+            <span className="underline underline-offset-2 ">Pitch file</span>
           </Link>
           <Link to="">
             <span className="underline underline-offset-2">Plan file</span>
@@ -63,26 +57,28 @@ function ProjectDone(props) {
           <span className="mr-7">Funding: {props.cost}</span>
         </div>
 
-        <div className="contents_bottom flex justify-between">
-          <div className="likes flex flex-row items-center text-2xl">
+        <div className="contents_bottom flex justify-center">
+          <div className="likes flex flex-row items-center justify-center text-2xl">
             <Link to="">
-            <span className="underline underline-offset-2 mr-7">
-            Achievement
-            </span>
+              <span className="underline underline-offset-2 mr-3.5">
+                Achievement
+              </span>
             </Link>
             <Link to="">
-            <span className="underline underline-offset-2 mr-7">
+              <span className="underline underline-offset-2 mr-3.5">
                 Detail Report
-            </span>
+              </span>
             </Link>
-            <span className="iconLove block">
-              <img src={iconHeart} className="w-14 h-14" alt="icon love" />
-            </span>
-            <span className="amountOfLikes text-xl font-medium leading-4 block">
-              {props.amoutOfLikes}
-            </span>
+            <div className="flex flex-col items-center justify-center gap-1">
+              <span className="iconLove block">
+                <img src={iconHeart} className="w-14 h-14" alt="icon love" />
+              </span>
+              <span className="amountOfLikes text-xl font-medium leading-4 block">
+                {props.amoutOfLikes}
+              </span>
+            </div>
           </div>
-          
+
           {/* <NormalButton>Be a contributor or sponsor</NormalButton> */}
         </div>
       </div>

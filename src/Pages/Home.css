@@ -1,45 +1,46 @@
-.content{
+.content {
   padding: 81px 100px;
 }
 
-#title_project{
+#title_project {
   font-size: 38px;
   font-weight: 500;
   width: 80%;
 }
 
-.title_button{
+.title_button {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
 }
 
-.project_calling{
+.project_calling {
   margin-top: 80px;
 }
 
-.project_running, .project_done{
+.project_running,
+.project_done {
   margin-top: 100px;
 }
 
-.project{
+.project {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#item_project{
+#item_project {
   width: 30%;
 }
 
-.blog{
-  background-color: #F6FFF6;
+.blog {
+  background-color: #f6fff6;
   height: 1254px;
   padding: 60px 100px 82px;
 }
 
-.blog_content{
+.blog_content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,32 +49,33 @@
   padding-bottom: 50px;
 }
 
-#blog_title{
+#blog_title {
   font-size: 35px;
   font-weight: 500;
 }
 
-.blog_image{
+.blog_image {
   display: flex;
   flex-direction: row;
   width: 50%;
 }
 
-.blog_image1{
+.blog_image1 {
   width: 55%;
   height: 100%;
 }
 
-.blog_image2{
+.blog_image2 {
   width: 45%;
   height: 100%;
 }
 
-.blog_image1{
+.blog_image1 {
   display: flex;
   flex-direction: column;
 }
-.image1, video1{
+.image1,
+video1 {
   height: 50%;
   width: 100%;
 }
@@ -84,7 +86,7 @@
   object-fit: cover;
 }
 
-.blog_des{
+.blog_des {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -93,18 +95,18 @@
   font-size: 20px;
 }
 
-.blog_seemore{
+.blog_seemore {
   font-size: 25px;
   cursor: pointer;
 }
 
-.profile{
+.profile {
   height: 318px;
   margin: 82px 100px 82px 150px;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
-.profile_des{
+.profile_des {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -113,10 +115,10 @@
   margin-right: 10px;
 }
 
-.circle{
+.circle {
   width: 170px;
   height: 170px;
-  background-color: #D2E1D2; /* Màu nền của hình tròn */
+  background-color: #d2e1d2; /* Màu nền của hình tròn */
   border-radius: 50%; /* Để tạo hình tròn */
   position: absolute;
   top: -60px;
@@ -124,78 +126,79 @@
   z-index: 1;
 }
 
-.icon_profile{
+.icon_profile {
   z-index: 2;
 }
 
-.profile_des_text{
+.profile_des_text {
   font-size: 22px;
   max-width: 800px;
   z-index: 2;
 }
 
-.profile_intro_text1{
+.profile_intro_text1 {
   font-weight: 500;
   font-size: 24px;
 }
 
-.profile_intro_text2{
+.profile_intro_text2 {
   font-size: 18px;
 }
 
-.image_profile{
+.image_profile {
   width: 150px;
   height: 150px;
   border-radius: 20px;
 }
 
-.who_we_are{
+.who_we_are {
   justify-content: space-between;
-  background: #F6FFF6;
+  background: #f6fff6;
   height: 552px;
   padding: 60px 100px;
 }
 
-.our_information{
+.our_information {
   width: 45%;
 }
 
-.our_information_heading1{
+.our_information_heading1 {
   font-size: 35px;
   font-weight: 500;
 }
 
-.our_information_heading2{
+.our_information_heading2 {
   font-size: 30px;
   margin-top: 50px;
 }
 
-.our_information_heading3{
+.our_information_heading3 {
   font-size: 20px;
   margin-top: 20px;
   text-align: justify;
 }
 
-.button_introduce{
+.button_introduce {
   margin-top: 40px;
 }
 
-.button_donate, .button_contact button{
-  
+.button_donate,
+.button_contact button {
 }
-.button_contact button{
-  border: 2px solid #396D00;
+.button_contact button {
+  border: 2px solid #396d00;
   border-radius: 10px;
-  color: #396D00;
+  color: #396d00;
 }
 
-.icon_information{
+.icon_information {
   width: 45%;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 
-.icon_information1, .icon_information2{
+.icon_information1,
+.icon_information2 {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -203,19 +206,18 @@
   height: 33%;
 }
 
-.icon_information2{
+.icon_information2 {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 
-.icon_information i{
-  color: #396D00;
+.icon_information i {
+  color: #396d00;
   width: 70px;
 }
 
-@media screen and (max-width:935px) {
-  #item_project{
+@media screen and (max-width: 935px) {
+  #item_project {
     width: 100%;
   }
 }
-  

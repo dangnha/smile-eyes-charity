@@ -12,7 +12,8 @@ const Home = () => {
   const video_introduce = {
     title: t("item_title"),
     date: "20/10/2022",
-    linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
+    linkYT:
+      "https://www.youtube.com/embed/543jwFfCZvg?list=PLp6D8X7L5wgbTLG-OR0q8hJws4wD18e7o",
     des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
     amoutOfLikes: "300",
   };

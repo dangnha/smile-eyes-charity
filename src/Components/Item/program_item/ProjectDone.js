@@ -3,10 +3,9 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
 import "./program_item.css";
-import NormalBtn from "../../Button/NormalBtn";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
-function ProgramItem(props) {
+function ProjectDone(props) {
   return (
     <div className="program-item">
       {/* header */}
@@ -47,6 +46,11 @@ function ProgramItem(props) {
         <div className="contents_files text-2xl mb-3">
           <Link to="">
             <span className="underline underline-offset-2 mr-7">
+            Introduce
+            </span>
+            </Link>
+          <Link to="">
+            <span className="underline underline-offset-2 mr-7">
               Pitch file
             </span>
           </Link>
@@ -56,14 +60,21 @@ function ProgramItem(props) {
         </div>
 
         <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
-          <span className="mr-7">Funding</span>
-          <Tippy content="65%">
-            <progress value="65" max="100"></progress>
-          </Tippy>
+          <span className="mr-7">Funding: {props.cost}</span>
         </div>
 
         <div className="contents_bottom flex justify-between">
-          <div className="likes flex flex-col items-center ms-4">
+          <div className="likes flex flex-row items-center text-2xl">
+            <Link to="">
+            <span className="underline underline-offset-2 mr-7">
+            Achievement
+            </span>
+            </Link>
+            <Link to="">
+            <span className="underline underline-offset-2 mr-7">
+                Detail Report
+            </span>
+            </Link>
             <span className="iconLove block">
               <img src={iconHeart} className="w-14 h-14" alt="icon love" />
             </span>
@@ -72,13 +83,11 @@ function ProgramItem(props) {
             </span>
           </div>
           
-          <div className="button_sponsors">
-              <NormalBtn text="Be a contributor or sponsor"/>
-          </div>
+          {/* <NormalButton>Be a contributor or sponsor</NormalButton> */}
         </div>
       </div>
     </div>
   );
 }
 
-export default ProgramItem;
+export default ProjectDone;

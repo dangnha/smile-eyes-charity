@@ -1,7 +1,6 @@
 .program-item {
   max-width: 540px;
   min-width: 350px;
-  padding: 0 15px;
   background-color: rgb(255, 255, 255); /*tạm thời để vậy cho dễ nhìn*/
 }
 
@@ -21,7 +20,7 @@
     text-overflow: ellipsis;
     white-space: initial;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    /* -webkit-line-clamp: 3; */
     -webkit-box-orient: vertical;
   }
 }
@@ -39,13 +38,9 @@
   background-color: #396d00;
 }
 
-.button {
-  font-size: 20px;
-  padding: 10px 20px;
-  height: 55px;
-  border-radius: 20px;
-  color: white;
-  background-color: #396d00;
+.button_sponsors {
+  display: flex;
+  align-items: flex-end;
 }
 
 /* Tippy */
@@ -74,5 +69,5 @@
 }
 
 .large-Contents {
-  max-width: calc(100% - 700px);
+  max-width: 100%;
 }

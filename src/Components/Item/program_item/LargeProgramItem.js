@@ -5,6 +5,7 @@ import "tippy.js/dist/tippy.css";
 import "./program_item.css";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
+import NormalBtn from "../../Button/NormalBtn";
 function LargeProgramItem(props) {
   return (
     <div className="large-program-item">
@@ -70,10 +71,10 @@ function LargeProgramItem(props) {
                 {props.amoutOfLikes}
               </span>
             </div>
-            <button className="button font-medium">
-              Be a contributor or sponsor
-            </button>
-            {/* <NormalButton>Be a contributor or sponsor</NormalButton> */}
+            
+            <div className="button_sponsors">
+              <NormalBtn text="Be a contributor or sponsor"/>
+            </div>
           </div>
         </div>
       </div>

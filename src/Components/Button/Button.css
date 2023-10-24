@@ -15,6 +15,10 @@
   opacity: 0.8;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
 /* No Need styles for the "normal" button type */
 /* .btn_normal {
 

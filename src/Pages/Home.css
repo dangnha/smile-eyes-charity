@@ -26,12 +26,8 @@
 .project {
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-}
-
-#item_project {
-  width: 30%;
 }
 
 .blog {

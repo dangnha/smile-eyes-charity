@@ -1,7 +1,16 @@
 .program-item {
   max-width: 540px;
   min-width: 350px;
-  background-color: rgb(255, 255, 255); /*tạm thời để vậy cho dễ nhìn*/
+
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header_title h2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .video iframe {

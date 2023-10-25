@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import "./program_item.css";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
@@ -42,15 +40,15 @@ function ProjectDone(props) {
         </p>
 
         <div className="contents_files text-2xl mb-3 flex flex-row justify-between">
-          <Link to="">
+          <a target="_blank" rel="noreferrer" href={props.introFile}>
             <span className="underline underline-offset-2">Introduce</span>
-          </Link>
-          <Link to="">
+          </a>
+          <a target="_blank" rel="noreferrer" href={props.pitchFile}>
             <span className="underline underline-offset-2 ">Pitch file</span>
-          </Link>
-          <Link to="">
+          </a>
+          <a target="_blank" rel="noreferrer" href={props.planFile}>
             <span className="underline underline-offset-2">Plan file</span>
-          </Link>
+          </a>
         </div>
 
         <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
@@ -59,16 +57,16 @@ function ProjectDone(props) {
 
         <div className="contents_bottom flex justify-center">
           <div className="likes flex flex-row items-center justify-center text-2xl">
-            <Link to="">
+            <a target="_blank" rel="noreferrer" href={props.archiFile}>
               <span className="underline underline-offset-2 mr-3.5">
-                Achievement
+                Archievement
               </span>
-            </Link>
-            <Link to="">
+            </a>
+            <a target="_blank" rel="noreferrer" href={props.detailFile}>
               <span className="underline underline-offset-2 mr-3.5">
                 Detail Report
               </span>
-            </Link>
+            </a>
             <div className="flex flex-col items-center justify-center gap-1">
               <span className="iconLove block">
                 <img src={iconHeart} className="w-14 h-14" alt="icon love" />

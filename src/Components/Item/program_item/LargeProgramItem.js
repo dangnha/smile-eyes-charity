@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-
 import "./program_item.css";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
@@ -47,22 +45,22 @@ function LargeProgramItem(props) {
           </p>
 
           <div className="contents_files text-2xl flex flex-row gap-10">
-            <Link to="">
+            <a a target="_blank" rel="noreferrer" href={props.pitchFile}>
               <span className="underline underline-offset-2">Pitch file</span>
-            </Link>
-            <Link to="">
+            </a>
+            <a a target="_blank" rel="noreferrer" href={props.planFile}>
               <span className="underline underline-offset-2">Plan file</span>
-            </Link>
+            </a>
           </div>
 
           <div className="contents_progress mb-3 text-2xl hover:cursor-pointer flex flex-row gap-11 items-center">
             <span className="">Funding</span>
-            <Tippy content="65%">
-              <progress value="65" max="100"></progress>
+            <Tippy content="30%">
+              <progress value="30" max="100"></progress>
             </Tippy>
           </div>
 
-          <div className="contents_bottom flex flex-row gap-14">
+          <div className="contents_bottom flex flex-row justify-between gap-14">
             <div className="likes flex flex-col items-center ms-4">
               <span className="iconLove block">
                 <img src={iconHeart} className="w-14 h-14" alt="icon love" />
@@ -73,7 +71,7 @@ function LargeProgramItem(props) {
             </div>
 
             <div className="button_sponsors">
-              <NormalBtn text="Be a contributor or sponsor" />
+              <NormalBtn text="Be a contributor or sponsor" class="w-[100%]" />
             </div>
           </div>
         </div>

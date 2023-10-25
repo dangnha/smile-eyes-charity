@@ -1,42 +1,11 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import { Document, Page } from "react-pdf";
 import "./program_item.css";
 import NormalBtn from "../../Button/NormalBtn";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
 
 function ProgramItem({ props }) {
-  // State for handle pdf preview
-  const [pdfModalOpen, setPdfModalOpen] = useState(false);
-  const [pdfFile, setPdfFile] = useState(null);
-  const [numPages, setNumPages] = useState(null);
-  const [pdfError, setPdfError] = useState(null); // New state for the error
-
-  const onDocumentSuccess = ({ numPages }) => {
-    setNumPages(numPages);
-  };
-
-  const onDocumentError = (error) => {
-    setPdfError(error);
-    console.error("Error loading PDF:", pdfError);
-    // You can also set an error message in the state for rendering an error message to the user.
-    setPdfError("Error loading PDF. Please try again later.");
-  };
-
-  const openPdfModal = (file) => {
-    console.log(file);
-    setPdfFile(file);
-    setPdfModalOpen(true);
-    setPdfError(null); // Reset error state
-  };
-
-  const closePdfModal = () => {
-    setPdfModalOpen(false);
-  };
-
   return (
     <div className="program-item mb-6">
       {/* header */}
@@ -76,14 +45,15 @@ function ProgramItem({ props }) {
         </p>
         {/* Update code to preview pitch file and plan file */}
         <div className="contents_files text-2xl mb-3">
-          <Link to="" onClick={() => openPdfModal(props.pitchFile)}>
+          <a target="_blank" rel="noreferrer" href={props.pitchFile}>
             <span className="underline underline-offset-2 mr-7">
               Pitch file
             </span>
-          </Link>
-          <Link to="" onClick={() => openPdfModal(props.planFile)}>
+          </a>
+
+          <a target="_blank" rel="noreferrer" href={props.planFile}>
             <span className="underline underline-offset-2">Plan file</span>
-          </Link>
+          </a>
         </div>
 
         <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
@@ -93,7 +63,7 @@ function ProgramItem({ props }) {
           </Tippy>
         </div>
 
-        <div className="contents_bottom flex gap-11">
+        <div className="contents_bottom flex justify-between gap-11">
           <div className="likes flex flex-col items-center ms-4">
             <span className="iconLove block">
               <img src={iconHeart} className="w-14 h-14" alt="icon love" />
@@ -108,27 +78,6 @@ function ProgramItem({ props }) {
           </div>
         </div>
       </div>
-
-      {/* Code model pdf preview */}
-      {pdfModalOpen && pdfFile && (
-        <div className="pdf-modal">
-          <div className="pdf-modal-content">
-            <Document
-              file={pdfFile}
-              onLoadSuccess={onDocumentSuccess}
-              onError={onDocumentError}
-            >
-              {Array(numPages)
-                .fill()
-                .map((_, i) => (
-                  <Page pageNumber={i + 1} />
-                ))}
-            </Document>
-            {pdfError && <p className="error-message">{pdfError}</p>}
-            <button onClick={closePdfModal}>Close PDF</button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

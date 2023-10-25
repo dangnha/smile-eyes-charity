@@ -62,7 +62,7 @@ function LargeProgramItem(props) {
             </Tippy>
           </div>
 
-          <div className="contents_bottom flex flex-row gap-14">
+          <div className="contents_bottom flex flex-row justify-between gap-14">
             <div className="likes flex flex-col items-center ms-4">
               <span className="iconLove block">
                 <img src={iconHeart} className="w-14 h-14" alt="icon love" />

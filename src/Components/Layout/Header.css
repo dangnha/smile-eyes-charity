@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 #nav {
-  width: 100vw;
+  width: 100%;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -15,7 +15,7 @@
   background: #005000;
   /* width: 170px; */
   height: 40px;
-  padding: 0 80px;
+  padding: 0 70px;
 }
 
 #language {
@@ -148,13 +148,14 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 158px;
+    top: 116px;
     right: -300px;
     width: 300px;
     height: 100%;
     background: #699836;
     /* box-shadow: 0 0 70px rgba(0, 0, 0, 0.4); */
     padding-top: 40px;
+    padding-left: 30px;
     transition: 0.5s ease-in-out;
   }
 

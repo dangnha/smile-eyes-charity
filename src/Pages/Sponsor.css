@@ -1,0 +1,563 @@
+.sponsor {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.sponsor .div-2 {
+  background-color: #ffffff;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.sponsor .footer-instance {
+  height: 19%;
+  top: 81%;
+}
+
+.sponsor .design-component-instance-node {
+  height: 10%;
+  top: 1%;
+}
+
+.sponsor .footer-2 {
+  top: 4%;
+}
+
+.sponsor .footer-3 {
+  top: 7%;
+}
+
+.sponsor .footer-4 {
+  top: 2%;
+}
+
+.sponsor .footer-5 {
+  top: 9%;
+}
+
+.sponsor .footer-6 {
+  top: 4.5%;
+}
+
+.sponsor .footer-7 {
+  top: 6.5%;
+}
+
+.sponsor .footer-8 {
+  top: 9%;
+}
+
+.sponsor .footer-9 {
+  top: 11.5%;
+}
+
+.sponsor .footer-10 {
+  height: 11.5%;
+  top: 1%;
+}
+
+.sponsor .footer-11 {
+  height: 5.5%;
+  top: 2%;
+}
+
+.sponsor .footer-12 {
+  height: 5%;
+}
+
+.sponsor .footer-13 {
+  top: 1%;
+}
+
+.sponsor .footer-14 {
+  top: 3.5%;
+}
+
+.sponsor .footer-15 {
+  top: 2.5%;
+}
+
+.sponsor .footer-16 {
+  top: 4.5%;
+}
+
+.sponsor .footer-17 {
+  top: 1.5%;
+}
+
+.sponsor .footer-18 {
+  top: 3%;
+}
+
+.sponsor .overlap-2 {
+  height: 51%;
+  left: 11%;
+  position: absolute;
+  top: 29%;
+  width: 80%;
+}
+
+.sponsor .section {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.sponsor .text-wrapper-14 {
+  -webkit-text-stroke: 1px #000000;
+  color: #000000;
+  font-family: "Adamina", Helvetica;
+  font-size: 2.08vw; /* Sử dụng phần trăm cho font-size */
+  font-weight: 400;
+  left: 29.86%; /* Sử dụng phần trăm cho vị trí */
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -0.06%;
+}
+
+.sponsor .line-13 {
+  height: 0.07%;
+  left: 23.19%; /* Sử dụng phần trăm cho vị trí */
+  object-fit: cover;
+  position: absolute;
+  top: 1.21%;
+  width: 5.28%;
+}
+
+.sponsor .line-14 {
+  height: 0.07%;
+  left: 49.86%; /* Sử dụng phần trăm cho vị trí */
+  object-fit: cover;
+  position: absolute;
+  top: 1.21%;
+  width: 5.28%;
+}
+
+.sponsor .group-10 {
+  height: 3.99%;
+  left: 0;
+  position: absolute;
+  top: 3.38%;
+  width: 79.44%;
+}
+
+.sponsor .overlap-group-3 {
+  height: 2.68%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 79.29%;
+}
+
+.sponsor .icon-quote-up {
+  height: 1.08%;
+  left: 0;
+  position: absolute;
+  top: 0.09%;
+  width: 1.39%;
+}
+
+.sponsor .p {
+  color: #000000;
+  font-family: "Adamina", Helvetica;
+  font-size: 2.08vw;
+  font-weight: 400;
+  left: 1.18%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 77.92%;
+}
+
+.sponsor .icon-quote-down {
+  height: 1.08%;
+  left: 66.67%;
+  position: absolute;
+  top: 3%;
+  width: 1.39%;
+}
+  
+.sponsor .overlap-group-wrapper {
+  height: 4.72%;
+  left: 27.92%;
+  position: absolute;
+  top: 46.92%;
+  width: 21.11%;
+}
+
+.sponsor .overlap-3 {
+  background-color: #396d00;
+  border-radius: 1.33%;
+  height: 4.72%;
+  position: relative;
+  width: 20.97%;
+}
+
+.sponsor .advance {
+  height: 2.67%;
+  left: 17.22%;
+  position: absolute;
+  top: 4.92%;
+  width: 2.67%;
+}
+
+.sponsor .text-wrapper-15 {
+  color: #ffffff;
+  font-family: "Roboto", Helvetica;
+  font-size: 1.47vw; /* Sử dụng phần trăm cho font-size */
+  font-weight: 700;
+  left: 2.01%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5.25%;
+  white-space: nowrap;
+}
+
+.sponsor .text-wrapper-16 {
+  color: #000000;
+  font-family: "Alex Brush", Helvetica;
+  font-size: 3.47vw;
+  font-weight: 400;
+  left: 29.31%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 30.42%;
+}
+
+.sponsor .text-wrapper-17 {
+  color: #000000;
+  font-family: "Alex Brush", Helvetica;
+  font-size: 3.47vw;
+  font-weight: 400;
+  left: 13.19%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 77.38%;
+}
+
+.sponsor .text-wrapper-18 {
+  color: #000000;
+  font-family: "Alex Brush", Helvetica;
+  font-size: 3.47vw;
+  font-weight: 400;
+  left: 46.46%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 77.38%;
+}
+
+.sponsor .icon-award {
+  height: 5.06%;
+  left: 35.42%;
+  position: absolute;
+  top: 20.89%;
+  width: 4.44%;
+}
+
+.sponsor .group-11 {
+  height: 6.91%;
+  left: 3.33%;
+  position: absolute;
+  top: 35.42%;
+  width: 70%;
+}
+
+.sponsor .overlap-4 {
+  border-radius: 1.33%;
+  height: 6.91%;
+  left: 51.53%;
+  position: absolute;
+  top: 0;
+  width: 18.53%;
+}
+
+.sponsor .rectangle-2 {
+  height: 4.72%;
+  left: 4.17%;
+  position: absolute;
+  top: 1.11%;
+  width: 4.17%;
+}
+
+.sponsor .div-3 {
+  border: 0.07% solid;
+  border-color: #000000;
+  border-radius: 1.33%;
+  height: 6.91%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 18.53%;
+}
+
+.sponsor .rectangle-3 {
+  height: 4.17%;
+  left: 3.89%;
+  position: absolute;
+  top: 1.03%;
+  width: 4.17%;
+}
+
+.sponsor .rectangle-wrapper {
+  border: 0.07% solid;
+  border-color: #000000;
+  border-radius: 1.33%;
+  height: 6.91%;
+  left: 25.83%;
+  position: absolute;
+  top: 0;
+  width: 18.53%;
+}
+
+.sponsor .rectangle-4 {
+  height: 5.56%;
+  left: 3.82%;
+  position: absolute;
+  top: 0.78%;
+  width: 5.78%;
+}
+
+.sponsor .group-12 {
+  height: 11.11%;
+  left: 6.11%;
+  position: absolute;
+  top: 41.67%;
+  width: 52.22%;
+}
+
+.sponsor .overlap-5 {
+  height: 10.97%;
+  left: 23.19%;
+  position: absolute;
+  top: 0.24%;
+  width: 24.86%;
+}
+
+.sponsor .ellipse {
+  background-color: #eaeaea;
+  border-radius: 5.89%;
+  height: 10.83%;
+  left: 0.2%;
+  position: absolute;
+  top: 0.07%;
+  width: 10.83%;
+}
+
+.sponsor .ellipse-2 {
+  height: 10.97%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 7.22%;
+}
+
+.sponsor .icon-award-2 {
+  height: 4.44%;
+  left: 2.22%;
+  position: absolute;
+  top: 5.83%;
+  width: 3.33%;
+}
+
+.sponsor .icon-award-3 {
+  height: 4.44%;
+  left: 10%;
+  position: absolute;
+  top: 5.83%;
+  width: 3.33%;
+}
+
+.sponsor .group-13 {
+  height: 11.11%;
+  left: 50.28%;
+  position: absolute;
+  top: 0;
+  width: 12.5%;
+}
+
+.sponsor .rectangle-5 {
+  height: 2.78%;
+  left: 5.56%;
+  position: absolute;
+  top: 4.17%;
+  width: 2.78%;
+}
+
+.sponsor .rectangle-6 {
+  height: 2.78%;
+  left: 5.56%;
+  position: absolute;
+  top: 0;
+  width: 2.78%;
+}
+
+.sponsor .rectangle-7 {
+  height: 2.78%;
+  left: 0;
+  position: absolute;
+  top: 2.78%;
+  width: 2.78%;
+}
+
+.sponsor .rectangle-8 {
+  height: 2.78%;
+  left: 5.56%;
+  position: absolute;
+  top: 6.94%;
+  width: 2.78%;
+}
+
+.sponsor .rectangle-9 {
+  height: 2.78%;
+  left: 0;
+  position: absolute;
+  top: 5.83%;
+  width: 2.78%;
+}
+
+.sponsor .group-14 {
+  height: 11.11%;
+  left: 0;
+  position: absolute;
+  top: 0.61%;
+  width: 12.5%;
+}
+
+.sponsor .rectangle-10 {
+  height: 2.94%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 3.06%;
+}
+
+.sponsor .rectangle-11 {
+  height: 2.94%;
+  left: 5.28%;
+  position: absolute;
+  top: 4.72%;
+  width: 3.06%;
+}
+
+.sponsor .rectangle-12 {
+  height: 2.94%;
+  left: 5.28%;
+  position: absolute;
+  top: 10.83%;
+  width: 3.06%;
+}
+
+.sponsor .rectangle-13 {
+  height: 2.94%;
+  left: 0;
+  position: absolute;
+  top: 7.5%;
+  width: 3.06%;
+}
+
+.sponsor .rectangle-14 {
+  height: 2.94%;
+  left: 0;
+  position: absolute;
+  top: 11.67%;
+  width: 3.06%;
+}
+
+.sponsor .header-instance {
+  background-color: transparent;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.sponsor .div-wrapper {
+  height: 13.89%;
+  left: 0.21%;
+  position: absolute;
+  top: 4.17%;
+  width: 99.79%;
+}
+
+.sponsor .overlap-6 {
+  background-color: #f6fff6;
+  height: 13.89%;
+  position: relative;
+  width: 100%;
+}
+
+.sponsor .rectangle-15 {
+  height: 100%;
+  left: 44.5%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 55.5%;
+}
+
+.sponsor .button {
+  all: unset;
+  box-sizing: border-box;
+  height: 7.08%;
+  left: 5.89%;
+  position: absolute;
+  top: 5.42%;
+  width: 22.29%;
+}
+
+.sponsor .overlap-group-4 {
+  background-color: #396d00;
+  border-radius: 4.44%;
+  height: 7.08%;
+  position: relative;
+  width: 22.22%;
+}
+
+.sponsor .icon-arrow-right {
+  height: 3.33%;
+  left: 18.33%;
+  position: absolute;
+  top: 6.11%;
+  width: 4%;
+}
+
+.sponsor .text-wrapper-19 {
+  color: #ffffff;
+  font-family: "Adamina", Helvetica;
+  font-size: 2.08vw;
+  font-weight: 400;
+  height: 3.33%;
+  left: 2.08%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5.83%;
+  width: 13.89%;
+}
+
+.sponsor .content-3 {
+  color: #000000;
+  font-family: "Adamina", Helvetica;
+  font-size: 2.78vw;
+  font-weight: 400;
+  left: 5.89%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 10%;
+  width: 34.86%;
+}

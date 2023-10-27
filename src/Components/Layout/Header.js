@@ -23,12 +23,13 @@ const Header = () => {
       <div id="navbar-language">
         <Language selected={selected} setSelected={setSelected} />
       </div>
-
       <div id="navbar-title">
-        <div id="logo">
-          <img src="./image/logo.png" alt="abc" />
-          <p>Smile Eye Charity</p>
-        </div>
+        <a href="/">
+          <div id="logo">
+            <img src="./image/logo.png" alt="abc" />
+            <p>Smile Eye Charity</p>
+          </div>
+        </a>
 
         <div>
           <ul id="title" className={clicked ? "active" : "title"}>

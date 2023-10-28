@@ -26,12 +26,8 @@
 .project {
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-}
-
-#item_project {
-  width: 30%;
 }
 
 .blog {
@@ -112,7 +108,7 @@ video1 {
   width: 60%;
   max-width: 660px;
   position: relative;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 .circle {
@@ -216,8 +212,20 @@ video1 {
   width: 70px;
 }
 
-@media screen and (max-width: 935px) {
-  #item_project {
-    width: 100%;
+@media screen and (max-width: 968px){
+  .profile_des_text{
+    font-size: 18px;
+  }
+
+  .our_information_heading3{
+    font-size: 16px;
+  }
+
+  .button_introduce button{
+    font-size: 16px;
+  }
+
+  .des_title_blog{
+    font-size: 18px;
   }
 }

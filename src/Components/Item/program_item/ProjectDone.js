@@ -57,8 +57,8 @@ function ProjectDone(props) {
           <span className="mr-7">Funding: {props.cost}</span>
         </div>
 
-        <div className="contents_bottom flex justify-center">
-          <div className="likes flex flex-row items-center justify-center text-2xl">
+        <div className="contents_bottom flex justify-between">
+          <div className="likes flex flex-row items-center text-2xl">
             <Link to="">
               <span className="underline underline-offset-2 mr-3.5">
                 Achievement

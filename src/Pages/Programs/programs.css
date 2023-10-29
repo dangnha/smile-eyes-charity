@@ -1,9 +1,11 @@
 .top_image {
     max-width: 1200px;
+    width: 93%;
 } 
 
 .intro {
     max-width: 1080px;
+    width: 90%;
 }
 
 .paragraph {
@@ -12,10 +14,12 @@
 
 .paragraph p {
     max-width: 1080px;
+    width: 90%;
 }
 
 .programs {
     max-width: 1200px;
+    width: 95%;
 }
 
 .programs_filter {
@@ -59,6 +63,36 @@
     height: 60px;
     animation: rotation 2s infinite linear;
     display: none;
+}
+
+/* responsive */
+
+/* for tablet */
+@media screen and (min-width:768px) and (max-width: 1023px){
+    .intro .intro_image {
+        height: 250px;
+    }
+
+    .intro .intro_text-title {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/* for smartphone */
+@media screen and (min-width:640px) and (max-width: 767px){
+    .top_image {
+        display: none;
+    }
+
+    .intro .intro_image {
+        height: 200px;
+    }
+
+    .intro .intro_text-title {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
 }
 
 

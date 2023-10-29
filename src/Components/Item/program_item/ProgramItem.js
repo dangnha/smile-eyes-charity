@@ -38,18 +38,18 @@ function ProgramItem({ props }) {
   };
 
   return (
-    <div className="program-item mb-6">
+    <div className="program-item md:mb-6 ">
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
-          <h2 className="text-2xl font-medium">{props.title}</h2>
+          <h2 className="lg:text-2xl md:text-xl sm:text-base font-medium">{props.title}</h2>
           <img
             src={iconShare}
-            className="w-10 h-10 ms-5 hover:cursor-pointer"
+            className="lg:w-10 md:w-8 sm:w-6 hover:cursor-pointer ms-3"
             alt="icon share"
           />
         </div>
-        <div className="header_date text-xl">
+        <div className="header_date lg:text-xl md:text-lg sm:text-base">
           <span>Time: </span>
           <span>{props.date}</span>
         </div>
@@ -71,11 +71,11 @@ function ProgramItem({ props }) {
 
       {/* contents */}
       <div className="contents">
-        <p className="contents_description text-xl text-left mb-3">
+        <p className="contents_description lg:text-xl md:text-lg sm:text-base text-left mb-3">
           {props.des}
         </p>
         {/* Update code to preview pitch file and plan file */}
-        <div className="contents_files text-2xl mb-3">
+        <div className="contents_files lg:text-2xl sm:text-xl mb-3">
           <Link to="" onClick={() => openPdfModal(props.pitchFile)}>
             <span className="underline underline-offset-2 mr-7">
               Pitch file
@@ -86,19 +86,19 @@ function ProgramItem({ props }) {
           </Link>
         </div>
 
-        <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
+        <div className="contents_progress mb-2 lg:text-2xl sm:text-xl hover:cursor-pointer flex justify-between items-center">
           <span className="mr-7">Funding</span>
-          <Tippy content="65%">
-            <progress value="65" max="100"></progress>
+          <Tippy content={props.progress + "%"}>
+            <progress value={props.progress} max="100"></progress>
           </Tippy>
         </div>
 
         <div className="contents_bottom flex justify-between gap-11">
           <div className="likes flex flex-col items-center ms-4">
             <span className="iconLove block">
-              <img src={iconHeart} className="w-14 h-14" alt="icon love" />
+              <img src={iconHeart} className="lg:w-16 md:w-14 sm:w-12" alt="icon love" />
             </span>
-            <span className="amountOfLikes text-xl font-medium leading-4 block">
+            <span className="amountOfLikes lg:text-xl sm:text-lg font-medium leading-4 block">
               {props.amoutOfLikes}
             </span>
           </div>

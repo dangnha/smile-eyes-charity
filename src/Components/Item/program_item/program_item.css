@@ -1,7 +1,5 @@
 .program-item {
   max-width: 540px;
-  min-width: 350px;
-
   padding: 15px;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
@@ -21,8 +19,9 @@
 .contents_description {
   /* hidden text when it overflow 3 lines */
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
 
   @supports (-webkit-line-clamp: 2) {
     overflow: hidden;
@@ -46,6 +45,7 @@
 .contents_progress progress::-webkit-progress-value {
   background-color: #396d00;
 }
+
 
 .button_sponsors {
   display: flex;
@@ -77,6 +77,11 @@
   width: 70%;
 }
 
+.large-program-item .video iframe {
+  min-width: 300px;
+  min-height: 200px;  
+}
+
 .large-Contents {
   max-width: 100%;
 }
@@ -100,3 +105,43 @@
   max-height: 80%;
   overflow: auto;
 }
+
+/* responsive */
+
+/* for desktop, laptop */
+@media screen and (min-width:1024px){
+  .large-program-item .video iframe {
+    height: 350px;
+  }
+}
+
+/* for tablet */
+@media screen and (min-width:768px) and (max-width: 1023px){
+  .program-item .video iframe {
+   height: 250px;
+  }
+
+  .large-program-item .video iframe {
+    height: 300px;
+  }
+
+  .contents_bottom .likes {
+    min-width: 55px;
+  }
+}
+
+/* for smartphone */
+@media screen and (min-width:640px) and (max-width: 767px){
+  .program-item .video iframe {
+   height: 200px;
+  }
+
+  .large-program-item .video iframe {
+    height: 250px;
+  }
+
+  .contents_bottom .likes {
+    min-width: 50px;
+  }
+}
+

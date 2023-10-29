@@ -12,14 +12,14 @@ function LargeProgramItem(props) {
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex">
-          <span className="text-4xl font-medium ">{props.title}</span>
+          <span className="lg:text-4xl md:text-3xl sm:text-2xl font-medium ">{props.title}</span>
           <img
             src={iconShare}
-            className="w-10 h-10 ms-5 hover:cursor-pointer"
+            className="lg:w-10 md:w-8 sm:w-7 ms-5 hover:cursor-pointer"
             alt="icon share"
           />
         </div>
-        <div className="header_date text-lg italic">
+        <div className="header_date lg:text-xl md:text-lg sm:text-base italic">
           <span>Time: </span>
           <span>{props.date}</span>
         </div>
@@ -46,7 +46,7 @@ function LargeProgramItem(props) {
             {props.des}
           </p>
 
-          <div className="contents_files text-2xl flex flex-row gap-10">
+          <div className="contents_files lg:text-2xl sm:text-xl flex flex-row gap-10">
             <Link to="">
               <span className="underline underline-offset-2">Pitch file</span>
             </Link>
@@ -55,19 +55,19 @@ function LargeProgramItem(props) {
             </Link>
           </div>
 
-          <div className="contents_progress mb-3 text-2xl hover:cursor-pointer flex flex-row gap-11 items-center">
+          <div className="contents_progress mb-3 lg:text-2xl sm:text-xl hover:cursor-pointer flex flex-row gap-11 items-center">
             <span className="">Funding</span>
-            <Tippy content="65%">
-              <progress value="65" max="100"></progress>
+            <Tippy content={props.progress + "%"}>
+              <progress value={props.progress} max="100"></progress>
             </Tippy>
           </div>
 
           <div className="contents_bottom flex flex-row justify-between gap-14">
             <div className="likes flex flex-col items-center ms-4">
               <span className="iconLove block">
-                <img src={iconHeart} className="w-14 h-14" alt="icon love" />
+                <img src={iconHeart} className="lg:w-16 sm:w-14" alt="icon love" />
               </span>
-              <span className="amountOfLikes text-xl font-medium leading-4 block">
+              <span className="amountOfLikes lg:text-xl sm:text-lg font-medium leading-4 block">
                 {props.amoutOfLikes}
               </span>
             </div>

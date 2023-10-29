@@ -11,6 +11,7 @@ const props = [
     linkYT: "https://www.youtube.com/embed/bdBG5VO01e0?si=xEOHtxpF1LCmHNAU",
     des: "Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects. Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects.",
     amoutOfLikes: "145.9k",
+    progress: 78,
     pitchFile: "/public/pdf/data_struct.pdf",
     planFile: "/public/pdf/intro.pdf",
   },
@@ -22,6 +23,7 @@ const props = [
     linkYT: "https://www.youtube.com/embed/xHegpKx61eE?si=oOO1Pe1FzXLiRpQy",
     des: "The statistics in this video were provided by GiveWell, the World Health Organization, and the websites listed above. Cost estimates may not be 100% accurate, as they're difficult to evaluate and can vary depending on the source. For example, the Against Malaria Foundation estimates that bed nets typically cost between US$2 and US$3, whereas GiveWell puts the price at $4.53.",
     amoutOfLikes: "1.7k",
+    progress: 67,
     pitchFile: "/public/pdf/data_struct.pdf",
     planFile: "/public/pdf/intro.pdf",
   },
@@ -33,6 +35,7 @@ const props = [
     linkYT: "https://www.youtube.com/embed/npk7tfKyXok?si=E1ubB7RWUvoCaCLX",
     des: "The war in Yemen, which began early last year when the government was overthrown by rebel forces, has pushed the country to the brink of famine. This video contains distressing scenes from the start. See more from BBC Our World's documentary Starving Yemen this weekend on BBC World, BBC News and iPlayer.",
     amoutOfLikes: "24k",
+    progress: 80,
     pitchFile: "/public/pdf/data_struct.pdf",
     planFile: "/public/pdf/intro.pdf",
   },
@@ -45,6 +48,7 @@ const props = [
     linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
     des: "Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects. Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects.",
     amoutOfLikes: "106k",
+    progress: 92,
     pitchFile: "/public/pdf/data_struct.pdf",
     planFile: "/public/pdf/intro.pdf",
   },
@@ -56,6 +60,7 @@ const props = [
     linkYT: "https://www.youtube.com/embed/GvIHMITsYTw?si=qWTtHJL6PHGfo-Za",
     des: " Xây nhà vệ sinh cho trẻ em vùng cao là hành động nhỏ nhưng lại mang thông điệp nhân văn rất lớn. Việc làm này của nhóm thiện nguyện VAECO HAN không chỉ giúp cho các thầy cô và học sinh tiếp cận gần hơn với văn hóa học đường dưới xuôi. Nó còn tạo động lực để các em học sinh nghèo vùng cao thích thú hơn khi đến trường, tới lớp.",
     amoutOfLikes: "12.4k",
+    progress: 96,
     pitchFile: "/public/pdf/data_struct.pdf",
     planFile: "/public/pdf/intro.pdf",
   },
@@ -67,6 +72,7 @@ const props = [
     linkYT: "https://www.youtube.com/embed/sC2sEm0UBVQ?si=tpYTdgVVytiK_TlU",
     des: "Bạn hẳn sẽ không cầm lòng nổi khi biết ở vùng cao, vùng sâu, vùng xa có hàng trăm, hàng ngàn đồng bào của chúng ta đang sống cuộc sống nghèo khó, thiếu thốn. Người già, trẻ em không có nổi tấm chăn, manh áo ấm; các gia đình lay lắt bên những mái nhà xuống cấp không đủ che gió, che mưa; biết bao em bé không có sách để đọc, không có quyển vở cây bút để viết, thậm chí có em không được đến trường",
     amoutOfLikes: "798.8k",
+    progress: 100,
     pitchFile: "/public/pdf/data_struct.pdf",
     planFile: "/public/pdf/intro.pdf",
   },
@@ -123,19 +129,19 @@ const Programs = () => {
       <div className="top_image mx-auto my-12">
         <img
           src="./images/top_image.png"
-          className="w-full object-fit"
+          className="mx-auto w-full object-fit"
           alt="nothing"
         />
       </div>
 
-      <div className="intro mx-auto my-16 flex justify-between">
+      <div className="intro mx-auto md:my-16 sm:my-14 flex justify-between">
         <img
           src="./images/Rectangle_126.png"
           alt="nothing"
           className="intro_image w-3/6"
         />
-        <div className="text w-2/5">
-          <p className="text-4xl mt-16 mb-20">Many Exciting Projects</p>
+        <div className="intro_text text w-2/5">
+          <p className="intro_text-title md:text-4xl sm:text-xl mt-16 mb-20">Many Exciting Projects</p>
           <p className="text-xl">
             Discover the great meaningful charity projects of Smile Eyes Charity
           </p>
@@ -143,7 +149,7 @@ const Programs = () => {
       </div>
 
       {/* paragraph */}
-      <div className="paragraph py-16 mb-20 text-lg text-justify">
+      <div className="paragraph md:py-16 sm:py-10 md:mb-20 sm:mb-16 text-lg text-justify">
         <p className="mx-auto">
           The exceptional charities on this list have earned perfect scores
           across all four beacons in our Encompass Rating System. Based on our
@@ -186,7 +192,7 @@ const Programs = () => {
           </li>
         </ul>
 
-        <p className="mini_programs-title text-3xl font-medium mb-8">{title}</p>
+        <p className="mini_programs-title lg:text-3xl md:text-2xl sm:text-xl font-medium mb-8">{title}</p>
 
         {/* mini programs */}
         <img

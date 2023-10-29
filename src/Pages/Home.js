@@ -16,6 +16,7 @@ const Home = () => {
       "https://www.youtube.com/embed/543jwFfCZvg?list=PLp6D8X7L5wgbTLG-OR0q8hJws4wD18e7o",
     des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
     amoutOfLikes: "300",
+    progress: 89,
   };
 
   const projects = [
@@ -25,6 +26,7 @@ const Home = () => {
       linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
       des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
       amoutOfLikes: "300",
+      progress: 90,
     },
     {
       title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
@@ -32,6 +34,7 @@ const Home = () => {
       linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
       des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
       amoutOfLikes: "300",
+      progress: 78,
     },
     {
       title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
@@ -39,6 +42,7 @@ const Home = () => {
       linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
       des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
       amoutOfLikes: "300",
+      progress: 92,
     },
   ];
 
@@ -79,6 +83,7 @@ const Home = () => {
             linkYT={video_introduce.linkYT}
             des={video_introduce.des}
             amoutOfLikes={video_introduce.amoutOfLikes}
+            progress={video_introduce.progress}
           />
         </div>
 

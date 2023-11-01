@@ -6,6 +6,7 @@ import Button from "../Components/Button/Button";
 import "./Home.css";
 import BlogModel from "../Components/Item/model/BlogModel";
 import { useTranslation } from "react-i18next";
+import Projects from "./Projects";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -25,43 +26,6 @@ const Home = () => {
     planFile:
       "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
   };
-
-  const projects = [
-    {
-      title: "XÂY DỰNG MÔ HÌNH KINH TẾ VƯỜN",
-      date: "01/11/2023 - 01/11/2025 (2 năm)",
-      place: "cụm dân cư Pà-Căng mới",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm kinh tế vườn và tự xây dựng được mô hình kinh tế vườn cho gia đình của mình. Kết quả là vườn nhà được sử dụng hiệu quả, mức sống được nâng cao. Hơn nữa, góp phần làm môi trường xanh sạch đẹp.",
-      amoutOfLikes: "179",
-    },
-    {
-      title: "XÂY DỰNG XƯỞNG SẢN XUẤT PHÂN HỮU CƠ",
-      date: "01/11/2023 ~ 01/11/2025 (2 năm)",
-      place: "cụm dân cư Pà-Căng mới",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Phân bón hữu cơ là yếu tố quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm tái sử dụng các chất thải gia súc gia cầm, rác thải gia đình, rác thải nông nghiệp trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con. Kết quả là bà con có phân bón hữu cơ chất lượng cho vườn của mình với chi phí thấp. Hơn nữa, bà con hiểu được quy trình làm rác và giá trị của rác, bà con sẽ tận dụng chúng cho việc phát triển nông nghiệp. Từ đó góp phần làm cho môi trường trong làng xanh sạch đẹp.",
-      amoutOfLikes: "212",
-    },
-    // {
-    //   title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-    //   date: "20/10/2022",
-    //   linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-    //   des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-    //   amoutOfLikes: "300",
-    // },
-  ];
-
-  const projects_done = [
-    // {
-    //   title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-    //   date: "20/10/2022",
-    //   linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-    //   des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-    //   amoutOfLikes: "300",
-    //   cost: "10.000.000 VND",
-    // },
-  ];
 
   return (
     <div>
@@ -90,11 +54,13 @@ const Home = () => {
           </div>
 
           <div className="project">
-            {projects.map((project, index) => (
-              <div id="item_project" key={index}>
-                <ProgramItem props={project} />
-              </div>
-            ))}
+            {Projects.filter((project) => project.type === "raising").map(
+              (project, index) => (
+                <div id="item_project" key={index}>
+                  <ProgramItem props={project} />
+                </div>
+              )
+            )}
           </div>
         </div>
 
@@ -107,11 +73,13 @@ const Home = () => {
           </div>
 
           <div className="project">
-            {projects.map((project, index) => (
-              <div id="item_project" key={index}>
-                <ProgramItem props={project} />
-              </div>
-            ))}
+            {Projects.filter((project) => project.type === "running").map(
+              (project, index) => (
+                <div id="item_project" key={index}>
+                  <ProgramItem props={project} />
+                </div>
+              )
+            )}
           </div>
         </div>
 
@@ -124,18 +92,27 @@ const Home = () => {
           </div>
 
           <div className="project">
-            {projects_done.map((project_done, index) => (
-              <div id="item_project" key={index}>
-                <ProjectDone
-                  title={project_done.title}
-                  date={project_done.date}
-                  linkYT={project_done.linkYT}
-                  des={project_done.des}
-                  amoutOfLikes={project_done.amoutOfLikes}
-                  cost={project_done.cost}
-                />
-              </div>
-            ))}
+            {Projects.filter((project) => project.type === "completed").map(
+              (project, index) => (
+                <div id="item_project" key={index}>
+                  {console.log(project)}
+                  <ProjectDone
+                    type={project.type}
+                    title={project.title}
+                    date={project.date}
+                    place={project.place}
+                    linkYT={project.linkYT}
+                    des={project.des}
+                    amoutOfLikes={project.amoutOfLikes}
+                    introductionFile
+                    pitchFile={project.pitchFile}
+                    planFile={project.planFile}
+                    detailFile={project.detailFile}
+                    cost={project.cost}
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>

@@ -5,19 +5,25 @@ import "./program_item.css";
 import NormalBtn from "../../Button/NormalBtn";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
+import { FacebookShareButton } from "react-share";
 
 function ProgramItem({ props }) {
+  const shareUrl = props.linkYT; // URL to share
+  const title = "Smile Eyes Charity Project is so amazing"; // Title for the shared content
+
   return (
     <div className="program-item mb-6">
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
           <h2 className="text-2xl font-medium">{props.title}</h2>
-          <img
-            src={iconShare}
-            className="w-10 h-10 ms-5 hover:cursor-pointer"
-            alt="icon share"
-          />
+          <FacebookShareButton url={shareUrl} quote={title}>
+            <img
+              src={iconShare}
+              className="w-10 h-10 ms-5 hover:cursor-pointer"
+              alt="icon share"
+            />
+          </FacebookShareButton>
         </div>
         <div className="header_date text-xl">
           <div>

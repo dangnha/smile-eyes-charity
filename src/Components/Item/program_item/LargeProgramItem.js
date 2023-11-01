@@ -1,17 +1,16 @@
-import { Link } from "react-router-dom";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-
 import "./program_item.css";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
 import NormalBtn from "../../Button/NormalBtn";
+
 function LargeProgramItem(props) {
   return (
     <div className="large-program-item">
       {/* header */}
       <div className="header mb-6">
-        <div className="header_title flex">
+        <div className="header_title flex mb-3">
           <span className="text-4xl font-medium ">{props.title}</span>
           <img
             src={iconShare}
@@ -20,8 +19,14 @@ function LargeProgramItem(props) {
           />
         </div>
         <div className="header_date text-lg italic">
-          <span>Time: </span>
-          <span>{props.date}</span>
+          <div>
+            <span>Time: </span>
+            <span>{props.date}</span>
+          </div>
+          <div>
+            <span>Place: </span>
+            <span>{props.place}</span>
+          </div>
         </div>
       </div>
 
@@ -47,12 +52,22 @@ function LargeProgramItem(props) {
           </p>
 
           <div className="contents_files text-2xl flex flex-row gap-10">
-            <Link to="">
+            <a
+              href={props.pitchFile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
               <span className="underline underline-offset-2">Pitch file</span>
-            </Link>
-            <Link to="">
+            </a>
+            <a
+              href={props.planFile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
               <span className="underline underline-offset-2">Plan file</span>
-            </Link>
+            </a>
           </div>
 
           <div className="contents_progress mb-3 text-2xl hover:cursor-pointer flex flex-row gap-11 items-center">

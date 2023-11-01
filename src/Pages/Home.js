@@ -1,72 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import LargeProgramItem from "../Components/Item/program_item/LargeProgramItem";
 import ProgramItem from "../Components/Item/program_item/ProgramItem";
 import ProjectDone from "../Components/Item/program_item/ProjectDone";
 import Button from "../Components/Button/Button";
 import "./Home.css";
+import BlogModel from "../Components/Item/model/BlogModel";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const { t } = useTranslation();
+  const [showBlogModel, setShowBlogModel] = useState(false);
 
   const video_introduce = {
     title: t("item_title"),
-    date: "20/10/2022",
+    date: "01/11/2023 ~ 01/11/2028",
+    place:
+      "cụm dân cư Pà-Căng mới, thôn Pà-Ong, xã Cà-Dy, huyện Nam Giang, tỉnh Quảng Nam, Việt Nam ",
     linkYT:
       "https://www.youtube.com/embed/543jwFfCZvg?list=PLp6D8X7L5wgbTLG-OR0q8hJws4wD18e7o",
-    des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
+    des: "Cụm dân cư Pà Căng mới nằm bên dòng sông Dakmy xinh đẹp, phía sau là những dãy núi Trường Sơn hiền hòa. Làng có 30 hộ gia đình người Cơ Tu, trong đó 26 hộ nghèo (thu nhập dưới 1.500.000 VND/hộ/tháng) và 4 hộ cận nghèo. Hằng ngày bà con vào rừng hoặc ra sông tìm kiếm đồ ăn hoặc những món có thể bán. Nỗi lo lắng lớn nhất của người dân ở đây là thiếu ăn thiếu mặc, nhất là vào mùa mưa. ",
     amoutOfLikes: "300",
+    pitchFile:
+      "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+    planFile:
+      "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
   };
 
   const projects = [
     {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
+      title: "XÂY DỰNG MÔ HÌNH KINH TẾ VƯỜN",
+      date: "01/11/2023 - 01/11/2025 (2 năm)",
+      place: "cụm dân cư Pà-Căng mới",
       linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
+      des: "Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm kinh tế vườn và tự xây dựng được mô hình kinh tế vườn cho gia đình của mình. Kết quả là vườn nhà được sử dụng hiệu quả, mức sống được nâng cao. Hơn nữa, góp phần làm môi trường xanh sạch đẹp.",
+      amoutOfLikes: "179",
     },
     {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
+      title: "XÂY DỰNG XƯỞNG SẢN XUẤT PHÂN HỮU CƠ",
+      date: "01/11/2023 ~ 01/11/2025 (2 năm)",
+      place: "cụm dân cư Pà-Căng mới",
       linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
+      des: "Phân bón hữu cơ là yếu tố quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm tái sử dụng các chất thải gia súc gia cầm, rác thải gia đình, rác thải nông nghiệp trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con. Kết quả là bà con có phân bón hữu cơ chất lượng cho vườn của mình với chi phí thấp. Hơn nữa, bà con hiểu được quy trình làm rác và giá trị của rác, bà con sẽ tận dụng chúng cho việc phát triển nông nghiệp. Từ đó góp phần làm cho môi trường trong làng xanh sạch đẹp.",
+      amoutOfLikes: "212",
     },
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-    },
+    // {
+    //   title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
+    //   date: "20/10/2022",
+    //   linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
+    //   des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
+    //   amoutOfLikes: "300",
+    // },
   ];
 
   const projects_done = [
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-      cost: "10.000.000 VND",
-    },
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-      cost: "10.000.000 VND",
-    },
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-      cost: "10.000.000 VND",
-    },
+    // {
+    //   title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
+    //   date: "20/10/2022",
+    //   linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
+    //   des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
+    //   amoutOfLikes: "300",
+    //   cost: "10.000.000 VND",
+    // },
   ];
 
   return (
@@ -76,9 +70,12 @@ const Home = () => {
           <LargeProgramItem
             title={video_introduce.title}
             date={video_introduce.date}
+            place={video_introduce.place}
             linkYT={video_introduce.linkYT}
             des={video_introduce.des}
             amoutOfLikes={video_introduce.amoutOfLikes}
+            pitchFile={video_introduce.pitchFile}
+            planFile={video_introduce.planFile}
           />
         </div>
 
@@ -177,7 +174,10 @@ const Home = () => {
               educationally.
             </p>
             <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
-            <div className="blog_seemore flex flex-col items-center">
+            <div
+              className="blog_seemore flex flex-col items-center"
+              onClick={() => setShowBlogModel(!showBlogModel)}
+            >
               <p className="mt-10">See more</p>
               <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
             </div>
@@ -195,7 +195,10 @@ const Home = () => {
               educationally.
             </p>
             <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
-            <div className="blog_seemore flex flex-col items-center">
+            <div
+              className="blog_seemore flex flex-col items-center"
+              onClick={() => setShowBlogModel(!showBlogModel)}
+            >
               <p className="mt-10">See more</p>
               <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
             </div>
@@ -224,6 +227,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {showBlogModel && <BlogModel onClose={() => setShowBlogModel(false)} />}
 
       <div className="profile flex flex-row items-center">
         <div className="profile_des">

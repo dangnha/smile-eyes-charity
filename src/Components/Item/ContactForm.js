@@ -1,7 +1,7 @@
 import React from "react";
 const ContactForm = () => {
   return (
-    <div className="container mx-auto my-20 w-[55vw] h-[85vh] border border-white bg-[#005000] opacity-85 pt-[10px] ">
+    <div className="container mx-auto my-20 w-[55vw] h-[85vh] border border-white bg-[#005000] opacity-35 pt-[10px] ">
       <div className="flex flex-col justify-center items-center">
         <p className="w-[85%] text-left text-white text-[58px] font-extrabold font-['Inter']">
           {" "}
@@ -14,7 +14,7 @@ const ContactForm = () => {
           Submit your information in this below form to start new journey.{" "}
         </p>
         <br />
-        <form className="w-[85%]">
+        <form className="w-[85%] ">
           <div className="flex flex-col gap-5 justify-center items-center">
             <textarea
               required

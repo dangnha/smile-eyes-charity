@@ -43,7 +43,7 @@ const About = () => {
                   <i className="icon-tel fa-solid fa-phone"></i>
                   <div>
                     <p>Contact Us</p>
-                    <p>+123456789</p>
+                    <p>0962 414 125</p>
                   </div>
                 </div>
               </div>
@@ -59,11 +59,13 @@ const About = () => {
             <div className="flex-founder basis-[45%] mt-8">
               <div className="text-sub-founder flex flex-col p-12 text-left">
                 <i className="fa-solid fa-quote-left fa-xl mr-auto"></i>
-                <p className="text-xl pl-10">We provide opportunity support for children living in the
-                highlands, mountains and disadvantaged areas in Nam Giang. Our
-                main goal is to improve the quality of life of children so that
-                they develop comprehensively physically, mentally and
-                educationally.</p>
+                <p className="text-xl pl-10">
+                  We provide opportunity support for children living in the
+                  highlands, mountains and disadvantaged areas in Nam Giang. Our
+                  main goal is to improve the quality of life of children so
+                  that they develop comprehensively physically, mentally and
+                  educationally.
+                </p>
                 <i className="fa-solid fa-quote-right fa-xl ml-auto"></i>
               </div>
             </div>
@@ -198,13 +200,21 @@ const About = () => {
           <div className="achievement-content flex flex-row">
             <div className="achievement-des">
               <p id="achieved">Achieved</p>
-              <p id="achieved-des">We register and regulate charities in England and Wales, to ensure
-                that the public can support charities with confidence. As registrar,
-                we are responsible for maintaining an accurate.</p>
+              <p id="achieved-des">
+                We register and regulate charities in England and Wales, to
+                ensure that the public can support charities with confidence. As
+                registrar, we are responsible for maintaining an accurate.
+              </p>
               <p id="aim-title">Our strategic priorities up to 2025 are:</p>
-              <p id="achieved-des">Protecting charities from abuse or mismanagement</p>
-              <p id="achieved-des">Enabling trustees to run their charities effectively</p>
-              <p id="achieved-des">Encouraging greater transparency and accountability</p>
+              <p id="achieved-des">
+                Protecting charities from abuse or mismanagement
+              </p>
+              <p id="achieved-des">
+                Enabling trustees to run their charities effectively
+              </p>
+              <p id="achieved-des">
+                Encouraging greater transparency and accountability
+              </p>
               <div className="achievement-aim flex flex-row mt-10">
                 <div className="achievement-aim-des mr-10">
                   <p id="number-achievement">132+</p>

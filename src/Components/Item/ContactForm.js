@@ -1,16 +1,16 @@
 import React from "react";
 const ContactForm = () => {
   return (
-    <div className="container mx-auto my-20 w-[55vw] h-[85vh] border border-white bg-[#005000] opacity-85 pt-[10px] ">
+    <div className="container mx-auto my-auto border border-white bg-[#005000] opacity-85">
       <div className="flex flex-col justify-center items-center">
-        <p className="w-[85%] text-left text-white text-[58px] font-extrabold font-['Inter']">
+        <p className="w-[85%] text-left text-white text-[30px] font-extrabold font-['Inter']">
           {" "}
           Be come our sponsors
         </p>
-        <p className="w-[85%] text-white text-left text-[20px] ">
+        <p className="w-[85%] text-white text-left text-[18px] ">
           Please become a part of us, join hands in building a loving community.
         </p>
-        <p className="w-[85%] text-white text-left text-[20px] ">
+        <p className="w-[85%] text-white text-left text-[18px] ">
           Submit your information in this below form to start new journey.{" "}
         </p>
         <br />

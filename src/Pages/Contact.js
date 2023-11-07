@@ -1,7 +1,13 @@
+import "./Contact.css"
+import ContactForm from "../Components/Item/ContactForm"
 const Contact = () => {
     return (
-      <div>
-        <h1 className="text-2xl text-red">This is Contact content</h1>
+      <div className="contact-container">
+        <div className="contact-form">
+          <div className="contact-fill-form"><ContactForm/></div>
+        </div>
+        <div className="contact-info"></div>
+        <div className="contact-banner"></div>
       </div>
     );
   };

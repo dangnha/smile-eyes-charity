@@ -1,10 +1,11 @@
 import React from "react";
 import UserItemsProfile from "../Components/UserItemsProfile/UserItemsProfile";
 import Button from "../Components/Button/Button";
-
+import { useTranslation } from "react-i18next";
 import "./AboutUs.css";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <React.Fragment>
       <div className="aboutUS w-[100vw]">
@@ -60,11 +61,7 @@ const About = () => {
               <div className="text-sub-founder flex flex-col p-12 text-left">
                 <i className="fa-solid fa-quote-left fa-xl mr-auto"></i>
                 <p className="text-xl pl-10">
-                  We provide opportunity support for children living in the
-                  highlands, mountains and disadvantaged areas in Nam Giang. Our
-                  main goal is to improve the quality of life of children so
-                  that they develop comprehensively physically, mentally and
-                  educationally.
+                {t("profile-des")}
                 </p>
                 <i className="fa-solid fa-quote-right fa-xl ml-auto"></i>
               </div>
@@ -74,10 +71,10 @@ const About = () => {
                 <div className="container-image-founder">
                   <div className="image-founder image3"></div>
                 </div>
-                <h1 className="name-founder">DINH THI DONG PHUONG</h1>
-                <p className="position-founder uppercase">Founder</p>
-                <p className="company-founder">From: Smile Eye Charity</p>
-                <p className="email-founder">Email: dinhdongphuong@gmail.com</p>
+                <h1 className="name-founder">{t("profile-intro1")}</h1>
+                <p className="position-founder uppercase">{t("profile-intro2")}</p>
+                <p className="company-founder">{t("profile-intro3")}</p>
+                <p className="email-founder">{t("profile-intro4")}</p>
               </div>
             </div>
           </div>

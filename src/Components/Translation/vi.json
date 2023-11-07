@@ -40,6 +40,7 @@
     "title-raising3": "YEMEN: BÊN BỜ VỰC NẠN ĐÓI",
     "date-raising3": "01/11/2023 - 01/11/2025 (2 năm)",
     "place-raising3": "cụm dân cư Pà-Căng mới",
+    "linkYT-raising3": "https://youtu.be/PaIaf8DhVrQ",
     "des-raising3": "Cuộc chiến ở Yemen, bắt đầu vào đầu năm ngoái khi chính phủ bị lực lượng nổi dậy lật đổ, đã đẩy nước này đến bờ vực nạn đói. Video này chứa những cảnh đau buồn ngay từ đầu. Xem thêm từ phim tài liệu Starving Yemen của BBC Our World vào cuối tuần này trên BBC World, BBC News và iPlayer.",
 
     "title-running1": "Quanglinhvlogs || Khoan Giếng Nước Sạch Cho Người Dân Bản Địa Châu Phi",
@@ -56,10 +57,33 @@
 
     "title-complete2": "Quanglinhvlogs || Khoan Giếng Nước Sạch Cho Người Dân Bản Địa Châu Phi",
     "place-complete2": "",
-    "des-complete2": "Nước sạch thay đổi mọi thứ. từ thiện: nước mang lại nước uống sạch và an toàn cho những người có nhu cầu trên khắp thế giới, cải thiện sức khỏe, giáo dục và cơ hội - đặc biệt là cho phụ nữ và trẻ em. 100% số tiền quyên góp của công chúng được chuyển trực tiếp đến các dự án nước sạch. Nước sạch thay đổi mọi thứ. từ thiện: nước mang lại nước uống sạch và an toàn cho những người có nhu cầu trên khắp thế giới, cải thiện sức khỏe, giáo dục và cơ hội - đặc biệt là cho phụ nữ và trẻ em. 100% số tiền quyên góp của công chúng được chuyển trực tiếp đến các dự án nước sạch."
+    "des-complete2": "Nước sạch thay đổi mọi thứ. từ thiện: nước mang lại nước uống sạch và an toàn cho những người có nhu cầu trên khắp thế giới, cải thiện sức khỏe, giáo dục và cơ hội - đặc biệt là cho phụ nữ và trẻ em. 100% số tiền quyên góp của công chúng được chuyển trực tiếp đến các dự án nước sạch. Nước sạch thay đổi mọi thứ. từ thiện: nước mang lại nước uống sạch và an toàn cho những người có nhu cầu trên khắp thế giới, cải thiện sức khỏe, giáo dục và cơ hội - đặc biệt là cho phụ nữ và trẻ em. 100% số tiền quyên góp của công chúng được chuyển trực tiếp đến các dự án nước sạch.",
     
+    "blogs-title": "BLOGS",
+    "blogs-des": "Chúng tôi hỗ trợ cơ hội cho trẻ em sống ở vùng cao, miền núi và vùng khó khăn ở Nam Giang. Mục tiêu chính của chúng tôi là nâng cao chất lượng cuộc sống của trẻ em để các em phát triển toàn diện về thể chất, tinh thần và giáo dục." ,
+    "blogs-button": "Xem thêm",
 
-    
+    "profile-des": "Chúng tôi hỗ trợ cơ hội cho trẻ em sống ở vùng cao, miền núi và vùng khó khăn ở Nam Giang. Mục tiêu chính của chúng tôi là nâng cao chất lượng cuộc sống của trẻ em để các em phát triển toàn diện về thể chất, tinh thần và giáo dục." ,
+    "profile-intro1": "ĐINH THỊ ĐÔNG PHƯƠNG",
+    "profile-intro2": "Người sáng lập",
+    "profile-intro3": "Từ: Tổ chức từ thiện Smile Eye",
+    "profile-intro4": "Email: dinhdongphuong@gmail.com",
+
+    "project-page-title": "Nhiều dự án thú vị",
+    "project-page-des1": "Khám phá những dự án từ thiện vô cùng ý nghĩa của Smile Eyes Charity",
+    "project-page-des2": "Các tổ chức từ thiện đặc biệt trong danh sách này đã đạt được điểm tuyệt đối trên tất cả bốn cột mốc trong Hệ thống xếp hạng Encompass của chúng tôi. Dựa trên số liệu của chúng tôi, các tổ chức này có tác động lớn trong lĩnh vực hoạt động nhất định của họ, có trách nhiệm về mặt tài chính và minh bạch , đồng thời tuân theo các phương pháp hay nhất về lãnh đạo và văn hóa tổ chức. Chưa đến một phần mười của một phần trăm các tổ chức từ thiện mà chúng tôi đánh giá đạt được điểm tuyệt đối! Chúng tôi hoan nghênh các tổ chức từ thiện này vì có tác động lớn và hoạt động tốt hơn các tổ chức khác thực hiện công việc tương tự. Vui lòng nhấp vào tên của các tổ chức này các tổ chức từ thiện có hiệu suất cao có trong danh sách của chúng tôi để tìm hiểu thêm về sứ mệnh, chương trình và dịch vụ của họ cũng như quyên góp thông qua Giỏ quà tặng.",
+    "raising-button": "Đang quyên góp",
+    "running-button": "Đang diễn ra",
+    "complete-button": "Hoàn thành",
+
+    "who-we-are-1": "Chúng ta là ai",
+    "who-we-are-2": "Tác động của chúng tôi",
+    "who-we-are-3": "Chúng tôi hỗ trợ cơ hội cho trẻ em sống ở vùng cao, miền núi và vùng khó khăn ở Nam Giang. Mục tiêu chính của chúng tôi là nâng cao chất lượng cuộc sống của trẻ em để các em phát triển toàn diện về thể chất, tinh thần và có tính giáo dục.",
+    "who-we-are-4": "Công ty từ thiện Mắt Cười",
+    "who-we-are-5": "Pà-Ông, Cà Dy, Nam Giang",
+    "who-we-are-6": "Nhiều dự án đang trong quá trình thực hiện",
+    "donate-button": "Quyên góp",
+    "contact-button": "Liên hệ"
     
 }
   

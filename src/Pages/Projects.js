@@ -47,18 +47,7 @@ const Projects = [
     pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
     planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
   },
-  {
-    type: "running",
-    title:
-      "Quanglinhvlogs || Khoan Giếng Nước Sạch Cho Người Dân Bản Địa Châu Phi",
-    date: "10/2023~10/2028",
-    place: "",
-    linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
-    des: "Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects. Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects.",
-    amoutOfLikes: "106k",
-    pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-    planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
-  },
+  
   {
     type: "completed",
     title:
@@ -77,13 +66,12 @@ const Projects = [
   },
   {
     type: "completed",
-    title:
-      "Quanglinhvlogs || Khoan Giếng Nước Sạch Cho Người Dân Bản Địa Châu Phi",
+    title: "Lời Kêu Gọi Donate",
     date: "10/2023~10/2028",
-    place: "",
-    linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
-    des: "Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects. Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects.",
-    amoutOfLikes: "106k",
+    place: "Quang Binh",
+    linkYT: "https://www.youtube.com/embed/sC2sEm0UBVQ?si=tpYTdgVVytiK_TlU",
+    des: "Bạn hẳn sẽ không cầm lòng nổi khi biết ở vùng cao, vùng sâu, vùng xa có hàng trăm, hàng ngàn đồng bào của chúng ta đang sống cuộc sống nghèo khó, thiếu thốn. Người già, trẻ em không có nổi tấm chăn, manh áo ấm; các gia đình lay lắt bên những mái nhà xuống cấp không đủ che gió, che mưa; biết bao em bé không có sách để đọc, không có quyển vở cây bút để viết, thậm chí có em không được đến trường",
+    amoutOfLikes: "798.8k",
     introductionFile: "https://www.facebook.com/",
     pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
     planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",

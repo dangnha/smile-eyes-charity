@@ -6,6 +6,36 @@
     "sponsor": "Sponsors",
 
     "the next part": "text of item",
-    "item_title" : "PROJECT DEVELOPMENT PÀ-ONG VILLAGE" 
+    "item_title" : "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
+
+    "contact_form-title": "Become our sponsors",
+    "contact_form-encouragement1": "Please become a part of us, join hands in building a loving community.",
+    "contact_form-encouragement2": "Submit your information in this below form to start new journey.",
+    "contact_form-comments": "Questions/ Contributions *",
+    "contact_form-name": "Your Name / Anonymous",
+    "contact_form-email": "Your Email *",
+    "contact_form-selection": "Select *",
+    "contact_form-select_contribution":"Contribution",
+    "contact_form-select_volunteer": "Volunteer",
+    "contact_form-select_sponsor": "Sponsor",
+    "contact_form-profile_link": "Send your profile link",
+    "contact_form-btn_join": "JOIN NOW",
+
+    "contact_information-title": "Contact Information",
+    "contact_information-address": "Pa-Ong Village, Ca Dy Commune, Nam Giang District, Quang Nam Province, Vietnam",
+    "contact_information-the_lie1": "Help Other People",
+    "contact_information-the_lie2": "We Dream To Create A Bright Future Of The Underprivileged Children",
+
+    "footer_projects": "OUR PROJECT",
+    "footer_projects-about_us": "Who we are",
+    "footer_projects-rasing": "Projects are calling volunteer",
+    "footer_projects-running": "Projects are running",
+    "footer_projects-done": "Our achievements",
+    "footer_social-media-title": "FOLLOW US",
+    "footer_company-infor-name": "Smile Eye Charity LLC",
+    "footer_company-infor-address": "Head office address: Pa-Ong Village, Cà Dy Commune, Nam Giang District, Quang Nam Province, Viet Nam",
+    "footer_company-infor-charter-capital": "Charter capital",
+    "footer_company-infor-director": "Director",
+    "footer_company-infor-phone": "Phone number"
 }
   

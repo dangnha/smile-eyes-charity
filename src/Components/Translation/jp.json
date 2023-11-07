@@ -6,6 +6,36 @@
     "sponsor": "スポンサー",
 
     "the next part": "text of item",
-    "item_title": "プロジェクト開発 PÀ-ONG ビレッジ"
+    "item_title": "プロジェクト開発 PÀ-ONG ビレッジ",
+
+    "contact_form-title": "スポンサーになってください",
+    "contact_form-encouragement1": "",
+    "contact_form-encouragement2": "ぜひ私たちの一員になって、愛情あふれるコミュニティの構築に協力してください。",
+    "contact_form-comments": "質問/投稿 *",
+    "contact_form-name": "あなたの名前 / 匿名",
+    "contact_form-email": "あなたのメールアドレス *",
+    "contact_form-selection": "選択する *",
+    "contact_form-select_contribution":"貢献",
+    "contact_form-select_volunteer": "ボランティア",
+    "contact_form-select_sponsor": "スポンサー",
+    "contact_form-profile_link": "プロフィールのリンクを送信する",
+    "contact_form-btn_join": "今すぐ参加する",
+
+    "contact_information-title": "連絡先",
+    "contact_information-address": "Pa-Ong Village、Ca Dy Commune、ナムザン地区、クアンナム省、ベトナム",
+    "contact_information-the_lie1": "他の人を助ける",
+    "contact_information-the_lie2": "私たちは恵まれない子供たちの明るい未来を創造することを夢見ています",
+
+    "footer_projects": "我々のプロジェクト",
+    "footer_projects-about_us": "私たちは誰なのか",
+    "footer_projects-rasing": "プロジェクトではボランティアを募集しています",
+    "footer_projects-running": "プロジェクトが進行中です",
+    "footer_projects-done": "私たちの実績",
+    "footer_social-media-title": "私たちに従ってください",
+    "footer_company-infor-name": "Smile Eye Charity 有限会社",
+    "footer_company-infor-address": "本社住所：ベトナム、クアンナム省ナムザン地区、カディコミューン、パオン村",
+    "footer_company-infor-charter-capital": "憲章資本",
+    "footer_company-infor-director": "監督",
+    "footer_company-infor-phone": "電話番号"
 }
   

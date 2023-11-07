@@ -1,41 +1,17 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import { Document, Page } from "react-pdf";
 import "./program_item.css";
 import NormalBtn from "../../Button/NormalBtn";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
+import { FacebookShareButton } from "react-share";
+import { useTranslation } from "react-i18next";
 
 function ProgramItem({ props }) {
-  // State for handle pdf preview
-  const [pdfModalOpen, setPdfModalOpen] = useState(false);
-  const [pdfFile, setPdfFile] = useState(null);
-  const [numPages, setNumPages] = useState(null);
-  const [pdfError, setPdfError] = useState(null); // New state for the error
-
-  const onDocumentSuccess = ({ numPages }) => {
-    setNumPages(numPages);
-  };
-
-  const onDocumentError = (error) => {
-    setPdfError(error);
-    console.error("Error loading PDF:", pdfError);
-    // You can also set an error message in the state for rendering an error message to the user.
-    setPdfError("Error loading PDF. Please try again later.");
-  };
-
-  const openPdfModal = (file) => {
-    console.log(file);
-    setPdfFile(file);
-    setPdfModalOpen(true);
-    setPdfError(null); // Reset error state
-  };
-
-  const closePdfModal = () => {
-    setPdfModalOpen(false);
-  };
+  const { t } = useTranslation();
+  const shareUrl = props.linkYT; // URL to share
+  const title = "Smile Eyes Charity Project is so amazing"; // Title for the shared content
 
   return (
     <div className="program-item mb-6">
@@ -43,15 +19,23 @@ function ProgramItem({ props }) {
       <div className="header mb-6">
         <div className="header_title flex justify-between">
           <h2 className="text-2xl font-medium">{props.title}</h2>
-          <img
-            src={iconShare}
-            className="w-10 h-10 ms-5 hover:cursor-pointer"
-            alt="icon share"
-          />
+          <FacebookShareButton url={shareUrl} quote={title}>
+            <img
+              src={iconShare}
+              className="w-10 h-10 ms-5 hover:cursor-pointer"
+              alt="icon share"
+            />
+          </FacebookShareButton>
         </div>
         <div className="header_date text-xl">
-          <span>Time: </span>
-          <span>{props.date}</span>
+          <div>
+            <span>{t("time-item")}</span>
+            <span>{props.date}</span>
+          </div>
+          <div>
+            <span>{t("place-item")}</span>
+            <span>{props.place}</span>
+          </div>
         </div>
       </div>
 
@@ -76,18 +60,28 @@ function ProgramItem({ props }) {
         </p>
         {/* Update code to preview pitch file and plan file */}
         <div className="contents_files text-2xl mb-3">
-          <Link to="" onClick={() => openPdfModal(props.pitchFile)}>
+          <a
+            href={props.pitchFile}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
             <span className="underline underline-offset-2 mr-7">
-              Pitch file
+            {t("pitch-file")}
             </span>
-          </Link>
-          <Link to="" onClick={() => openPdfModal(props.planFile)}>
-            <span className="underline underline-offset-2">Plan file</span>
-          </Link>
+          </a>
+          <a
+            href={props.planFile}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <span className="underline underline-offset-2">{t("plan-file")}</span>
+          </a>
         </div>
 
         <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
-          <span className="mr-7">Funding</span>
+          <span className="mr-7">{t("funding")}</span>
           <Tippy content="65%">
             <progress value="65" max="100"></progress>
           </Tippy>
@@ -104,31 +98,10 @@ function ProgramItem({ props }) {
           </div>
 
           <div className="button_sponsors">
-            <NormalBtn text="Be a contributor or sponsor" />
+            <NormalBtn text={t("sponsor-button")} />
           </div>
         </div>
       </div>
-
-      {/* Code model pdf preview */}
-      {pdfModalOpen && pdfFile && (
-        <div className="pdf-modal">
-          <div className="pdf-modal-content">
-            <Document
-              file={pdfFile}
-              onLoadSuccess={onDocumentSuccess}
-              onError={onDocumentError}
-            >
-              {Array(numPages)
-                .fill()
-                .map((_, i) => (
-                  <Page pageNumber={i + 1} />
-                ))}
-            </Document>
-            {pdfError && <p className="error-message">{pdfError}</p>}
-            <button onClick={closePdfModal}>Close PDF</button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

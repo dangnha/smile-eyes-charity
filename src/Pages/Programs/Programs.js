@@ -1,76 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import ProgramItem from "../../Components/Item/program_item/ProgramItem";
+import Projects from "../Projects";
 import "./programs.css";
-
-const props = [
-  {
-    id: 1,
-    type: "raising",
-    title: "Economic development program",
-    date: "10/2023~10/2028",
-    linkYT: "https://www.youtube.com/embed/bdBG5VO01e0?si=xEOHtxpF1LCmHNAU",
-    des: "Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects. Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects.",
-    amoutOfLikes: "145.9k",
-    pitchFile: "/public/pdf/data_struct.pdf",
-    planFile: "/public/pdf/intro.pdf",
-  },
-  {
-    id: 2,
-    type: "raising",
-    title: "The Top 8 Charities in the World",
-    date: "10/2023~10/2028",
-    linkYT: "https://www.youtube.com/embed/xHegpKx61eE?si=oOO1Pe1FzXLiRpQy",
-    des: "The statistics in this video were provided by GiveWell, the World Health Organization, and the websites listed above. Cost estimates may not be 100% accurate, as they're difficult to evaluate and can vary depending on the source. For example, the Against Malaria Foundation estimates that bed nets typically cost between US$2 and US$3, whereas GiveWell puts the price at $4.53.",
-    amoutOfLikes: "1.7k",
-    pitchFile: "/public/pdf/data_struct.pdf",
-    planFile: "/public/pdf/intro.pdf",
-  },
-  {
-    id: 3,
-    type: "raising",
-    title: "Yemen: On the brink of starvation",
-    date: "10/2023~10/2028",
-    linkYT: "https://www.youtube.com/embed/npk7tfKyXok?si=E1ubB7RWUvoCaCLX",
-    des: "The war in Yemen, which began early last year when the government was overthrown by rebel forces, has pushed the country to the brink of famine. This video contains distressing scenes from the start. See more from BBC Our World's documentary Starving Yemen this weekend on BBC World, BBC News and iPlayer.",
-    amoutOfLikes: "24k",
-    pitchFile: "/public/pdf/data_struct.pdf",
-    planFile: "/public/pdf/intro.pdf",
-  },
-  {
-    id: 4,
-    type: "running",
-    title:
-      "Quanglinhvlogs || Khoan Giếng Nước Sạch Cho Người Dân Bản Địa Châu Phi",
-    date: "10/2023~10/2028",
-    linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
-    des: "Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects. Clean water changes everything. charity: water brings clean and safe drinking water to people in need around the world, improving health, education, and opportunity - especially for women and children. 100% of public donations go directly to clean water projects.",
-    amoutOfLikes: "106k",
-    pitchFile: "/public/pdf/data_struct.pdf",
-    planFile: "/public/pdf/intro.pdf",
-  },
-  {
-    id: 5,
-    type: "running",
-    title: "Lập Quỹ, Tặng Nhà Vệ Sinh Cho Trẻ Vùng Cao",
-    date: "10/2023~10/2028",
-    linkYT: "https://www.youtube.com/embed/GvIHMITsYTw?si=qWTtHJL6PHGfo-Za",
-    des: " Xây nhà vệ sinh cho trẻ em vùng cao là hành động nhỏ nhưng lại mang thông điệp nhân văn rất lớn. Việc làm này của nhóm thiện nguyện VAECO HAN không chỉ giúp cho các thầy cô và học sinh tiếp cận gần hơn với văn hóa học đường dưới xuôi. Nó còn tạo động lực để các em học sinh nghèo vùng cao thích thú hơn khi đến trường, tới lớp.",
-    amoutOfLikes: "12.4k",
-    pitchFile: "/public/pdf/data_struct.pdf",
-    planFile: "/public/pdf/intro.pdf",
-  },
-  {
-    id: 6,
-    type: "completed",
-    title: "Lời Kêu Gọi Donate",
-    date: "10/2023~10/2028",
-    linkYT: "https://www.youtube.com/embed/sC2sEm0UBVQ?si=tpYTdgVVytiK_TlU",
-    des: "Bạn hẳn sẽ không cầm lòng nổi khi biết ở vùng cao, vùng sâu, vùng xa có hàng trăm, hàng ngàn đồng bào của chúng ta đang sống cuộc sống nghèo khó, thiếu thốn. Người già, trẻ em không có nổi tấm chăn, manh áo ấm; các gia đình lay lắt bên những mái nhà xuống cấp không đủ che gió, che mưa; biết bao em bé không có sách để đọc, không có quyển vở cây bút để viết, thậm chí có em không được đến trường",
-    amoutOfLikes: "798.8k",
-    pitchFile: "/public/pdf/data_struct.pdf",
-    planFile: "/public/pdf/intro.pdf",
-  },
-];
 
 const Programs = () => {
   const [filter, setFilter] = useState("raising");
@@ -87,7 +18,7 @@ const Programs = () => {
   const btnCompleted = useRef();
 
   useEffect(() => {
-    const temp = props.filter((prop) => prop.type === filter);
+    const temp = Projects.filter((project) => project.type === filter);
     setCurrentPrograms(temp);
     // remove class active on all button
     btnRaising.current.classList.remove("active");

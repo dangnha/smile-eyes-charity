@@ -1,73 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import LargeProgramItem from "../Components/Item/program_item/LargeProgramItem";
 import ProgramItem from "../Components/Item/program_item/ProgramItem";
 import ProjectDone from "../Components/Item/program_item/ProjectDone";
 import Button from "../Components/Button/Button";
 import "./Home.css";
+import BlogModel from "../Components/Item/model/BlogModel";
 import { useTranslation } from "react-i18next";
+import Projects from "./Projects";
 
 const Home = () => {
   const { t } = useTranslation();
+  const [showBlogModel, setShowBlogModel] = useState(false);
 
   const video_introduce = {
-    title: t("item_title"),
-    date: "20/10/2022",
+    title: t("item_title_intro"),
+    date: t("time_intro"),
+    place: t("place_intro"),
     linkYT:
       "https://www.youtube.com/embed/543jwFfCZvg?list=PLp6D8X7L5wgbTLG-OR0q8hJws4wD18e7o",
-    des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
+    des: t("des_intro"),
     amoutOfLikes: "300",
+    pitchFile:
+      "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+    planFile:
+      "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
   };
-
-  const projects = [
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-    },
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-    },
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-    },
-  ];
-
-  const projects_done = [
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-      cost: "10.000.000 VND",
-    },
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-      cost: "10.000.000 VND",
-    },
-    {
-      title: "PROJECT DEVELOPMENT PÀ-ONG VILLAGE",
-      date: "20/10/2022",
-      linkYT: "https://www.youtube.com/embed/z9dccqTJIVs",
-      des: "Improve the quality of life of children and their families through the provision of services and resources necessary for their full physical, mental and educational development.",
-      amoutOfLikes: "300",
-      cost: "10.000.000 VND",
-    },
-  ];
 
   return (
     <div>
@@ -76,69 +33,85 @@ const Home = () => {
           <LargeProgramItem
             title={video_introduce.title}
             date={video_introduce.date}
+            place={video_introduce.place}
             linkYT={video_introduce.linkYT}
             des={video_introduce.des}
             amoutOfLikes={video_introduce.amoutOfLikes}
+            pitchFile={video_introduce.pitchFile}
+            planFile={video_introduce.planFile}
           />
         </div>
 
         <div className="project_calling">
           <div className="title_button">
             <p id="title_project">
-              Programs which are calling for volunteers and sponsors
+              {t("project-calling")}
             </p>
             <div id="button_see_all">
-              <Button text="See all" />
+              <Button text={t("button-see-all")} />
             </div>
           </div>
 
           <div className="project">
-            {projects.map((project, index) => (
-              <div id="item_project" key={index}>
-                <ProgramItem props={project} />
-              </div>
-            ))}
+            {Projects.filter((project) => project.type === "raising").map(
+              (project, index) => (
+                <div id="item_project" key={index}>
+                  <ProgramItem props={project} />
+                </div>
+              )
+            )}
           </div>
         </div>
 
         <div className="project_running">
           <div className="title_button">
-            <p id="title_project">Volunteer Programs which are running</p>
+            <p id="title_project">{t("project-running")}</p>
             <div id="button_see_all">
-              <Button text="See all" />
+              <Button text={t("button-see-all")} />
             </div>
           </div>
 
           <div className="project">
-            {projects.map((project, index) => (
-              <div id="item_project" key={index}>
-                <ProgramItem props={project} />
-              </div>
-            ))}
+            {Projects.filter((project) => project.type === "running").map(
+              (project, index) => (
+                <div id="item_project" key={index}>
+                  <ProgramItem props={project} />
+                </div>
+              )
+            )}
           </div>
         </div>
 
         <div className="project_done">
           <div className="title_button">
-            <p id="title_project">Projects done</p>
+            <p id="title_project">{t("project-done")}</p>
             <div id="button_see_all">
-              <Button text="See all" />
+              <Button text={t("button-see-all")} />
             </div>
           </div>
 
           <div className="project">
-            {projects_done.map((project_done, index) => (
-              <div id="item_project" key={index}>
-                <ProjectDone
-                  title={project_done.title}
-                  date={project_done.date}
-                  linkYT={project_done.linkYT}
-                  des={project_done.des}
-                  amoutOfLikes={project_done.amoutOfLikes}
-                  cost={project_done.cost}
-                />
-              </div>
-            ))}
+            {Projects.filter((project) => project.type === "completed").map(
+              (project, index) => (
+                <div id="item_project" key={index}>
+                  {console.log(project)}
+                  <ProjectDone
+                    type={project.type}
+                    title={project.title}
+                    date={project.date}
+                    place={project.place}
+                    linkYT={project.linkYT}
+                    des={project.des}
+                    amoutOfLikes={project.amoutOfLikes}
+                    introductionFile
+                    pitchFile={project.pitchFile}
+                    planFile={project.planFile}
+                    detailFile={project.detailFile}
+                    cost={project.cost}
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
@@ -177,7 +150,10 @@ const Home = () => {
               educationally.
             </p>
             <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
-            <div className="blog_seemore flex flex-col items-center">
+            <div
+              className="blog_seemore flex flex-col items-center"
+              onClick={() => setShowBlogModel(!showBlogModel)}
+            >
               <p className="mt-10">See more</p>
               <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
             </div>
@@ -195,7 +171,10 @@ const Home = () => {
               educationally.
             </p>
             <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
-            <div className="blog_seemore flex flex-col items-center">
+            <div
+              className="blog_seemore flex flex-col items-center"
+              onClick={() => setShowBlogModel(!showBlogModel)}
+            >
               <p className="mt-10">See more</p>
               <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
             </div>
@@ -224,6 +203,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {showBlogModel && <BlogModel onClose={() => setShowBlogModel(false)} />}
 
       <div className="profile flex flex-row items-center">
         <div className="profile_des">

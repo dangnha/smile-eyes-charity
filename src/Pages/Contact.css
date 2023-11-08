@@ -1,0 +1,10 @@
+.contact-form{
+    width: 100%;
+    background-image: url('/public/image/e2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-fill-form{
+    width: 50%;
+}

@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [option, setOption] = useState("0");
   const [file, setFile] = useState(null);
+
+  const { t } = useTranslation();
 
   const handleSendEmail = () => {
     const recipientEmail = "nhand.21it@vku.udn.vn"; // Replace with the recipient's email address
@@ -21,17 +24,16 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto my-20 w-[55vw] h-[85vh] border border-white bg-[#005000] opacity-35 pt-[10px] ">
+    <div className="container mx-auto my-20 w-[55vw] h-[630px] border border-white bg-[#005000] opacity-35 pt-[10px] ">
       <div className="flex flex-col justify-center items-center">
-        <p className="w-[85%] text-left text-white text-[30px] font-extrabold font-['Inter']">
-          {" "}
-          Be come our sponsors
+        <p className="w-[85%] text-left pb-3 text-white text-[45px] font-extrabold font-['Inter']">
+          {t("contact_form-title")}
         </p>
         <p className="w-[85%] text-white text-left text-[18px] ">
-          Please become a part of us, join hands in building a loving community.
+          {t("contact_form-encouragement1")}
         </p>
         <p className="w-[85%] text-white text-left text-[18px] ">
-          Submit your information in this below form to start new journey.{" "}
+          {t("contact_form-encouragement2")}
         </p>
         <br />
         <form className="w-[85%]">
@@ -43,19 +45,19 @@ const ContactForm = () => {
               cols="10"
               rows="5"
               className="w-[100%] text-white text-xl border border-white bg-transparent px-3 py-2.5 font-sans font-normal placeholder-white col-span-2 rounded-[5px]"
-              placeholder="Questions/ Contributions *"
+              placeholder={t("contact_form-comments")}
             ></textarea>
             <div className="flex flex-row gap-20 justify-center items-center w-[100%]">
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal placeholder-white"
-                placeholder="Your Name / Anonymous "
+                placeholder={t("contact_form-name")}
               />
               <input
                 required
                 className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal placeholder-white"
-                placeholder="Your Email *"
+                placeholder={t("contact_form-email")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -66,15 +68,17 @@ const ContactForm = () => {
                 onChange={(e) => setOption(e.target.value)}
                 className=" text-white peer h-full w-full rounded-[5px] border border-blue-gray-200 bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200  focus:outline-none "
               >
-                <option className="text-black">Select *</option>
-                <option value="Contribution" className="text-black">
-                  Contribution
+                <option className="text-black">
+                  {t("contact_form-selection")}
                 </option>
-                <option value="Contribute" className="text-black">
-                  Volunteer
+                <option value="Contributionaaa" className="text-black">
+                  {t("contact_form-select_contribution")}
+                </option>
+                <option value="Volunteer" className="text-black">
+                  {t("contact_form-select_volunteer")}
                 </option>
                 <option value="Sponsor" className="text-black">
-                  Sponsor
+                  {t("contact_form-select_sponsor")}
                 </option>
               </select>
               <input
@@ -82,7 +86,7 @@ const ContactForm = () => {
                 value={file}
                 onChange={(e) => setFile(e.target.value)}
                 className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal placeholder-white"
-                placeholder="Send your profile link"
+                placeholder={t("contact_form-profile_link")}
               />
             </div>
             <div className="w-[100%] flex justify-end my-3">
@@ -90,7 +94,7 @@ const ContactForm = () => {
                 onClick={handleSendEmail}
                 className="submit text-[#005000] text-opacity-85 font-bold text-base rounded-full px-8 py-3 bg-white"
               >
-                JOIN NOW
+                {t("contact_form-btn_join")}
               </button>
             </div>
           </div>

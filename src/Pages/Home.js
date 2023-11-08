@@ -6,6 +6,8 @@ import Button from "../Components/Button/Button";
 import "./Home.css";
 import BlogModel from "../Components/Item/model/BlogModel";
 import { useTranslation } from "react-i18next";
+import Projects from "./Projects";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -138,9 +140,11 @@ const Home = () => {
             <p id="title_project">
               {t("project-calling")}
             </p>
-            <div id="button_see_all">
-              <Button text={t("button-see-all")} />
-            </div>
+            <Link to="/programs">
+              <div id="button_see_all">
+                <Button text={t("button-see-all")} />
+              </div>
+            </Link>
           </div>
 
           <div className="project">
@@ -158,8 +162,14 @@ const Home = () => {
           <div className="title_button">
             <p id="title_project">{t("project-running")}</p>
             <div id="button_see_all">
-              <Button text={t("button-see-all")} />
+              <Button text= />
             </div>
+            <p id="title_project">{t("project-running")}</p>
+            <Link to="/programs">
+              <div id="button_see_all">
+                <Button text={t("button-see-all")} />
+              </div>
+            </Link>
           </div>
 
           <div className="project">
@@ -176,9 +186,11 @@ const Home = () => {
         <div className="project_done">
           <div className="title_button">
             <p id="title_project">{t("project-done")}</p>
-            <div id="button_see_all">
-              <Button text={t("button-see-all")} />
-            </div>
+            <Link to="/programs">
+              <div id="button_see_all">
+                <Button text={t("button-see-all")} />
+              </div>
+            </Link>
           </div>
 
           <div className="project">

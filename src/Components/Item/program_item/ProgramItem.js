@@ -8,6 +8,7 @@ import iconHeart from "../../../images/heart.png";
 import { FacebookShareButton } from "react-share";
 import { useTranslation } from "react-i18next";
 
+import { Link } from "react-router-dom";
 function ProgramItem({ props }) {
   const { t } = useTranslation();
   const shareUrl = props.linkYT; // URL to share
@@ -96,10 +97,11 @@ function ProgramItem({ props }) {
               {props.amoutOfLikes}
             </span>
           </div>
-
-          <div className="button_sponsors">
-            <NormalBtn text={t("sponsor-button")} />
-          </div>
+          <Link to="/contact">
+            <div className="button_sponsors">
+              <NormalBtn text={t("sponsor-button")} />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

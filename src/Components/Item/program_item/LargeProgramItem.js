@@ -5,6 +5,7 @@ import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
 import NormalBtn from "../../Button/NormalBtn";
 import { FacebookShareButton } from "react-share";
+import { Link } from "react-router-dom";
 
 function LargeProgramItem(props) {
   const shareUrl = props.linkYT; // URL to share
@@ -92,10 +93,11 @@ function LargeProgramItem(props) {
                 {props.amoutOfLikes}
               </span>
             </div>
-
-            <div className="button_sponsors">
-              <NormalBtn text="Be a contributor or sponsor" />
-            </div>
+            <Link to="/contact">
+              <div className="button_sponsors">
+                <NormalBtn text="Be a contributor or sponsor" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

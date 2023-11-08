@@ -6,7 +6,7 @@ import NormalBtn from "../../Button/NormalBtn";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
 import { FacebookShareButton } from "react-share";
-
+import { Link } from "react-router-dom";
 function ProgramItem({ props }) {
   const shareUrl = props.linkYT; // URL to share
   const title = "Smile Eyes Charity Project is so amazing"; // Title for the shared content
@@ -94,10 +94,11 @@ function ProgramItem({ props }) {
               {props.amoutOfLikes}
             </span>
           </div>
-
-          <div className="button_sponsors">
-            <NormalBtn text="Be a contributor or sponsor" />
-          </div>
+          <Link to="/contact">
+            <div className="button_sponsors">
+              <NormalBtn text="Be a contributor or sponsor" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

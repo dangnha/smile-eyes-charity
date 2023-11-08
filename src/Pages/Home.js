@@ -7,6 +7,7 @@ import "./Home.css";
 import BlogModel from "../Components/Item/model/BlogModel";
 import { useTranslation } from "react-i18next";
 import Projects from "./Projects";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -48,9 +49,11 @@ const Home = () => {
             <p id="title_project">
               Programs which are calling for volunteers and sponsors
             </p>
-            <div id="button_see_all">
-              <Button text="See all" />
-            </div>
+            <Link to="/programs">
+              <div id="button_see_all">
+                <Button text="See all" />
+              </div>
+            </Link>
           </div>
 
           <div className="project">
@@ -67,9 +70,11 @@ const Home = () => {
         <div className="project_running">
           <div className="title_button">
             <p id="title_project">Volunteer Programs which are running</p>
-            <div id="button_see_all">
-              <Button text="See all" />
-            </div>
+            <Link to="/programs">
+              <div id="button_see_all">
+                <Button text="See all" />
+              </div>
+            </Link>
           </div>
 
           <div className="project">
@@ -86,9 +91,11 @@ const Home = () => {
         <div className="project_done">
           <div className="title_button">
             <p id="title_project">Projects done</p>
-            <div id="button_see_all">
-              <Button text="See all" />
-            </div>
+            <Link to="/programs">
+              <div id="button_see_all">
+                <Button text="See all" />
+              </div>
+            </Link>
           </div>
 
           <div className="project">

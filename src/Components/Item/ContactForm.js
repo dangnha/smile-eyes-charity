@@ -24,15 +24,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto my-20 w-[55vw] h-[85vh] border border-white bg-[#005000] opacity-35 pt-[10px] ">
+    <div className="container mx-auto my-20 w-[55vw] h-[630px] border border-white bg-[#005000] opacity-35 pt-[10px] ">
       <div className="flex flex-col justify-center items-center">
-        <p className="w-[85%] text-left text-white text-[58px] font-extrabold font-['Inter']">
+        <p className="w-[85%] text-left pb-3 text-white text-[45px] font-extrabold font-['Inter']">
           {t("contact_form-title")}
         </p>
-        <p className="w-[85%] text-white text-left text-[20px] ">
+        <p className="w-[85%] text-white text-left text-[18px] ">
           {t("contact_form-encouragement1")}
         </p>
-        <p className="w-[85%] text-white text-left text-[20px] ">
+        <p className="w-[85%] text-white text-left text-[18px] ">
           {t("contact_form-encouragement2")}
         </p>
         <br />
@@ -68,7 +68,9 @@ const ContactForm = () => {
                 onChange={(e) => setOption(e.target.value)}
                 className=" text-white peer h-full w-full rounded-[5px] border border-blue-gray-200 bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200  focus:outline-none "
               >
-                <option className="text-black">{t("contact_form-selection")}</option>
+                <option className="text-black">
+                  {t("contact_form-selection")}
+                </option>
                 <option value="Contributionaaa" className="text-black">
                   {t("contact_form-select_contribution")}
                 </option>

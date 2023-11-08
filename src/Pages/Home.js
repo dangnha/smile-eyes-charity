@@ -6,6 +6,7 @@ import Button from "../Components/Button/Button";
 import "./Home.css";
 import BlogModel from "../Components/Item/model/BlogModel";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -139,7 +140,9 @@ const Home = () => {
               {t("project-calling")}
             </p>
             <div id="button_see_all">
+            <Link to="/programs">
               <Button text={t("button-see-all")} />
+            </Link>
             </div>
           </div>
 
@@ -158,7 +161,9 @@ const Home = () => {
           <div className="title_button">
             <p id="title_project">{t("project-running")}</p>
             <div id="button_see_all">
+              <Link to="/programs">
               <Button text={t("button-see-all")} />
+              </Link>
             </div>
           </div>
 
@@ -177,7 +182,9 @@ const Home = () => {
           <div className="title_button">
             <p id="title_project">{t("project-done")}</p>
             <div id="button_see_all">
+              <Link to="/programs">
               <Button text={t("button-see-all")} />
+              </Link>
             </div>
           </div>
 
@@ -325,14 +332,18 @@ const Home = () => {
           </p>
           <div className="button_introduce flex flex-row gap-10">
             <div className="button_donate">
+              <Link to="/contact">
               <button className="text-white text-xl font-normal rounded-[10px] bg-[#396D00] px-3 py-2">
                 {t("donate-button")} <i class="fa-solid fa-chevron-right"></i>
               </button>
+              </Link>
             </div>
             <div className="button_contact">
+              <Link to="/contact">
               <button className="text-xl font-normal px-3 py-2">
               {t("contact-button")}<i class="fa-solid fa-chevron-right"></i>
               </button>
+              </Link>
             </div>
           </div>
         </div>

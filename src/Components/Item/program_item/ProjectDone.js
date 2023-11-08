@@ -84,7 +84,7 @@ function ProjectDone(props) {
         </div>
 
         <div className="contents_bottom flex justify-between">
-          <div className="likes flex flex-row items-center text-2xl">
+          <div className="likes flex flex-row items-center justify-between text-2xl w-full">
             <a
               href={props.achievementFile}
               target="_blank"

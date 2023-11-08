@@ -7,6 +7,7 @@ import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
 import { FacebookShareButton } from "react-share";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function ProgramItem({ props }) {
   const { t } = useTranslation();
@@ -98,7 +99,9 @@ function ProgramItem({ props }) {
           </div>
 
           <div className="button_sponsors">
+          <Link to="/contact">
             <NormalBtn text={t("sponsor-button")} />
+          </Link>
           </div>
         </div>
       </div>

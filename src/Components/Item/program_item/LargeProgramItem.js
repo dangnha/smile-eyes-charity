@@ -6,6 +6,7 @@ import iconHeart from "../../../images/heart.png";
 import NormalBtn from "../../Button/NormalBtn";
 import { FacebookShareButton } from "react-share";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function LargeProgramItem(props) {
   const { t } = useTranslation();
@@ -96,7 +97,7 @@ function LargeProgramItem(props) {
             </div>
 
             <div className="button_sponsors">
-              <NormalBtn text={t("sponsor-button")} />
+            <Link to="/contact"><NormalBtn text={t("sponsor-button")} /></Link>
             </div>
           </div>
         </div>

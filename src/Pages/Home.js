@@ -28,7 +28,6 @@ const Home = () => {
   };
 
   const Projects = [
-  
     {
       type: "raising",
       title: t("title-raising1"),
@@ -37,8 +36,10 @@ const Home = () => {
       linkYT: t("linkYT-raising1"),
       des: t("des-raising1"),
       amoutOfLikes: "179",
-      pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+      pitchFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
       cost: "",
     },
     {
@@ -49,8 +50,10 @@ const Home = () => {
       linkYT: t("linkYT-raising2"),
       des: t("des-raising2"),
       amoutOfLikes: "212",
-      pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+      pitchFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
       cost: "",
     },
     {
@@ -61,8 +64,10 @@ const Home = () => {
       linkYT: t("linkYT-raising3"),
       des: t("des-raising3"),
       amoutOfLikes: "24k",
-      pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+      pitchFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
       cost: "",
     },
     {
@@ -73,8 +78,10 @@ const Home = () => {
       linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
       des: t("des-running1"),
       amoutOfLikes: "106k",
-      pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+      pitchFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
     },
     {
       type: "running",
@@ -84,8 +91,10 @@ const Home = () => {
       linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
       des: t("des-running2"),
       amoutOfLikes: "106k",
-      pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+      pitchFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
     },
     {
       type: "completed",
@@ -96,10 +105,14 @@ const Home = () => {
       des: t("des-complete1"),
       amoutOfLikes: "106k",
       introductionFile: "https://www.facebook.com/",
-      pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
-      achievementFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      detailFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      pitchFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+      achievementFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      detailFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
       cost: "10.000.000VND",
     },
     {
@@ -111,10 +124,14 @@ const Home = () => {
       des: t("des-complete1"),
       amoutOfLikes: "106k",
       introductionFile: "https://www.facebook.com/",
-      pitchFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile: "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
-      achievementFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      detailFile: "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      pitchFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+      achievementFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+      detailFile:
+        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
       cost: "10.000.000VND",
     },
   ];
@@ -137,9 +154,7 @@ const Home = () => {
 
         <div className="project_calling">
           <div className="title_button">
-            <p id="title_project">
-              {t("project-calling")}
-            </p>
+            <p id="title_project">{t("project-calling")}</p>
             <Link to="/programs">
               <div id="button_see_all">
                 <Button text={t("button-see-all")} />
@@ -160,10 +175,6 @@ const Home = () => {
 
         <div className="project_running">
           <div className="title_button">
-            <p id="title_project">{t("project-running")}</p>
-            <div id="button_see_all">
-              <Button text= />
-            </div>
             <p id="title_project">{t("project-running")}</p>
             <Link to="/programs">
               <div id="button_see_all">
@@ -245,9 +256,7 @@ const Home = () => {
           </div>
           <div className="blog_des">
             <i class="fa-solid fa-quote-left fa-2xl mr-auto"></i>
-            <p className="des_title_blog mt-5">
-              {t("blogs-des")}
-            </p>
+            <p className="des_title_blog mt-5">{t("blogs-des")}</p>
             <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
             <div
               className="blog_seemore flex flex-col items-center"
@@ -262,9 +271,7 @@ const Home = () => {
         <div className="blog_content">
           <div className="blog_des">
             <i class="fa-solid fa-quote-left fa-2xl mr-auto"></i>
-            <p className="des_title_blog mt-5">
-              {t("blogs-des")}
-            </p>
+            <p className="des_title_blog mt-5">{t("blogs-des")}</p>
             <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
             <div
               className="blog_seemore flex flex-col items-center"
@@ -305,9 +312,7 @@ const Home = () => {
         <div className="profile_des">
           <div className="circle"></div>
           <i class="icon_profile fa-solid fa-quote-left fa-2xl mr-auto"></i>
-          <p className="profile_des_text mt-5">
-            {t("profile-des")}
-          </p>
+          <p className="profile_des_text mt-5">{t("profile-des")}</p>
           <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
         </div>
 
@@ -321,9 +326,7 @@ const Home = () => {
             <p className="profile_intro_text1">{t("profile-intro1")}</p>
             <p className="profile_intro_text2 mt-2">{t("profile-intro2")}</p>
             <p className="profile_intro_text2 mt-2">{t("profile-intro3")}</p>
-            <p className="profile_intro_text2">
-            {t("profile-intro4")}
-            </p>
+            <p className="profile_intro_text2">{t("profile-intro4")}</p>
           </div>
         </div>
       </div>
@@ -332,9 +335,7 @@ const Home = () => {
         <div className="our_information">
           <p className="our_information_heading1">{t("who-we-are-1")}</p>
           <p className="our_information_heading2">{t("who-we-are-2")}</p>
-          <p className="our_information_heading3">
-          {t("who-we-are-3")}
-          </p>
+          <p className="our_information_heading3">{t("who-we-are-3")}</p>
           <div className="button_introduce flex flex-row gap-10">
             <div className="button_donate">
               <button className="text-white text-xl font-normal rounded-[10px] bg-[#396D00] px-3 py-2">
@@ -343,7 +344,8 @@ const Home = () => {
             </div>
             <div className="button_contact">
               <button className="text-xl font-normal px-3 py-2">
-              {t("contact-button")}<i class="fa-solid fa-chevron-right"></i>
+                {t("contact-button")}
+                <i class="fa-solid fa-chevron-right"></i>
               </button>
             </div>
           </div>

@@ -2,8 +2,10 @@ import "./program_item.css";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
 import { FacebookShareButton } from "react-share";
+import { useTranslation } from "react-i18next";
 
 function ProjectDone(props) {
+  const { t } = useTranslation();
   const shareUrl = props.linkYT; // URL to share
   const title = "Smile Eyes Charity Project is so amazing"; // Title for the shared content
 
@@ -22,11 +24,11 @@ function ProjectDone(props) {
           </FacebookShareButton>
         </div>
         <div className="header_date text-xl">
-          <span>Time: </span>
+          <span>{t("time-item")}</span>
           <span>{props.date}</span>
         </div>
         <div>
-          <span>Place: </span>
+          <span>{t("place-item")}</span>
           <span>{props.place}</span>
         </div>
       </div>
@@ -57,7 +59,7 @@ function ProjectDone(props) {
             rel="noopener noreferrer"
             className="cursor-pointer"
           >
-            <span className="underline underline-offset-2">Introduce</span>
+            <span className="underline underline-offset-2">{t("introduce")}</span>
           </a>
           <a
             href={props.pitchFile}
@@ -65,7 +67,7 @@ function ProjectDone(props) {
             rel="noopener noreferrer"
             className="cursor-pointer"
           >
-            <span className="underline underline-offset-2 ">Pitch file</span>
+            <span className="underline underline-offset-2 ">{t("pitch-file")}</span>
           </a>
           <a
             href={props.planFile}
@@ -73,12 +75,12 @@ function ProjectDone(props) {
             rel="noopener noreferrer"
             className="cursor-pointer"
           >
-            <span className="underline underline-offset-2">Plan file</span>
+            <span className="underline underline-offset-2">{t("plan-file")}</span>
           </a>
         </div>
 
         <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
-          <span className="mr-7">Funding: {props.cost}</span>
+          <span className="mr-7">{t("funding")} {props.cost}</span>
         </div>
 
         <div className="contents_bottom flex justify-between">
@@ -90,7 +92,7 @@ function ProjectDone(props) {
               className="cursor-pointer"
             >
               <span className="underline underline-offset-2 mr-3.5">
-                Achievement
+                {t("achievement")}
               </span>
             </a>
             <a
@@ -100,7 +102,7 @@ function ProjectDone(props) {
               className="cursor-pointer"
             >
               <span className="underline underline-offset-2 mr-3.5">
-                Detail Report
+                {t("report")}
               </span>
             </a>
             <div className="flex flex-col items-center justify-center gap-1">

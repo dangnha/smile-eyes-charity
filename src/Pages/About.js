@@ -1,10 +1,12 @@
 import React from "react";
 import UserItemsProfile from "../Components/UserItemsProfile/UserItemsProfile";
 import Button from "../Components/Button/Button";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <React.Fragment>
       <div className="aboutUS w-[100vw]">
@@ -17,34 +19,31 @@ const About = () => {
               </div>
             </div>
             <div className="flex-aboutUs2 basis-[33%] flex flex-col justify-center gap-5">
-              <h3 className="title-page text-center">About Us</h3>
+              <h3 className="title-page text-center">{t("about-us-1")}</h3>
               <h4 className="text-heading">
-                Step Forward Serve The Humanity Reach Out
+                {t("about-us-2")}
               </h4>
               <p className="text-sub-heading">
-                The secret to happiness lies in helping others. Never
-                underestimate the difference YOU can make in the lives of the
-                poor, the abused and the helpless. Spread sunshine in their
-                lives no matter what the weather may be.
+                {t("about-us-3")}
               </p>
               <div className="volunteer-banner flex gap-2">
                 <div className="image-volunteer"> </div>
                 <div className="text-volunteer">
-                  <p className="text-volunteer-1">Work As An Volunteer</p>
+                  <p className="text-volunteer-1">{t("about-us-4")}</p>
                   <p className="text-volunteer-2">
-                    You will have the opportunity to participate in charities
-                    around the world
+                    {t("about-us-5")}
                   </p>
                 </div>
               </div>
               <div className="volunteer-container-tel">
                 <Link to="/contact">
-                  <Button text="JOIN NOW" size="sz-small" color="cl-green" />
+                  <Button text={t("button-join-now")} size="sz-small" color="cl-green" />
                 </Link>
+                                
                 <div className="volunteer-tel">
                   <i className="icon-tel fa-solid fa-phone"></i>
                   <div>
-                    <p>Contact Us</p>
+                    <p>{t("about-us-6")}</p>
                     <p>0962 414 125</p>
                   </div>
                 </div>
@@ -55,18 +54,14 @@ const About = () => {
 
         <div className="container-founder">
           <div className="heading-founder ">
-            <h3 className="pl-[40px]">Our Founder</h3>
+            <h3 className="pl-[40px]">{t("about-us-title-1")}</h3>
           </div>
           <div className="row-founder flex items-center justify-evenly">
             <div className="flex-founder basis-[45%] mt-8">
               <div className="text-sub-founder flex flex-col p-12 text-left">
                 <i className="fa-solid fa-quote-left fa-xl mr-auto"></i>
                 <p className="text-xl pl-10">
-                  We provide opportunity support for children living in the
-                  highlands, mountains and disadvantaged areas in Nam Giang. Our
-                  main goal is to improve the quality of life of children so
-                  that they develop comprehensively physically, mentally and
-                  educationally.
+                {t("profile-des")}
                 </p>
                 <i className="fa-solid fa-quote-right fa-xl ml-auto"></i>
               </div>
@@ -76,10 +71,10 @@ const About = () => {
                 <div className="container-image-founder">
                   <div className="image-founder image3"></div>
                 </div>
-                <h1 className="name-founder">DINH THI DONG PHUONG</h1>
-                <p className="position-founder uppercase">Founder</p>
-                <p className="company-founder">From: Smile Eye Charity</p>
-                <p className="email-founder">Email: dinhdongphuong@gmail.com</p>
+                <h1 className="name-founder">{t("profile-intro1")}</h1>
+                <p className="position-founder uppercase">{t("profile-intro2")}</p>
+                <p className="company-founder">{t("profile-intro3")}</p>
+                <p className="email-founder">{t("profile-intro4")}</p>
               </div>
             </div>
           </div>
@@ -87,14 +82,14 @@ const About = () => {
 
         <div className="container-sponsor-main">
           <div div className="heading-founder">
-            <h3>Our Founder</h3>
+            <h3>{t("about-us-title-2")}</h3>
           </div>
           <div className="container-sponsor">
             <div className="sponsor-item">
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Sponsor"
+                position={t("profile-position-1")}
                 address="Nghe An"
               />
             </div>
@@ -102,7 +97,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Sponsor"
+                position={t("profile-position-1")}
                 address="Nghe An"
               />
             </div>
@@ -110,7 +105,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Sponsor"
+                position={t("profile-position-1")}
                 address="Nghe An"
               />
             </div>
@@ -118,7 +113,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Sponsor"
+                position={t("profile-position-1")}
                 address="Nghe An"
               />
             </div>
@@ -126,7 +121,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Sponsor"
+                position={t("profile-position-1")}
                 address="Nghe An"
               />
             </div>
@@ -134,7 +129,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Sponsor"
+                position={t("profile-position-1")}
                 address="Nghe An"
               />
             </div>
@@ -143,14 +138,14 @@ const About = () => {
 
         <div className="container-volunteer-main">
           <div div className="heading-founder">
-            <h3>Our Volunteers</h3>
+            <h3>{t("about-us-title-3")}</h3>
           </div>
           <div className="container-volunteer">
             <div className="volunteer-item">
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Volunteer"
+                position={t("profile-position-2")}
                 address="Nghe An"
               />
             </div>
@@ -158,7 +153,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Volunteer"
+                position={t("profile-position-2")}
                 address="Nghe An"
               />
             </div>
@@ -166,7 +161,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Volunteer"
+                position={t("profile-position-2")}
                 address="Nghe An"
               />
             </div>
@@ -174,7 +169,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Volunteer"
+                position={t("profile-position-2")}
                 address="Nghe An"
               />
             </div>
@@ -182,7 +177,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Volunteer"
+                position={t("profile-position-2")}
                 address="Nghe An"
               />
             </div>
@@ -190,7 +185,7 @@ const About = () => {
               <UserItemsProfile
                 name="The Anh"
                 url_Image="profile_user1.jpg"
-                position="Volunteer"
+                position={t("profile-position-2")}
                 address="Nghe An"
               />
             </div>
@@ -198,41 +193,39 @@ const About = () => {
         </div>
 
         <div className="container-achievement-main">
-          <p id="achievement-title">OUR MISSION</p>
+          <p id="achievement-title">{t("about-us-title-4")}</p>
           <div className="achievement-content flex flex-row">
             <div className="achievement-des">
-              <p id="achieved">Achieved</p>
+              <p id="achieved">{t("mission-1")}</p>
               <p id="achieved-des">
-                We register and regulate charities in England and Wales, to
-                ensure that the public can support charities with confidence. As
-                registrar, we are responsible for maintaining an accurate.
+              {t("mission-2")}
               </p>
-              <p id="aim-title">Our strategic priorities up to 2025 are:</p>
+              <p id="aim-title">{t("mission-3")}</p>
               <p id="achieved-des">
-                Protecting charities from abuse or mismanagement
+              {t("mission-4")}
               </p>
               <p id="achieved-des">
-                Enabling trustees to run their charities effectively
+              {t("mission-5")}
               </p>
               <p id="achieved-des">
-                Encouraging greater transparency and accountability
+              {t("mission-6")}
               </p>
               <div className="achievement-aim flex flex-row mt-10">
                 <div className="achievement-aim-des mr-10">
                   <p id="number-achievement">132+</p>
-                  <p id="achieved-des">Primary School</p>
+                  <p id="achieved-des">{t("mission-7")}</p>
                 </div>
                 <div className="achievement-aim-des mr-10">
                   <p id="number-achievement">10+</p>
-                  <p id="achieved-des">Hospitals</p>
+                  <p id="achieved-des">{t("mission-8")}</p>
                 </div>
                 <div className="achievement-aim-des mr-10">
                   <p id="number-achievement">100+</p>
-                  <p id="achieved-des">Volunteers</p>
+                  <p id="achieved-des">{t("mission-9")}</p>
                 </div>
                 <div className="achievement-aim-des mr-10">
                   <p id="number-achievement">20+</p>
-                  <p id="achieved-des">Awards</p>
+                  <p id="achieved-des">{t("mission-10")}</p>
                 </div>
               </div>
             </div>

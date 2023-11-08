@@ -5,9 +5,11 @@ import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
 import NormalBtn from "../../Button/NormalBtn";
 import { FacebookShareButton } from "react-share";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 function LargeProgramItem(props) {
+  const { t } = useTranslation();
   const shareUrl = props.linkYT; // URL to share
   const title = "Smile Eyes Charity Project is so amazing"; // Title for the shared content
 
@@ -27,11 +29,11 @@ function LargeProgramItem(props) {
         </div>
         <div className="header_date text-lg italic">
           <div>
-            <span>Time: </span>
+            <span>{t("time-item")}</span>
             <span>{props.date}</span>
           </div>
           <div>
-            <span>Place: </span>
+            <span>{t("place-item")}</span>
             <span>{props.place}</span>
           </div>
         </div>
@@ -65,7 +67,7 @@ function LargeProgramItem(props) {
               rel="noopener noreferrer"
               className="cursor-pointer"
             >
-              <span className="underline underline-offset-2">Pitch file</span>
+              <span className="underline underline-offset-2">{t("pitch-file")}</span>
             </a>
             <a
               href={props.planFile}
@@ -73,12 +75,12 @@ function LargeProgramItem(props) {
               rel="noopener noreferrer"
               className="cursor-pointer"
             >
-              <span className="underline underline-offset-2">Plan file</span>
+              <span className="underline underline-offset-2">{t("plan-file")}</span>
             </a>
           </div>
 
           <div className="contents_progress mb-3 text-2xl hover:cursor-pointer flex flex-row gap-11 items-center">
-            <span className="">Funding</span>
+            <span className="">{t("funding")}</span>
             <Tippy content="65%">
               <progress value="65" max="100"></progress>
             </Tippy>
@@ -95,7 +97,7 @@ function LargeProgramItem(props) {
             </div>
             <Link to="/contact">
               <div className="button_sponsors">
-                <NormalBtn text="Be a contributor or sponsor" />
+                <NormalBtn text={t("sponsor-button")} />
               </div>
             </Link>
           </div>

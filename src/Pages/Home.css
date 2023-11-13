@@ -97,7 +97,7 @@ video1 {
 }
 
 .profile {
-  height: 318px;
+  height: 110vh;
   margin: 82px 100px 82px 150px;
   justify-content: space-evenly;
 }
@@ -127,24 +127,25 @@ video1 {
 }
 
 .profile_des_text {
-  font-size: 22px;
+  font-size: 16px;
   max-width: 800px;
   z-index: 2;
 }
 
 .profile_intro_text1 {
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 28px;
 }
 
 .profile_intro_text2 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .image_profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 20px;
+  width: 500px;
+  height: 650px;
+  //border-radius: 20px;
+  padding-top: 50px;
 }
 
 .who_we_are {
@@ -212,20 +213,20 @@ video1 {
   width: 70px;
 }
 
-@media screen and (max-width: 968px){
-  .profile_des_text{
+@media screen and (max-width: 968px) {
+  .profile_des_text {
     font-size: 18px;
   }
 
-  .our_information_heading3{
+  .our_information_heading3 {
     font-size: 16px;
   }
 
-  .button_introduce button{
+  .button_introduce button {
     font-size: 16px;
   }
 
-  .des_title_blog{
+  .des_title_blog {
     font-size: 18px;
   }
 }

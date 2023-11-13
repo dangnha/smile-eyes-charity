@@ -18,7 +18,7 @@ function LargeProgramItem(props) {
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex mb-3">
-          <span className="text-4xl font-medium ">{props.title}</span>
+          <span className="text-5xl font-medium ">{props.title}</span>
           <FacebookShareButton url={shareUrl} quote={title}>
             <img
               src={iconShare}
@@ -56,9 +56,11 @@ function LargeProgramItem(props) {
 
         {/* contents */}
         <div className="large-Contents px-4 basis-[45%] flex flex-col justify-evenly">
-          <p className="contents_description text-xl text-left mb-3">
-            {props.des}
-          </p>
+          <div className="max-h-[200px] overscroll-auto overflow-auto mb-3">
+            <p className="contents_description text-xl text-left">
+              {props.des}
+            </p>
+          </div>
 
           <div className="contents_files text-2xl flex flex-row gap-10">
             <a
@@ -67,7 +69,9 @@ function LargeProgramItem(props) {
               rel="noopener noreferrer"
               className="cursor-pointer"
             >
-              <span className="underline underline-offset-2">{t("pitch-file")}</span>
+              <span className="underline underline-offset-2">
+                {t("pitch-file")}
+              </span>
             </a>
             <a
               href={props.planFile}
@@ -75,7 +79,9 @@ function LargeProgramItem(props) {
               rel="noopener noreferrer"
               className="cursor-pointer"
             >
-              <span className="underline underline-offset-2">{t("plan-file")}</span>
+              <span className="underline underline-offset-2">
+                {t("plan-file")}
+              </span>
             </a>
           </div>
 

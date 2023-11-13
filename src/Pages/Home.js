@@ -57,20 +57,6 @@ const Home = () => {
       cost: "",
     },
     {
-      type: "raising",
-      title: t("title-raising3"),
-      date: t("date-raising3"),
-      place: t("place-raising3"),
-      linkYT: t("linkYT-raising3"),
-      des: t("des-raising3"),
-      amoutOfLikes: "24k",
-      pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
-      cost: "",
-    },
-    {
       type: "running",
       title: t("title-running1"),
       date: "10/2023~10/2028",

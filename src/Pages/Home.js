@@ -8,6 +8,7 @@ import BlogModel from "../Components/Item/model/BlogModel";
 import { useTranslation } from "react-i18next";
 import Projects from "./Projects";
 import { Link } from "react-router-dom";
+import dtdp from "../images/dtdp.jpg";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -50,20 +51,6 @@ const Home = () => {
       linkYT: t("linkYT-raising2"),
       des: t("des-raising2"),
       amoutOfLikes: "212",
-      pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
-      planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
-      cost: "",
-    },
-    {
-      type: "raising",
-      title: t("title-raising3"),
-      date: t("date-raising3"),
-      place: t("place-raising3"),
-      linkYT: t("linkYT-raising3"),
-      des: t("des-raising3"),
-      amoutOfLikes: "24k",
       pitchFile:
         "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
       planFile:
@@ -308,26 +295,28 @@ const Home = () => {
 
       {showBlogModel && <BlogModel onClose={() => setShowBlogModel(false)} />}
 
-      <div className="profile flex flex-row items-center">
+      <div className="profile flex flex-row items-center text-sm leading-7">
         <div className="profile_des">
           <div className="circle"></div>
           <i class="icon_profile fa-solid fa-quote-left fa-2xl mr-auto"></i>
           <p className="profile_des_text mt-5">{t("profile-des")}</p>
+          <p className="profile_des_text mt-5">{t("profile-des2")}</p>
+          <p className="profile_des_text mt-5">{t("profile-des3")}</p>
           <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
         </div>
-
-        <div className="profile_intro">
-          <img
-            className="image_profile mx-auto"
-            src="../image/168730.png"
-            alt=""
-          ></img>
+        <div className="profile_intro ">
           <div className="mt-5">
             <p className="profile_intro_text1">{t("profile-intro1")}</p>
-            <p className="profile_intro_text2 mt-2">{t("profile-intro2")}</p>
-            <p className="profile_intro_text2 mt-2">{t("profile-intro3")}</p>
-            <p className="profile_intro_text2">{t("profile-intro4")}</p>
+            <p className="profile_intro_text2 italic mt-2">
+              {t("profile-intro2")}
+            </p>
+            <p className="profile_intro_text2 italic">{t("profile-intro3")}</p>
           </div>
+          <img
+            className="image_profile mx-auto object-cover object-center w-[500px] h-[730px]"
+            src={dtdp}
+            alt="not found"
+          ></img>
         </div>
       </div>
 

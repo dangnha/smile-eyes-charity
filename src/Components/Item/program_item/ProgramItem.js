@@ -19,7 +19,7 @@ function ProgramItem({ props }) {
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
-          <h2 className="text-2xl font-medium">{props.title}</h2>
+          <div className="text-2xl font-medium mb-2">{props.title}</div>
           <FacebookShareButton url={shareUrl} quote={title}>
             <img
               src={iconShare}
@@ -56,9 +56,11 @@ function ProgramItem({ props }) {
 
       {/* contents */}
       <div className="contents">
-        <p className="contents_description text-xl text-left mb-3">
-          {props.des}
-        </p>
+        <div className="max-h-[150px] overscroll-auto overflow-auto mb-3">
+          <p className="contents_description text-xl text-left mb-3">
+            {props.des}
+          </p>
+        </div>
         {/* Update code to preview pitch file and plan file */}
         <div className="contents_files text-2xl mb-3">
           <a
@@ -68,7 +70,7 @@ function ProgramItem({ props }) {
             className="cursor-pointer"
           >
             <span className="underline underline-offset-2 mr-7">
-            {t("pitch-file")}
+              {t("pitch-file")}
             </span>
           </a>
           <a
@@ -77,7 +79,9 @@ function ProgramItem({ props }) {
             rel="noopener noreferrer"
             className="cursor-pointer"
           >
-            <span className="underline underline-offset-2">{t("plan-file")}</span>
+            <span className="underline underline-offset-2">
+              {t("plan-file")}
+            </span>
           </a>
         </div>
 

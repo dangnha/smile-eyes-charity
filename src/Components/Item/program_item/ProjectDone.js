@@ -14,7 +14,7 @@ function ProjectDone(props) {
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
-          <h2 className="text-2xl font-medium">{props.title}</h2>
+          <div className="text-2xl font-medium mb-2">{props.title}</div>
           <FacebookShareButton url={shareUrl} quote={title}>
             <img
               src={iconShare}
@@ -48,9 +48,11 @@ function ProjectDone(props) {
 
       {/* contents */}
       <div className="contents">
-        <p className="contents_description text-xl text-left mb-3">
-          {props.des}
-        </p>
+        <div className="max-h-[150px] overscroll-auto overflow-auto mb-3">
+          <p className="contents_description text-xl text-left mb-3">
+            {props.des}
+          </p>
+        </div>
 
         <div className="contents_files text-2xl mb-3 flex flex-row justify-between">
           <a
@@ -59,7 +61,9 @@ function ProjectDone(props) {
             rel="noopener noreferrer"
             className="cursor-pointer"
           >
-            <span className="underline underline-offset-2">{t("introduce")}</span>
+            <span className="underline underline-offset-2">
+              {t("introduce")}
+            </span>
           </a>
           <a
             href={props.pitchFile}
@@ -67,7 +71,9 @@ function ProjectDone(props) {
             rel="noopener noreferrer"
             className="cursor-pointer"
           >
-            <span className="underline underline-offset-2 ">{t("pitch-file")}</span>
+            <span className="underline underline-offset-2 ">
+              {t("pitch-file")}
+            </span>
           </a>
           <a
             href={props.planFile}
@@ -75,12 +81,16 @@ function ProjectDone(props) {
             rel="noopener noreferrer"
             className="cursor-pointer"
           >
-            <span className="underline underline-offset-2">{t("plan-file")}</span>
+            <span className="underline underline-offset-2">
+              {t("plan-file")}
+            </span>
           </a>
         </div>
 
         <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
-          <span className="mr-7">{t("funding")} {props.cost}</span>
+          <span className="mr-7">
+            {t("funding")} {props.cost}
+          </span>
         </div>
 
         <div className="contents_bottom flex justify-between">

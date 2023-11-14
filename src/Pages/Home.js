@@ -295,7 +295,7 @@ const Home = () => {
 
       {showBlogModel && <BlogModel onClose={() => setShowBlogModel(false)} />}
 
-      <div className="profile flex flex-row items-center text-sm leading-7">
+      <div className="profile flex flex-row text-sm leading-7">
         <div className="profile_des">
           <div className="circle"></div>
           <i class="icon_profile fa-solid fa-quote-left fa-2xl mr-auto"></i>
@@ -320,43 +320,53 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="who_we_are flex flex-row">
-        <div className="our_information">
-          <p className="our_information_heading1">{t("who-we-are-1")}</p>
-          <p className="our_information_heading2">{t("who-we-are-2")}</p>
-          <p className="our_information_heading3">{t("who-we-are-3")}</p>
-          <div className="button_introduce flex flex-row gap-10">
-            <div className="button_donate">
-              <Link to="/contact">
-              <button className="text-white text-xl font-normal rounded-[10px] bg-[#396D00] px-3 py-2">
-                {t("donate-button")} <i class="fa-solid fa-chevron-right"></i>
-              </button>
-              </Link>
-            </div>
-            <div className="button_contact">
-              <Link to="/contact">
-              <button className="text-xl font-normal px-3 py-2">
-                {t("contact-button")}
-                <i class="fa-solid fa-chevron-right"></i>
-              </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="icon_information">
-          <div className="icon_information1">
-            <i class="fa-solid fa-house-user fa-2xl"></i>
-            <p>{t("who-we-are-4")}</p>
-          </div>
-          <div className="icon_information2 ">
-            <i class="fa-solid fa-location-dot fa-2xl"></i>
-            <p>{t("who-we-are-5")}</p>
-          </div>
-          <div className="icon_information1">
-            <i class="fa-solid fa-person fa-2xl"></i>
-            <p>{t("who-we-are-6")}</p>
-          </div>
-        </div>
+      <div class="question">
+        <p class="question-title">Q&A</p>
+        <table>
+          <tr>
+            <td>1.</td>
+            <td>{t("cr12")}</td>
+            <td>
+                <p>{t("cr13a")}</p>
+                <ul>
+                  <li>{t("cr13b")}</li>
+                  <li>{t("cr13c")}</li>
+                  <li>{t("cr13d")}</li>
+                  <li>{t("cr13e")}</li>
+                  <li>{t("cr13f")}</li>
+                </ul>
+                <p>{t("cr13g")}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>{t("cr22")}</td>
+            <td>{t("cr23")}</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>{t("cr32")}</td>
+            <td>{t("cr33")}</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>{t("cr42")}</td>
+            <td>{t("cr43")}</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>{t("cr52")}</td>
+            <td>
+                <p>{t("cr53a")}</p>
+                <p>{t("cr53b")}</p>
+                <ul>
+                  <li>{t("cr53c")}</li>
+                  <li>{t("cr53d")}</li>
+                </ul>
+                <p>{t("cr53e")}</p>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const ContactForm = () => {
   const { t } = useTranslation();
 
   const handleSendEmail = () => {
-    const recipientEmail = "nhand.21it@vku.udn.vn"; // Replace with the recipient's email address
+    const recipientEmail = "minhltb.21it@vku.udn.vn"; // Replace with the recipient's email address
     const subject = email;
     const body = `Message contribution: ${message}\nName: ${name}\nPurpose: ${option}\nProfile Link: ${file}`;
 

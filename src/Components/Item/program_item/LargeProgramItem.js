@@ -101,11 +101,12 @@ function LargeProgramItem(props) {
                 {props.amoutOfLikes}
               </span>
             </div>
-            <Link to="/contact">
-              <div className="button_sponsors">
-                <NormalBtn text={t("sponsor-button")} />
-              </div>
-            </Link>
+
+            <div className="button_sponsors">
+              <Link to="/programs">
+              <NormalBtn text={t("sponsor-button")} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

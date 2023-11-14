@@ -97,18 +97,17 @@ video1 {
 }
 
 .profile {
-  height: 110vh;
-  margin: 82px 100px 82px 150px;
-  justify-content: space-evenly;
+  margin: 82px 100px 90px 150px;
+  justify-content: space-between;
 }
 
 .profile_des {
   display: flex;
   flex-direction: column;
   width: 60%;
-  max-width: 660px;
   position: relative;
   margin-right: 40px;
+  margin-top: 70px;
 }
 
 .circle {
@@ -128,7 +127,6 @@ video1 {
 
 .profile_des_text {
   font-size: 16px;
-  max-width: 800px;
   z-index: 2;
 }
 
@@ -144,73 +142,41 @@ video1 {
 .image_profile {
   width: 500px;
   height: 650px;
-  //border-radius: 20px;
+  border-radius: 20px;
   padding-top: 50px;
 }
 
-.who_we_are {
-  justify-content: space-between;
-  background: #f6fff6;
-  height: 552px;
-  padding: 60px 100px;
+.question {
+  padding-right: 100px;
+  padding-left: 150px;
+  padding-bottom: 100px;
+  background-color: #f6fff6;
 }
 
-.our_information {
-  width: 45%;
+.question-title{
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
 }
 
-.our_information_heading1 {
-  font-size: 35px;
-  font-weight: 500;
+ul{
+  list-style-position: inside;
+  list-style-type: circle; 
 }
 
-.our_information_heading2 {
-  font-size: 30px;
-  margin-top: 50px;
+table, td {
+  border: 2px solid #a3efa3;
+  font-size: 18px;
 }
 
-.our_information_heading3 {
-  font-size: 20px;
-  margin-top: 20px;
-  text-align: justify;
+.question td{
+  padding: 10px;
 }
 
-.button_introduce {
-  margin-top: 40px;
-}
-
-.button_donate,
-.button_contact button {
-}
-.button_contact button {
-  border: 2px solid #396d00;
-  border-radius: 10px;
-  color: #396d00;
-}
-
-.icon_information {
-  width: 45%;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-}
-
-.icon_information1,
-.icon_information2 {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  font-size: 20px;
-  height: 33%;
-}
-
-.icon_information2 {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-}
-
-.icon_information i {
-  color: #396d00;
-  width: 70px;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 @media screen and (max-width: 968px) {

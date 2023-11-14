@@ -2,6 +2,7 @@ import React from "react";
 import UserItemsProfile from "../Components/UserItemsProfile/UserItemsProfile";
 import Button from "../Components/Button/Button";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "./AboutUs.css";
 
 const About = () => {
@@ -35,7 +36,10 @@ const About = () => {
                 </div>
               </div>
               <div className="volunteer-container-tel">
-                <Button text={t("button-join-now")} size="sz-small" color="cl-green" />
+                <Link to="/contact">
+                  <Button text={t("button-join-now")} size="sz-small" color="cl-green" />
+                </Link>
+                                
                 <div className="volunteer-tel">
                   <i className="icon-tel fa-solid fa-phone"></i>
                   <div>

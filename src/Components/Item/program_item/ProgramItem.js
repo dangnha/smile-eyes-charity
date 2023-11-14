@@ -97,12 +97,11 @@ function ProgramItem({ props }) {
               {props.amoutOfLikes}
             </span>
           </div>
-
-          <div className="button_sponsors">
           <Link to="/contact">
-            <NormalBtn text={t("sponsor-button")} />
+            <div className="button_sponsors">
+              <NormalBtn text={t("sponsor-button")} />
+            </div>
           </Link>
-          </div>
         </div>
       </div>
     </div>

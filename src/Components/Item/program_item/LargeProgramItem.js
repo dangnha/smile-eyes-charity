@@ -97,7 +97,9 @@ function LargeProgramItem(props) {
             </div>
 
             <div className="button_sponsors">
-            <Link to="/contact"><NormalBtn text={t("sponsor-button")} /></Link>
+              <Link to="/programs">
+              <NormalBtn text={t("sponsor-button")} />
+              </Link>
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@
     "sponsor": "Tài trợ",
     
     "the next part": "text of item",
+
     "item_title_intro": "Dự án Phát triển bền vững cụm dân cư Pà-căng mới",
     "time_intro": "01/11/2023 ~ 01/11/2028",
     "place_intro": "cụm dân cư Pà-Căng mới, thôn Pà-Ong, xã Cà-Dy, huyện Nam Giang, tỉnh Quảng Nam, Việt Nam ",
@@ -109,7 +110,47 @@
     "profile-position-1": "Nhà tài trợ",
     "profile-position-2": "Tình nguyện viên",
     "position-title": "Chức vụ: ",
-    "country-title": "Quê quán: "
-    
+    "country-title": "Quê quán: ",
+  
+
+    "contact_form-title": "Trở thành những nhà tài trợ",
+    "contact_form-encouragement1": "Hãy trở thành một phần của chúng tôi, chung tay xây dựng một cộng đồng yêu thương.",
+    "contact_form-encouragement2": "Vui lòng gửi thông tin của bạn theo mẫu dưới đây và bắt đầu hành trình mới.",
+    "contact_form-comments": "Đóng góp ý kiến *",
+    "contact_form-name": "Họ và tên / ẩn danh",
+    "contact_form-email": "Email *",
+    "contact_form-selection": "Hoạt động tham gia  *",
+    "contact_form-select_contribution":"Quyên góp",
+    "contact_form-select_volunteer": "Tình nguyện viên",
+    "contact_form-select_sponsor": "Nhà tài trợ",
+    "contact_form-profile_link": "Đường dẫn đến trang cá nhân của bạn",
+    "contact_form-btn_join": "THAM GIA",
+
+    "contact_information-title": "Thông tin liên hệ",
+    "contact_information-address": "Thôn Pà-Ong, Xã Cà Dy, Huyện Nam Giang, tỉnh Quảng Nam, Việt Nam",
+    "contact_information-the_lie1": "Giúp đỡ mọi người...",
+    "contact_information-the_lie2": "Chúng tôi luôn mơ ước tạo dựng một tương lai tươi sáng cho trẻ em có hoàn cảnh khó khăn",
+
+    "footer_projects": "Những dự án",
+    "footer_projects-about_us": "Chúng tôi là ai",
+    "footer_projects-rasing": "Những dự án đang kêu gọi từ thiện",
+    "footer_projects-running": "Những dự án đang hoạt động",
+    "footer_projects-done": "Những thành tựu lớn",
+    "footer_social-media-title": "Mạng xã hội",
+    "footer_company-infor-name": "Công ty TNHH Smile Eye Charity",
+    "footer_company-infor-address": "Địa chỉ trụ sở chính: Thôn Pà-Ong, Xã Cà Dy, Huyện Nam Giang, tỉnh Quảng Nam, Việt Nam",
+    "footer_company-infor-charter-capital": "Vốn điều lệ",
+    "footer_company-infor-director": "Giám đốc",
+    "footer_company-infor-phone": "Số điện thoại",
+
+    "sponsor_intro-projects": "Nâng cao chất lượng cuộc sống, phát triển toàn diện về tinh thần và giáo dục cho trẻ em Nam Giang",
+    "sponsor_our-projects": "Những dự án",
+    "sponsor_our-sponsor": "Nhà tài trợ",
+    "sponsor_thankfull1": "Chúng tôi cảm thấy rất trân trọng và biết ơn sự tài trợ của bạn. Cảm ơn bạn ",
+    "sponsor_thankfull2": "đã góp phần xây dựng tổ chức của chúng tôi ngày càng phát triển hơn nữa",
+    "sponsor_gold-sponsor": "Gold Sponsor",
+    "sponsor_silver-sponsor": "Silver Sponsor",
+    "sponsor_bronze-sponsor": "Bronze Sponsor"  
+ 
 }
   

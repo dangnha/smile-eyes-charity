@@ -18,8 +18,7 @@ const Home = () => {
     title: t("item_title_intro"),
     date: t("time_intro"),
     place: t("place_intro"),
-    linkYT:
-      "https://www.youtube.com/embed/543jwFfCZvg?list=PLp6D8X7L5wgbTLG-OR0q8hJws4wD18e7o",
+    linkYT: t("linkYT"),
     des: t("des_intro"),
     amoutOfLikes: "300",
     pitchFile:
@@ -327,15 +326,15 @@ const Home = () => {
             <td>1.</td>
             <td>{t("cr12")}</td>
             <td>
-                <p>{t("cr13a")}</p>
-                <ul>
-                  <li>{t("cr13b")}</li>
-                  <li>{t("cr13c")}</li>
-                  <li>{t("cr13d")}</li>
-                  <li>{t("cr13e")}</li>
-                  <li>{t("cr13f")}</li>
-                </ul>
-                <p>{t("cr13g")}</p>
+              <p>{t("cr13a")}</p>
+              <ul>
+                <li>{t("cr13b")}</li>
+                <li>{t("cr13c")}</li>
+                <li>{t("cr13d")}</li>
+                <li>{t("cr13e")}</li>
+                <li>{t("cr13f")}</li>
+              </ul>
+              <p>{t("cr13g")}</p>
             </td>
           </tr>
           <tr>
@@ -357,13 +356,13 @@ const Home = () => {
             <td>5.</td>
             <td>{t("cr52")}</td>
             <td>
-                <p>{t("cr53a")}</p>
-                <p>{t("cr53b")}</p>
-                <ul>
-                  <li>{t("cr53c")}</li>
-                  <li>{t("cr53d")}</li>
-                </ul>
-                <p>{t("cr53e")}</p>
+              <p>{t("cr53a")}</p>
+              <p>{t("cr53b")}</p>
+              <ul>
+                <li>{t("cr53c")}</li>
+                <li>{t("cr53d")}</li>
+              </ul>
+              <p>{t("cr53e")}</p>
             </td>
           </tr>
         </table>

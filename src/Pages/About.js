@@ -20,26 +20,24 @@ const About = () => {
             </div>
             <div className="flex-aboutUs2 basis-[33%] flex flex-col justify-center gap-5">
               <h3 className="title-page text-center">{t("about-us-1")}</h3>
-              <h4 className="text-heading">
-                {t("about-us-2")}
-              </h4>
-              <p className="text-sub-heading">
-                {t("about-us-3")}
-              </p>
+              <h4 className="text-heading">{t("about-us-2")}</h4>
+              <p className="text-sub-heading">{t("about-us-3")}</p>
               <div className="volunteer-banner flex gap-2">
                 <div className="image-volunteer"> </div>
                 <div className="text-volunteer">
                   <p className="text-volunteer-1">{t("about-us-4")}</p>
-                  <p className="text-volunteer-2">
-                    {t("about-us-5")}
-                  </p>
+                  <p className="text-volunteer-2">{t("about-us-5")}</p>
                 </div>
               </div>
               <div className="volunteer-container-tel">
                 <Link to="/contact">
-                  <Button text={t("button-join-now")} size="sz-small" color="cl-green" />
+                  <Button
+                    text={t("button-join-now")}
+                    size="sz-small"
+                    color="cl-green"
+                  />
                 </Link>
-                                
+
                 <div className="volunteer-tel">
                   <i className="icon-tel fa-solid fa-phone"></i>
                   <div>
@@ -60,9 +58,7 @@ const About = () => {
             <div className="flex-founder basis-[45%] mt-8">
               <div className="text-sub-founder flex flex-col p-12 text-left">
                 <i className="fa-solid fa-quote-left fa-xl mr-auto"></i>
-                <p className="text-xl pl-10">
-                {t("profile-des")}
-                </p>
+                <p className="text-xl pl-10">{t("profile-des")}</p>
                 <i className="fa-solid fa-quote-right fa-xl ml-auto"></i>
               </div>
             </div>
@@ -72,9 +68,10 @@ const About = () => {
                   <div className="image-founder image3"></div>
                 </div>
                 <h1 className="name-founder">{t("profile-intro1")}</h1>
-                <p className="position-founder uppercase">{t("profile-intro2")}</p>
+                <p className="position-founder uppercase">
+                  {t("profile-intro2")}
+                </p>
                 <p className="company-founder">{t("profile-intro3")}</p>
-                <p className="email-founder">{t("profile-intro4")}</p>
               </div>
             </div>
           </div>
@@ -197,19 +194,11 @@ const About = () => {
           <div className="achievement-content flex flex-row">
             <div className="achievement-des">
               <p id="achieved">{t("mission-1")}</p>
-              <p id="achieved-des">
-              {t("mission-2")}
-              </p>
+              <p id="achieved-des">{t("mission-2")}</p>
               <p id="aim-title">{t("mission-3")}</p>
-              <p id="achieved-des">
-              {t("mission-4")}
-              </p>
-              <p id="achieved-des">
-              {t("mission-5")}
-              </p>
-              <p id="achieved-des">
-              {t("mission-6")}
-              </p>
+              <p id="achieved-des">{t("mission-4")}</p>
+              <p id="achieved-des">{t("mission-5")}</p>
+              <p id="achieved-des">{t("mission-6")}</p>
               <div className="achievement-aim flex flex-row mt-10">
                 <div className="achievement-aim-des mr-10">
                   <p id="number-achievement">132+</p>

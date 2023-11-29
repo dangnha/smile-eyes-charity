@@ -1,27 +1,32 @@
 import "./program_item.css";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
-import { FacebookShareButton } from "react-share";
 import { useTranslation } from "react-i18next";
 
 function ProjectDone(props) {
   const { t } = useTranslation();
-  const shareUrl = props.linkYT; // URL to share
-  const title = "Smile Eyes Charity Project is so amazing"; // Title for the shared content
+  const handleShareClick = () => {
+    // Copy the smile-eye link to the clipboard
+    const smileeyecharity = "https://smileeyecharity.org/";
+    navigator.clipboard.writeText(smileeyecharity);
 
+    // Show a notification after 1 second
+    setTimeout(() => {
+      alert(`You copied this link successfully: ${smileeyecharity}`);
+    }, 1000);
+  };
   return (
     <div className="program-item">
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
           <div className="text-2xl font-medium mb-2">{props.title}</div>
-          <FacebookShareButton url={shareUrl} quote={title}>
-            <img
-              src={iconShare}
-              className="w-10 h-10 ms-5 hover:cursor-pointer"
-              alt="icon share"
-            />
-          </FacebookShareButton>
+          <img
+            src={iconShare}
+            className="w-10 h-10 ms-5 hover:cursor-pointer"
+            alt="icon share"
+            onClick={handleShareClick}
+          />
         </div>
         <div className="header_date text-xl">
           <span>{t("time-item")}</span>

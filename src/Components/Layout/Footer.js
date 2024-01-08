@@ -4,8 +4,7 @@ import "./Footer.css";
 import React from "react";
 
 const Footer = () => {
-
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="footer flex flex-col justify-around">
@@ -18,7 +17,9 @@ const Footer = () => {
           <p className="underline">{t("footer_projects-done")}</p>
         </div>
         <div className="footer-content-2">
-          <p className="footer-content-title">{t("footer_social-media-title")}</p>
+          <p className="footer-content-title">
+            {t("footer_social-media-title")}
+          </p>
           <div className="flex flex-row items-center">
             <i class="icon-footer fa-brands fa-square-facebook"></i>
             <p>Facebook</p>
@@ -46,11 +47,29 @@ const Footer = () => {
       <div className="footer-line"></div>
 
       <div className="footer-tile-nav flex flex-row">
-        <Link to="/"><p id="footer-title-line-right" className="underline">{t("home")}</p></Link>
-        <Link to="/programs"><p id="footer-title-line-right" className="underline">{t("projects")}</p></Link>
-        <Link to="/aboutus"><p id="footer-title-line-right" className="underline">{t("about")}</p></Link>
-        <Link to="/contact"><p id="footer-title-line-right" className="underline">{t("contact")}</p></Link>
-        <Link to="/sponsor"><p className="underline">{t("sponsor")}</p></Link>
+        <Link to="/">
+          <p id="footer-title-line-right" className="underline">
+            {t("home")}
+          </p>
+        </Link>
+        <Link to="/programs">
+          <p id="footer-title-line-right" className="underline">
+            {t("projects")}
+          </p>
+        </Link>
+        <Link to="/aboutus">
+          <p id="footer-title-line-right" className="underline">
+            {t("about")}
+          </p>
+        </Link>
+        <Link to="/contact">
+          <p id="footer-title-line-right" className="underline">
+            {t("contact")}
+          </p>
+        </Link>
+        <Link to="/sponsor">
+          <p className="underline">{t("sponsor")}</p>
+        </Link>
       </div>
     </div>
   );

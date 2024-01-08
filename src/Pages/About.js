@@ -9,16 +9,16 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <React.Fragment>
-      <div className="aboutUS w-[100vw]">
+      <div className="aboutUS md:pt-20 mt-5 w-[100vw]">
         <div className="container-aboutUs">
-          <div className="row-aboutUs">
+          <div className="row-aboutUs mb-16 flex flex-col lg:flex-row">
             <div className="flex-aboutUs1 basis-[55%] flex justify-center items-center">
               <div className="container-image">
-                <div className="image image1 bg-center"></div>
-                <div className="image image2 bg-center"></div>
+                <div className="image image1 bg-center lg:w-[100%] max-w-[70%] max-h-[70%]"></div>
+                <div className="image image2 bg-center lg:w-[100%] max-w-[70%] max-h-[70%]"></div>
               </div>
             </div>
-            <div className="flex-aboutUs2 basis-[33%] flex flex-col justify-center gap-5">
+            <div className="flex-aboutUs2 basis-[33%] flex flex-col lg:mt-0 md:mt-0 mt-0 md:mb-0 mb-14 justify-center lg:items-start items-center gap-5">
               <h3 className="title-page text-center">{t("about-us-1")}</h3>
               <h4 className="text-heading">{t("about-us-2")}</h4>
               <p className="text-sub-heading">{t("about-us-3")}</p>
@@ -50,19 +50,19 @@ const About = () => {
           </div>
         </div>
 
-        <div className="container-founder">
+        <div className="container-founder lg:pb-24 lg:pt-20 pb-20 pt-10">
           <div className="heading-founder ">
             <h3 className="pl-[40px]">{t("about-us-title-1")}</h3>
           </div>
-          <div className="row-founder flex items-center justify-evenly">
-            <div className="flex-founder basis-[45%] mt-8">
+          <div className="row-founder flex lg:flex-row flex-col lg:gap-0 gap-20 items-center justify-evenly">
+            <div className="flex-founder lg:basis-[50%] basis-[40%] mt-8">
               <div className="text-sub-founder flex flex-col p-12 text-left">
                 <i className="fa-solid fa-quote-left fa-xl mr-auto"></i>
                 <p className="text-xl pl-10">{t("profile-des")}</p>
                 <i className="fa-solid fa-quote-right fa-xl ml-auto"></i>
               </div>
             </div>
-            <div className="flex-founder basis[50%] ">
+            <div className="flex-founder lg:basis[40%] basis-[40%] lg:pb-0 pb-10">
               <div className="flex-founder-container -m-10">
                 <div className="container-image-founder">
                   <div className="image-founder image3"></div>
@@ -81,7 +81,7 @@ const About = () => {
           <div div className="heading-founder">
             <h3>{t("about-us-title-2")}</h3>
           </div>
-          <div className="container-sponsor">
+          <div className="container-sponsor grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-20">
             <div className="sponsor-item">
               <UserItemsProfile
                 name="Dong Phuong"
@@ -133,7 +133,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="container-volunteer-main">
+        <div className="container-volunteer-main lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-20">
           <div div className="heading-founder">
             <h3>{t("about-us-title-3")}</h3>
           </div>

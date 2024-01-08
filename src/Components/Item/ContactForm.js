@@ -24,9 +24,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto my-20 w-[55vw] h-[630px] border border-white bg-[#005000] opacity-35 pt-[10px] ">
+    <div className="container mx-auto lg:w-[55vw] md:w-[90%] w-[96%] pt-10 pb-8 border border-white bg-[#005000] opacity-35">
       <div className="flex flex-col justify-center items-center">
-        <p className="w-[85%] text-left pb-3 text-white text-[45px] font-extrabold font-['Inter']">
+        <p className="w-[85%] text-left pb-3 text-white lg:text-4xl md:text-2xl text-lg font-extrabold font-['Inter']">
           {t("contact_form-title")}
         </p>
         <p className="w-[85%] text-white text-left text-[18px] ">
@@ -44,29 +44,29 @@ const ContactForm = () => {
               required
               cols="10"
               rows="5"
-              className="w-[100%] text-white text-xl border border-white bg-transparent px-3 py-2.5 font-sans font-normal placeholder-white col-span-2 rounded-[5px]"
+              className="w-[100%] text-white lg:text-xl md:text-lg text-base border border-white bg-transparent px-3 py-2.5 font-sans font-normal placeholder-white col-span-2 rounded-[5px]"
               placeholder={t("contact_form-comments")}
             ></textarea>
-            <div className="flex flex-row gap-20 justify-center items-center w-[100%]">
+            <div className="flex lg:flex-row flex-col lg:gap-20 gap-10 justify-center items-center w-[100%]">
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal placeholder-white"
+                className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 lg:text-xl md:text-lg text-base py-5 font-sans font-normal placeholder-white"
                 placeholder={t("contact_form-name")}
               />
               <input
                 required
-                className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal placeholder-white"
+                className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 lg:text-xl md:text-lg text-base py-5 font-sans font-normal placeholder-white"
                 placeholder={t("contact_form-email")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="flex flex-row gap-20 justify-center items-center w-[100%]">
+            <div className="flex lg:flex-row flex-col lg:gap-20 gap-10 justify-center items-center w-[100%]">
               <select
                 value={option}
                 onChange={(e) => setOption(e.target.value)}
-                className=" text-white peer h-full w-full rounded-[5px] border border-blue-gray-200 bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200  focus:outline-none "
+                className=" text-white peer h-full w-full rounded-[5px] border border-blue-gray-200 bg-black bg-opacity-0 px-3 lg:text-xl md:text-lg text-base py-5 font-sans font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200  focus:outline-none "
               >
                 <option className="text-black">
                   {t("contact_form-selection")}
@@ -85,7 +85,7 @@ const ContactForm = () => {
                 type="text"
                 value={file}
                 onChange={(e) => setFile(e.target.value)}
-                className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 text-xl py-5 font-sans font-normal placeholder-white"
+                className=" text-white peer h-full w-full rounded-[5px] border border-white bg-black bg-opacity-0 px-3 lg:text-xl md:text-lg text-base py-5 font-sans font-normal placeholder-white"
                 placeholder={t("contact_form-profile_link")}
               />
             </div>

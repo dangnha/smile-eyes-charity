@@ -145,7 +145,7 @@ const Programs = () => {
   };
 
   return (
-    <div className="body">
+    <div className="body lg:w-[80%] md:w-[85%] w-[90%] mx-auto">
       <div className="top_image mx-auto my-12">
         <img
           src="./images/top_image.png"
@@ -154,14 +154,16 @@ const Programs = () => {
         />
       </div>
 
-      <div className="intro mx-auto my-16 flex justify-between">
+      <div className="intro mx-auto my-16 md:flex justify-between hidden">
         <img
           src="./images/Rectangle_126.png"
           alt="nothing"
           className="intro_image w-3/6"
         />
         <div className="text w-2/5">
-          <p className="text-4xl mt-16 mb-20">{t("project-page-title")}</p>
+          <p className="text-4xl font-bold mt-16 mb-14">
+            {t("project-page-title")}
+          </p>
           <p className="text-xl">{t("project-page-des1")}</p>
         </div>
       </div>
@@ -208,7 +210,7 @@ const Programs = () => {
           ref={iconLoadRef}
         />
         <div
-          className="mini_programs-items mx-auto mb-20 grid grid-cols-2 gap-6"
+          className="mini_programs-items mx-auto mb-20 grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-3 justify-center items-center"
           ref={miniProRef}
         >
           {currentPrograms &&

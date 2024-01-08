@@ -20,7 +20,9 @@ function ProjectDone(props) {
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
-          <div className="text-2xl font-semibold mb-2">{props.title}</div>
+          <div className="lg:text-2xl md:text-xl text-lg font-semibold mb-2">
+            {props.title}
+          </div>
           <img
             src={iconShare}
             className="w-10 h-10 ms-5 hover:cursor-pointer"
@@ -28,7 +30,7 @@ function ProjectDone(props) {
             onClick={handleShareClick}
           />
         </div>
-        <div className="header_date text-xl">
+        <div className="header_date lg:text-xl md:text-lg text-base">
           <span>{t("time-item")}</span>
           <span>{props.date}</span>
         </div>
@@ -59,7 +61,7 @@ function ProjectDone(props) {
           </p>
         </div>
 
-        <div className="contents_files text-2xl mb-3 flex flex-row justify-between">
+        <div className="contents_files lg:text-2xl md:text-xl text-lg mb-3 flex flex-row justify-between">
           <a
             href={props.introductionFile}
             target="_blank"
@@ -92,14 +94,14 @@ function ProjectDone(props) {
           </a>
         </div>
 
-        <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
+        <div className="contents_progress mb-2 lg:text-2xl md:text-xl text-lg hover:cursor-pointer flex justify-between items-center">
           <span className="mr-7">
             {t("funding")} {props.cost}
           </span>
         </div>
 
         <div className="contents_bottom flex justify-between">
-          <div className="likes flex flex-row items-center justify-between text-2xl w-full">
+          <div className="likes flex flex-row items-center justify-between lg:text-2xl md:text-xl text-lg w-full">
             <a
               href={props.achievementFile}
               target="_blank"

@@ -25,7 +25,7 @@ const Header = () => {
     { path: "/programs", label: t("projects") },
     { path: "/aboutus", label: t("about") },
     { path: "/contact", label: t("contact") },
-    { path: "/sponsor", label: t("sponsor") },
+    // { path: "/sponsor", label: t("sponsor") },
   ];
 
   return (
@@ -33,7 +33,10 @@ const Header = () => {
       <div id="navbar-language">
         <Language selected={selected} setSelected={setSelected} />
       </div>
-      <div id="navbar-title">
+      <div
+        id="navbar-title"
+        className="lg:gap-[400px] md:gap-[200px] gap-[80px]"
+      >
         <a href="/">
           <div id="logo">
             <img src="./image/logo.png" alt="abc" />

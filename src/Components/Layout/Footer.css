@@ -15,6 +15,10 @@
   padding: 3px 0;
 }
 
+.footer-content .footer-content-1, .footer-content-2 p:hover{
+  cursor: pointer;
+}
+
 .footer-content-title{
   font-size: 30px;
   color: #fff;

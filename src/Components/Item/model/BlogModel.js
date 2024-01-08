@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import treEmImage from "./img/tre-em.jpg";
+import image1 from "./img/image1.jpg";
+import image2 from "./img/image2.jpg";
 
 const BlogModel = ({ onClose }) => {
   const secondDivRef = useRef(null);
@@ -35,18 +36,13 @@ const BlogModel = ({ onClose }) => {
             </button>
           </div>
           <div className="flex flex-col justify-center items-center mt-[20px] gap-5 mb-10">
-            <div className="text-4xl font-serif uppercase font-semibold">
-              Smile eye charity feeling
+            <div className="text-3xl font-serif uppercase font-semibold">
+              SUPPORT FOOD AND CLOTHES BEFORE RAINY SEASONS-2023
             </div>
-            <div className="text-xl font-serif uppercase ">
-              SEPTEMBER 4, 2023 By ADAM
-            </div>
-          </div>
-          <div className="w-[60%]">
-            <img src={treEmImage} alt="Not found" className="w-[100%]" />
+            <div className="text-xl font-serif uppercase ">July 2023</div>
           </div>
 
-          <div className="w-[60%] mb-6">
+          {/* <div className="w-[60%] mb-6">
             <div className="font-sans text-2xl text-[#993300] mb-3">
               Overview
             </div>
@@ -68,9 +64,30 @@ const BlogModel = ({ onClose }) => {
               included in our list to learn more about their mission, programs,
               and services and to make a donation via the Giving Basket.
             </div>
+          </div> */}
+          <div className="w-[70%] mb-6">
+            <div className="font-sans text-xl text-justify">
+              Business owner of Cortex Textile{" "}
+              <a href="www.cortextextile.com">(www.cortextextile.com)</a> and
+              his employees prepared food, clothes, toothbrushes and toothpaste,
+              sanitary napkins for girls, milk for special children, and more.
+              They personally brought the items back to the village and
+              explained to the villagers how to use them with love. The
+              villagers welcomed everyone with a lunch of special dishes from
+              the mountains and forests. We all had a fun together.
+            </div>
+            <br />
+            <div className="font-sans text-xl text-justify">
+              We feel happy because all of us have a warmer winter.
+            </div>
           </div>
 
-          <div className="w-[60%] mb-6">
+          <div className="w-[75%] flex">
+            <img src={image1} alt="Not found" className="w-[50%]" />
+            <img src={image2} alt="Not found" className="w-[50%]" />
+          </div>
+
+          {/* <div className="w-[60%] mb-6">
             <div className="font-sans text-2xl text-[#993300] mb-3">
               Our Mission
             </div>
@@ -92,7 +109,7 @@ const BlogModel = ({ onClose }) => {
               included in our list to learn more about their mission, programs,
               and services and to make a donation via the Giving Basket.
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,9 +1,104 @@
 import { useEffect, useRef, useState } from "react";
 import ProgramItem from "../../Components/Item/program_item/ProgramItem";
-import Projects from "../Projects";
 import "./programs.css";
+import { useTranslation } from "react-i18next";
 
 const Programs = () => {
+  const { t } = useTranslation();
+  const Projects = [
+    {
+      type: "raising",
+      title: t("title-raising1"),
+      date: t("date-raising1"),
+      place: t("place-raising1"),
+      linkYT: t("linkYT-raising1"),
+      des: t("des-raising1"),
+      amoutOfLikes: "179",
+      pitchFile:
+        "https://docs.google.com/spreadsheets/d/1N8dZMewYsr8gXbPO15spz9M0ar0g8xT5/edit?rtpof=true#gid=728959804",
+      planFile:
+        "https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit",
+      cost: "",
+    },
+    {
+      type: "raising",
+      title: t("title-raising2"),
+      date: t("date-raising2"),
+      place: t("place-raising2"),
+      linkYT: t("linkYT-raising2"),
+      des: t("des-raising2"),
+      amoutOfLikes: "212",
+      pitchFile:
+        "https://docs.google.com/spreadsheets/d/1G2XVdWuFmktxEH8zO6MdqQc4hSF_PRGe/edit?rtpof=true#gid=60212578",
+      planFile:
+        "https://docs.google.com/document/d/1B1xQJMnXx0wwdEdDXrlzEA8MdYdISLXy/edit?rtpof=true",
+      cost: "",
+    },
+    {
+      type: "running",
+      title: t("title-running1"),
+      date: "10/2023~10/2028",
+      place: t("place-running1"),
+      linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
+      des: t("des-running1"),
+      amoutOfLikes: "106k",
+      pitchFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+    },
+    {
+      type: "running",
+      title: t("title-running2"),
+      date: "10/2023~10/2028",
+      place: t("place-running2"),
+      linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
+      des: t("des-running2"),
+      amoutOfLikes: "106k",
+      pitchFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+    },
+    {
+      type: "completed",
+      title: t("title-complete1"),
+      date: "10/2023~10/2028",
+      place: t("place-complete1"),
+      linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
+      des: t("des-complete1"),
+      amoutOfLikes: "106k",
+      introductionFile: "https://www.facebook.com/",
+      pitchFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      achievementFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      detailFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      cost: "10.000.000VND",
+    },
+    {
+      type: "completed",
+      title: t("title-complete1"),
+      date: "10/2023~10/2028",
+      place: t("place-complete1"),
+      linkYT: "https://www.youtube.com/embed/LXcWjzaMwqE?si=6ubyy8q_rcOhWl15",
+      des: t("des-complete1"),
+      amoutOfLikes: "106k",
+      introductionFile: "https://www.facebook.com/",
+      pitchFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      planFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      achievementFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      detailFile:
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
+      cost: "10.000.000VND",
+    },
+  ];
   const [filter, setFilter] = useState("raising");
   const [currentPrograms, setCurrentPrograms] = useState([]);
   const [title, setTitle] = useState(
@@ -27,13 +122,13 @@ const Programs = () => {
 
     if (filter === "raising") {
       btnRaising.current.classList.add("active");
-      setTitle("Programs which are calling for volunteers and sponsors");
+      setTitle(t("project-calling"));
     } else if (filter === "running") {
       btnRunning.current.classList.add("active");
-      setTitle("Programs which are running, people can join it");
+      setTitle(t("project-running"));
     } else {
       btnCompleted.current.classList.add("active");
-      setTitle("Programs which have completed");
+      setTitle(t("project-done"));
     }
   }, [filter]);
 
@@ -66,58 +161,44 @@ const Programs = () => {
           className="intro_image w-3/6"
         />
         <div className="text w-2/5">
-          <p className="text-4xl mt-16 mb-20">Many Exciting Projects</p>
-          <p className="text-xl">
-            Discover the great meaningful charity projects of Smile Eyes Charity
-          </p>
+          <p className="text-4xl mt-16 mb-20">{t("project-page-title")}</p>
+          <p className="text-xl">{t("project-page-des1")}</p>
         </div>
       </div>
 
       {/* paragraph */}
-      <div className="paragraph py-16 mb-20 text-lg text-justify">
-        <p className="mx-auto">
-          The exceptional charities on this list have earned perfect scores
-          across all four beacons in our Encompass Rating System. Based on our
-          metrics, these organizations are highly impactful in their given cause
-          area, are fiscally responsible and transparent, and follow leadership
-          and organizational culture best practices. Less than one-tenth of one
-          percent of charities we rate earn a perfect score! We applaud these
-          charities for being highly impactful and outperforming other
-          organizations performing similar work. Please click on the names of
-          the high-performing charities included in our list to learn more about
-          their mission, programs, and services and to make a donation via the
-          Giving Basket.
-        </p>
-      </div>
+      {/* <div className="paragraph py-16 mb-20 text-lg text-justify">
+        <p className="mx-auto">{t("project-page-des2")}</p>
+      </div> */}
 
       {/* programs */}
       <div className="programs mx-auto">
         {/* filter */}
-        <ul className="programs_filter mx-auto mb-16 py-4 flex justify-evenly">
+        <ul className="programs_filter mx-auto mb-16 py-4 flex justify-evenly list-none">
           <li
             className="programs_filter-button active text-lg px-6 py-2 hover:cursor-pointer"
             ref={btnRaising}
             onClick={() => handleFilter("raising")}
           >
-            Raising
+            {t("raising-button")}
           </li>
           <li
             className="programs_filter-button text-lg px-6 py-2 hover:cursor-pointer"
             ref={btnRunning}
             onClick={() => handleFilter("running")}
           >
-            Running
+            {t("running-button")}
           </li>
           <li
             className="programs_filter-button text-lg px-6 py-2 hover:cursor-pointer"
             ref={btnCompleted}
             onClick={() => handleFilter("completed")}
           >
-            Completed
+            {t("complete-button")}
           </li>
         </ul>
 
-        <p className="mini_programs-title text-3xl font-medium mb-8">{title}</p>
+        <p className="mini_programs-title text-4xl font-medium mb-8">{title}</p>
 
         {/* mini programs */}
         <img

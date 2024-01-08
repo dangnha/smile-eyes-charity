@@ -23,6 +23,11 @@ function Language({ selected, setSelected }) {
       language: "Japanese",
       trans: "jp",
     },
+    {
+      image: "./image/french.png",
+      language: "French",
+      trans: "fr",
+    },
   ];
   return (
     <div id="language">

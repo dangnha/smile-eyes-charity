@@ -1,0 +1,49 @@
+p.contact-des {
+    font-size: 26px;
+}
+
+.contact_information-title {
+    font-weight: 700;
+    color: #396d00;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+.contact-info {
+    margin-top: 10rem;
+    }
+
+}
+
+/* mobile 1 */
+@media (max-width: 767px) {
+
+    .contact-info {
+        margin-top: 20rem;
+    }
+}
+
+/* mobile 2 */
+
+@media (max-width: 750px) {
+
+    .contact-info {
+        margin-top: 30rem;
+    }
+}
+
+/* mobile 3 */
+
+@media (max-width: 750px) {
+    .contact-info {
+        margin-top: 40rem;
+    }
+}
+
+/* mobile 4 */
+
+@media (max-width: 657px) {
+    .contact-info {
+        margin-top: 50rem;
+    }
+}

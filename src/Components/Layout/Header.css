@@ -128,6 +128,16 @@
   transition: all 0.3s ease-in-out;
 }
 
+.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+}
+
 #title li p:hover::after {
   width: 100%;
 }

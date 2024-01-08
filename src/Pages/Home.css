@@ -32,7 +32,7 @@
 
 .blog {
   background-color: #f6fff6;
-  height: 1254px;
+  height: 700px;
   padding: 60px 100px 82px;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 45%;
+  height: 90%;
   margin-top: 50px;
   padding-bottom: 50px;
 }
@@ -97,18 +97,17 @@ video1 {
 }
 
 .profile {
-  height: 318px;
-  margin: 82px 100px 82px 150px;
-  justify-content: space-evenly;
+  margin: 82px 100px 90px 150px;
+  justify-content: space-between;
 }
 
 .profile_des {
   display: flex;
   flex-direction: column;
   width: 60%;
-  max-width: 660px;
   position: relative;
   margin-right: 40px;
+  margin-top: 70px;
 }
 
 .circle {
@@ -127,105 +126,74 @@ video1 {
 }
 
 .profile_des_text {
-  font-size: 22px;
-  max-width: 800px;
+  font-size: 16px;
   z-index: 2;
 }
 
 .profile_intro_text1 {
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 28px;
 }
 
 .profile_intro_text2 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .image_profile {
-  width: 150px;
-  height: 150px;
+  width: 500px;
+  height: 650px;
   border-radius: 20px;
+  padding-top: 50px;
 }
 
-.who_we_are {
-  justify-content: space-between;
-  background: #f6fff6;
-  height: 552px;
-  padding: 60px 100px;
+.question {
+  padding-right: 100px;
+  padding-left: 150px;
+  padding-bottom: 100px;
+  background-color: #f6fff6;
 }
 
-.our_information {
-  width: 45%;
+.question-title {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
 }
 
-.our_information_heading1 {
-  font-size: 35px;
-  font-weight: 500;
+ul {
+  list-style-position: inside;
+  list-style-type: circle;
 }
 
-.our_information_heading2 {
-  font-size: 30px;
-  margin-top: 50px;
+table,
+td {
+  border: 2px solid #a3efa3;
+  font-size: 18px;
 }
 
-.our_information_heading3 {
-  font-size: 20px;
-  margin-top: 20px;
-  text-align: justify;
+.question td {
+  padding: 10px;
 }
 
-.button_introduce {
-  margin-top: 40px;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.button_donate,
-.button_contact button {
-}
-.button_contact button {
-  border: 2px solid #396d00;
-  border-radius: 10px;
-  color: #396d00;
-}
-
-.icon_information {
-  width: 45%;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-}
-
-.icon_information1,
-.icon_information2 {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  font-size: 20px;
-  height: 33%;
-}
-
-.icon_information2 {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-}
-
-.icon_information i {
-  color: #396d00;
-  width: 70px;
-}
-
-@media screen and (max-width: 968px){
-  .profile_des_text{
+@media screen and (max-width: 968px) {
+  .profile_des_text {
     font-size: 18px;
   }
 
-  .our_information_heading3{
+  .our_information_heading3 {
     font-size: 16px;
   }
 
-  .button_introduce button{
+  .button_introduce button {
     font-size: 16px;
   }
 
-  .des_title_blog{
+  .des_title_blog {
     font-size: 18px;
   }
 }

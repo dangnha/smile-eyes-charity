@@ -1,7 +1,9 @@
 import React from 'react';
 import './UserItemsProfile.css';
+import { useTranslation } from "react-i18next";
 
 const UserItemsProfile = (props) => {
+    const { t } = useTranslation();
     return (
         <div className='userItemsCardContainer'>
            <div className='userItemsCard'>
@@ -13,8 +15,8 @@ const UserItemsProfile = (props) => {
                 <div className='userItemsContent'>
                     <div className='detailContent'>
                         <h2>{props.name}</h2>
-                        <p>Position: {props.position}</p>
-                        <p>From: {props.address}</p>
+                        <p>{t("position-title")} {props.position}</p>
+                        <p>{t("country-title")} {props.address}</p>
                     </div>
                 </div>
 

@@ -96,8 +96,8 @@ function ProgramItem({ props }) {
 
         <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
           <span className="mr-7">{t("funding")}</span>
-          <Tippy content="65%">
-            <progress value="65" max="100"></progress>
+          <Tippy content="30%">
+            <progress value="30" max="100"></progress>
           </Tippy>
         </div>
 

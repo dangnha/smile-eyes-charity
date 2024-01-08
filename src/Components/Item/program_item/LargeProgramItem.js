@@ -107,8 +107,8 @@ function LargeProgramItem(props) {
 
           <div className="contents_progress mb-3 text-2xl hover:cursor-pointer flex flex-row gap-11 items-center">
             <span className="">{t("funding")}</span>
-            <Tippy content="65%">
-              <progress value="65" max="100"></progress>
+            <Tippy content="30%">
+              <progress value="30" max="100"></progress>
             </Tippy>
           </div>
 

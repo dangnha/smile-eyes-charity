@@ -1,7 +1,7 @@
-import React from "react";
+// program_item.js
+import React, { useState } from "react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import "./program_item.css";
 import NormalBtn from "../../Button/NormalBtn";
 import iconShare from "../../../images/share.png";
 import iconHeart from "../../../images/heart.png";
@@ -9,20 +9,28 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 function ProgramItem({ props }) {
+  const [pdfUrl, setPdfUrl] = useState(null);
+
+  const handlePdfPreview = (url) => {
+    setPdfUrl(url);
+  };
+
+  const handleClosePdfPreview = () => {
+    setPdfUrl(null);
+  };
+
   const { t } = useTranslation();
   const handleShareClick = () => {
-    // Copy the smile-eye link to the clipboard
     const smileeyecharity = "https://smileeyecharity.org/";
     navigator.clipboard.writeText(smileeyecharity);
 
-    // Show a notification after 1 second
     setTimeout(() => {
       alert(`You copied this link successfully: ${smileeyecharity}`);
     }, 1000);
   };
+
   return (
     <div className="program-item mb-6">
-      {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
           <div className="text-2xl font-medium mb-2">{props.title}</div>
@@ -45,7 +53,6 @@ function ProgramItem({ props }) {
         </div>
       </div>
 
-      {/* video */}
       <div className="video w-full mb-6">
         <iframe
           loading="lazy"
@@ -59,35 +66,32 @@ function ProgramItem({ props }) {
         ></iframe>
       </div>
 
-      {/* contents */}
       <div className="contents">
         <div className="max-h-[150px] overscroll-auto overflow-auto mb-3">
           <p className="contents_description text-xl text-left mb-3">
             {props.des}
           </p>
         </div>
-        {/* Update code to preview pitch file and plan file */}
-        <div className="contents_files text-2xl mb-3">
-          <a
+
+        <div className="contents_files text-2xl mb-3 flex gap-4">
+          <div
             href={props.pitchFile}
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
+            className="cursor-pointer underline underline-offset-2 mr-7"
+            onClick={() => handlePdfPreview(props.pitchFile)}
           >
-            <span className="underline underline-offset-2 mr-7">
-              {t("pitch-file")}
-            </span>
-          </a>
-          <a
+            {t("pitch-file")}
+          </div>
+          <div
             href={props.planFile}
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
+            className="cursor-pointer underline underline-offset-2"
+            onClick={() => handlePdfPreview(props.planFile)}
           >
-            <span className="underline underline-offset-2">
-              {t("plan-file")}
-            </span>
-          </a>
+            {t("plan-file")}
+          </div>
         </div>
 
         <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
@@ -112,6 +116,30 @@ function ProgramItem({ props }) {
             </div>
           </Link>
         </div>
+
+        {pdfUrl && (
+          <div
+            className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            onClick={handleClosePdfPreview}
+          >
+            <div className="bg-white w-[1300px] h-[700px] overflow-auto p-8 rounded shadow-lg relative">
+              <button
+                className="absolute top-2 right-2 text-3xl cursor-pointer"
+                onClick={handleClosePdfPreview}
+              >
+                &times;
+              </button>
+              <div className="relative h-full">
+                <iframe
+                  title="PDF Viewer"
+                  src={pdfUrl}
+                  width="100%"
+                  height="100%"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

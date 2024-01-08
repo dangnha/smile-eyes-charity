@@ -15,9 +15,9 @@ const Programs = () => {
       des: t("des-raising1"),
       amoutOfLikes: "179",
       pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/spreadsheets/d/1N8dZMewYsr8gXbPO15spz9M0ar0g8xT5/edit?rtpof=true#gid=728959804",
       planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+        "https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit",
       cost: "",
     },
     {
@@ -29,9 +29,9 @@ const Programs = () => {
       des: t("des-raising2"),
       amoutOfLikes: "212",
       pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/spreadsheets/d/1G2XVdWuFmktxEH8zO6MdqQc4hSF_PRGe/edit?rtpof=true#gid=60212578",
       planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+        "https://docs.google.com/document/d/1B1xQJMnXx0wwdEdDXrlzEA8MdYdISLXy/edit?rtpof=true",
       cost: "",
     },
     {
@@ -43,9 +43,9 @@ const Programs = () => {
       des: t("des-running1"),
       amoutOfLikes: "106k",
       pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
     },
     {
       type: "running",
@@ -56,9 +56,9 @@ const Programs = () => {
       des: t("des-running2"),
       amoutOfLikes: "106k",
       pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
     },
     {
       type: "completed",
@@ -70,13 +70,13 @@ const Programs = () => {
       amoutOfLikes: "106k",
       introductionFile: "https://www.facebook.com/",
       pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       achievementFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       detailFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       cost: "10.000.000VND",
     },
     {
@@ -89,13 +89,13 @@ const Programs = () => {
       amoutOfLikes: "106k",
       introductionFile: "https://www.facebook.com/",
       pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       achievementFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       detailFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
       cost: "10.000.000VND",
     },
   ];

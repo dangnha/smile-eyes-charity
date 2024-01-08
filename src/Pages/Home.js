@@ -9,6 +9,8 @@ import { useTranslation } from "react-i18next";
 import Projects from "./Projects";
 import { Link } from "react-router-dom";
 import dtdp from "../images/dtdp.jpg";
+import mainPro from "./pdf/main-pro.pdf";
+import mainPro2 from "./pdf/main-pro2.pdf";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -21,10 +23,9 @@ const Home = () => {
     linkYT: t("linkYT"),
     des: t("des_intro"),
     amoutOfLikes: "300",
-    pitchFile:
-      "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+    pitchFile: mainPro,
     planFile:
-      "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+      "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit",
   };
 
   const Projects = [
@@ -37,9 +38,9 @@ const Home = () => {
       des: t("des-raising1"),
       amoutOfLikes: "179",
       pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/spreadsheets/d/1N8dZMewYsr8gXbPO15spz9M0ar0g8xT5/edit?rtpof=true#gid=728959804",
       planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+        "https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit",
       cost: "",
     },
     {
@@ -51,9 +52,9 @@ const Home = () => {
       des: t("des-raising2"),
       amoutOfLikes: "212",
       pitchFile:
-        "https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF",
+        "https://docs.google.com/spreadsheets/d/1G2XVdWuFmktxEH8zO6MdqQc4hSF_PRGe/edit?rtpof=true#gid=60212578",
       planFile:
-        "https://docs.google.com/document/d/1E3FJ-_xRJVNIufNneIlmX5srQkppdrp2/edit?rtpof=true",
+        "https://docs.google.com/document/d/1B1xQJMnXx0wwdEdDXrlzEA8MdYdISLXy/edit?rtpof=true",
       cost: "",
     },
     {
@@ -222,12 +223,16 @@ const Home = () => {
           <div className="blog_image">
             <div className="blog_image1">
               <div className="image1">
-                <img className="img-fit" src="../image/1.jpg" alt="Not found" />
+                <img
+                  className="img-fit"
+                  src="../image/image1.jpg"
+                  alt="Not found"
+                />
               </div>
               <div className="image1">
                 <img
                   className="img-fit"
-                  src="../image/tre-em.jpg"
+                  src="../image/image2.jpg"
                   alt="Not found"
                 />
               </div>
@@ -235,7 +240,7 @@ const Home = () => {
             <div className="blog_image2">
               <img
                 className="img-fit"
-                src="../image/chum-anh-nhung-doi-mat-nu-cuoi-rat-trong-cua-cac-em-be-vung-cao.webp"
+                src="../image/image1.jpg"
                 alt="Not found"
               />
             </div>
@@ -254,7 +259,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="blog_content">
+        {/* <div className="blog_content">
           <div className="blog_des">
             <i class="fa-solid fa-quote-left fa-2xl mr-auto"></i>
             <p className="des_title_blog mt-5">{t("blogs-des")}</p>
@@ -289,7 +294,7 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {showBlogModel && <BlogModel onClose={() => setShowBlogModel(false)} />}

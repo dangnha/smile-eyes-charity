@@ -37,7 +37,9 @@ function LargeProgramItem(props) {
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex mb-3">
-          <span className="text-5xl font-medium ">{props.title}</span>
+          <span className="lg:text-6xl font-bold md:text-4xl text-xl text-[#396d00]">
+            {props.title}
+          </span>
           <img
             src={iconShare}
             className="w-10 h-10 ms-5 hover:cursor-pointer"
@@ -45,7 +47,7 @@ function LargeProgramItem(props) {
             onClick={handleShareClick}
           />
         </div>
-        <div className="header_date text-lg italic">
+        <div className="header_date lg:text-lg md:text-base text-sm italic">
           <div>
             <span>{t("time-item")}</span>
             <span>{props.date}</span>
@@ -58,9 +60,9 @@ function LargeProgramItem(props) {
       </div>
 
       {/* body */}
-      <div className="body w-full flex flex-row gap-5">
+      <div className="body w-full flex lg:flex-row flex-col justify-center items-center gap-5">
         {/* video */}
-        <div className="video mb-6 basis-[55%]">
+        <div className="video mb-6 lg:basis-[55%] min-w-[100%] lg:min-w-[55%]">
           <iframe
             width="500"
             height="450"
@@ -75,12 +77,12 @@ function LargeProgramItem(props) {
         {/* contents */}
         <div className="large-Contents px-4 basis-[45%] flex flex-col justify-evenly">
           <div className="max-h-[200px] overscroll-auto overflow-auto mb-3">
-            <p className="contents_description text-xl text-left">
+            <p className="contents_description lg:text-xl md:text-lg text-base text-left">
               {props.des}
             </p>
           </div>
 
-          <div className="contents_files text-2xl flex flex-row gap-10">
+          <div className="contents_files lg:text-2xl md:text-xl text-lg flex flex-row gap-10">
             <div
               href={props.pitchFile}
               target="_blank"
@@ -105,7 +107,7 @@ function LargeProgramItem(props) {
             </div>
           </div>
 
-          <div className="contents_progress mb-3 text-2xl hover:cursor-pointer flex flex-row gap-11 items-center">
+          <div className="contents_progress mb-3 lg:text-2xl md:text-xl text-lg hover:cursor-pointer flex flex-row gap-11 items-center">
             <span className="">{t("funding")}</span>
             <Tippy content="30%">
               <progress value="30" max="100"></progress>
@@ -117,7 +119,7 @@ function LargeProgramItem(props) {
               <span className="iconLove block">
                 <img src={iconHeart} className="w-14 h-14" alt="icon love" />
               </span>
-              <span className="amountOfLikes text-xl font-medium leading-4 block">
+              <span className="amountOfLikes lg:text-xl md:text-lg text-base font-medium leading-4 block">
                 {props.amoutOfLikes}
               </span>
             </div>

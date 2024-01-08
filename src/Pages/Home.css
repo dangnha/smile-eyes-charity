@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 
-.main_button_see_all{
+.main_button_see_all {
   text-align: center;
   font-size: 20px;
 }
@@ -41,10 +41,15 @@
   padding: 60px 100px 82px;
 }
 
+.blog_image {
+  flex-basis: 55%;
+}
+
 .blog_content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 2em;
   height: 90%;
   margin-top: 50px;
   padding-bottom: 50px;
@@ -58,7 +63,7 @@
 .blog_image {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 90%;
 }
 
 .blog_image1 {
@@ -185,7 +190,7 @@ table {
   border-collapse: collapse;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width: 700px) {
   .profile {
     margin: 82px 40px 90px 40px;
   }
@@ -199,20 +204,35 @@ table {
   .profile_intro_text2 {
     font-size: 12px;
   }
-  .des_title_blog{
+  .des_title_blog {
     font-size: 12px;
   }
-  .blog_seemore p{
+  .blog_seemore p {
     font-size: 12px;
   }
-  .blog_des i{
-    width: 10px;
-    height: 10px;
+  .blog_des {
+    width: 90%;
+    height: 90%;
+    padding-top: 30px;
+  }
+  .fa-solid {
+    font-size: 16px;
   }
   #blog_title {
     font-size: 20px;
     font-weight: 500;
   }
+  .blog_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .image_profile {
     height: 400px;
   }
@@ -237,23 +257,23 @@ table {
   td {
     display: block;
   }
-  .question-title{
+  .question-title {
     font-size: 30px;
   }
-  .question td{
+  .question td {
     font-size: 12px;
   }
-  .profile{
+  .profile {
     flex-direction: column;
   }
   .profile_des {
     width: 100%;
   }
-  .profile_intro{
+  .profile_intro {
     text-align: center;
   }
 
-  .circle{
+  .circle {
     display: none;
   }
 }
@@ -275,17 +295,17 @@ table {
     font-size: 18px;
   }
 
-  #title_project{
+  #title_project {
     font-size: 30px;
   }
 
-  .profile{
+  .profile {
     flex-direction: column;
   }
   .profile_des {
     width: 100%;
   }
-  .profile_intro{
+  .profile_intro {
     text-align: center;
   }
 
@@ -304,17 +324,17 @@ table {
   }
 }
 
-@media (min-width: 968px) and (max-width:1400px){
-  #title_project{
+@media (min-width: 968px) and (max-width: 1400px) {
+  #title_project {
     font-size: 30px;
   }
-  .profile{
+  .profile {
     flex-direction: column;
   }
   .profile_des {
     width: 100%;
   }
-  .profile_intro{
+  .profile_intro {
     text-align: center;
   }
 }

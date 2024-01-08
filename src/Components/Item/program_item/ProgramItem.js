@@ -33,7 +33,9 @@ function ProgramItem({ props }) {
     <div className="program-item mb-6">
       <div className="header mb-6">
         <div className="header_title flex justify-between">
-          <div className="text-2xl font-semibold mb-2">{props.title}</div>
+          <div className="lg:text-2xl md:text-xl text-lg font-semibold mb-2">
+            {props.title}
+          </div>
           <img
             src={iconShare}
             className="w-10 h-10 ms-5 hover:cursor-pointer"
@@ -41,7 +43,7 @@ function ProgramItem({ props }) {
             onClick={handleShareClick}
           />
         </div>
-        <div className="header_date text-xl">
+        <div className="header_date lg:text-xl md:text-lg text-base">
           <div>
             <span>{t("time-item")}</span>
             <span>{props.date}</span>
@@ -68,12 +70,12 @@ function ProgramItem({ props }) {
 
       <div className="contents">
         <div className="max-h-[150px] overscroll-auto overflow-auto mb-3">
-          <p className="contents_description text-xl text-left mb-3">
+          <p className="contents_description lg:text-xl md:text-lg text-base text-left mb-3">
             {props.des}
           </p>
         </div>
 
-        <div className="contents_files text-2xl mb-3 flex gap-4">
+        <div className="contents_files lg:text-2xl md:text-xl text-lg  mb-3 flex gap-4">
           <div
             href={props.pitchFile}
             target="_blank"
@@ -94,7 +96,7 @@ function ProgramItem({ props }) {
           </div>
         </div>
 
-        <div className="contents_progress mb-2 text-2xl hover:cursor-pointer flex justify-between items-center">
+        <div className="contents_progress mb-2 lg:text-2xl md:text-xl text-lg hover:cursor-pointer flex justify-between items-center">
           <span className="mr-7">{t("funding")}</span>
           <Tippy content="30%">
             <progress value="30" max="100"></progress>

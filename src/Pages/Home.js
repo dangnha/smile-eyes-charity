@@ -219,17 +219,17 @@ const Home = () => {
           </div>
 
           <div className="main_button_see_all">
-          <Link to="/programs">
-            <div id="button_see_all">
-              <p>{t("button-see-all")}</p>
-              <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
-            </div>
-          </Link>
-        </div>
+            <Link to="/programs">
+              <div id="button_see_all">
+                <p>{t("button-see-all")}</p>
+                <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className="blog">
+      <div className="blog flex lg:block flex-col items-center">
         <p id="blog_title">{t("blogs-title")}</p>
         <div className="blog_content">
           <div className="blog_image">

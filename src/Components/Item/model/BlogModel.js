@@ -35,11 +35,13 @@ const BlogModel = ({ onClose }) => {
               <i className="fa-solid fa-times"></i>
             </button>
           </div>
-          <div className="flex flex-col justify-center items-center mt-[20px] gap-5 mb-10">
-            <div className="text-3xl font-serif uppercase font-semibold">
+          <div className="flex flex-col justify-center items-center mt-[20px] gap-5 lg:mb-10 mb-2">
+            <div className="lg:text-3xl md:text-xl text-lg font-serif text-center uppercase font-semibold">
               SUPPORT FOOD AND CLOTHES BEFORE RAINY SEASONS-2023
             </div>
-            <div className="text-xl font-serif uppercase ">July 2023</div>
+            <div className="lg:text-xl md:text-lg text-base font-serif uppercase ">
+              July 2023
+            </div>
           </div>
 
           {/* <div className="w-[60%] mb-6">
@@ -65,8 +67,8 @@ const BlogModel = ({ onClose }) => {
               and services and to make a donation via the Giving Basket.
             </div>
           </div> */}
-          <div className="w-[70%] mb-6">
-            <div className="font-sans text-xl text-justify">
+          <div className="lg:w-[70%] md:w-[85%] w-[90%] mb-6">
+            <div className="font-sans lg:text-xl md:text-lg text-base text-justify">
               Business owner of Cortex Textile{" "}
               <a href="www.cortextextile.com">(www.cortextextile.com)</a> and
               his employees prepared food, clothes, toothbrushes and toothpaste,
@@ -77,14 +79,14 @@ const BlogModel = ({ onClose }) => {
               the mountains and forests. We all had a fun together.
             </div>
             <br />
-            <div className="font-sans text-xl text-justify">
+            <div className="font-sans lg:text-xl md:text-lg text-base text-justify">
               We feel happy because all of us have a warmer winter.
             </div>
           </div>
 
-          <div className="w-[75%] flex">
-            <img src={image1} alt="Not found" className="w-[50%]" />
-            <img src={image2} alt="Not found" className="w-[50%]" />
+          <div className="w-[75%] flex md:flex-row flex-col justify-center items-center md:gap-0 gap-5">
+            <img src={image1} alt="Not found" className="md:w-[50%] w-[85%]" />
+            <img src={image2} alt="Not found" className="md:w-[50%] w-[85%]" />
           </div>
 
           {/* <div className="w-[60%] mb-6">

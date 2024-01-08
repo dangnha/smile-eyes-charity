@@ -189,7 +189,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="container-achievement-main">
+        {/* <div className="container-achievement-main">
           <p id="achievement-title">{t("about-us-title-4")}</p>
           <div className="achievement-content flex flex-row">
             <div className="achievement-des">
@@ -232,7 +232,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </React.Fragment>
   );

@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import enTranslation from "./en.json";
 import viTranslation from "./vi.json";
 import jpTranslation from "./jp.json";
+import frTranslation from "./fr.json";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -14,6 +15,9 @@ i18n.use(initReactI18next).init({
     },
     jp: {
       translation: jpTranslation,
+    },
+    fr: {
+      translation: frTranslation,
     },
   },
   lng: "vi", // Default language

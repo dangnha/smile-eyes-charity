@@ -140,13 +140,8 @@ const Home = () => {
         </div>
 
         <div className="project_calling">
-          <div className="title_button">
+          <div className="title_program">
             <p id="title_project">{t("project-calling")}</p>
-            <Link to="/programs">
-              <div id="button_see_all">
-                <Button text={t("button-see-all")} />
-              </div>
-            </Link>
           </div>
 
           <div className="project">
@@ -158,16 +153,20 @@ const Home = () => {
               )
             )}
           </div>
+
+          <div className="main_button_see_all">
+            <Link to="/programs">
+              <div id="button_see_all">
+                <p>{t("button-see-all")}</p>
+                <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
+              </div>
+            </Link>
+          </div>
         </div>
 
         <div className="project_running">
-          <div className="title_button">
+          <div className="title_program">
             <p id="title_project">{t("project-running")}</p>
-            <Link to="/programs">
-              <div id="button_see_all">
-                <Button text={t("button-see-all")} />
-              </div>
-            </Link>
           </div>
 
           <div className="project">
@@ -179,16 +178,20 @@ const Home = () => {
               )
             )}
           </div>
+
+          <div className="main_button_see_all">
+            <Link to="/programs">
+              <div id="button_see_all">
+                <p>{t("button-see-all")}</p>
+                <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
+              </div>
+            </Link>
+          </div>
         </div>
 
         <div className="project_done">
-          <div className="title_button">
+          <div className="title_program">
             <p id="title_project">{t("project-done")}</p>
-            <Link to="/programs">
-              <div id="button_see_all">
-                <Button text={t("button-see-all")} />
-              </div>
-            </Link>
           </div>
 
           <div className="project">
@@ -214,6 +217,15 @@ const Home = () => {
               )
             )}
           </div>
+
+          <div className="main_button_see_all">
+          <Link to="/programs">
+            <div id="button_see_all">
+              <p>{t("button-see-all")}</p>
+              <i class="fa-solid fa-chevron-down fa-lg mt-2"></i>
+            </div>
+          </Link>
+        </div>
         </div>
       </div>
 
@@ -308,7 +320,12 @@ const Home = () => {
           <p className="profile_des_text mt-5">{t("profile-des3")}</p>
           <i class="fa-solid fa-quote-right fa-2xl ml-auto mt-5"></i>
         </div>
-        <div className="profile_intro ">
+        <div className="profile_intro">
+          <img
+            className="image_profile mx-auto object-cover object-center w-[500px] h-[730px]"
+            src={dtdp}
+            alt="not found"
+          ></img>
           <div className="mt-5">
             <p className="profile_intro_text1">{t("profile-intro1")}</p>
             <p className="profile_intro_text2 italic mt-2">
@@ -316,11 +333,6 @@ const Home = () => {
             </p>
             <p className="profile_intro_text2 italic">{t("profile-intro3")}</p>
           </div>
-          <img
-            className="image_profile mx-auto object-cover object-center w-[500px] h-[730px]"
-            src={dtdp}
-            alt="not found"
-          ></img>
         </div>
       </div>
 

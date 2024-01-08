@@ -20,7 +20,7 @@ function ProjectDone(props) {
       {/* header */}
       <div className="header mb-6">
         <div className="header_title flex justify-between">
-          <div className="text-2xl font-medium mb-2">{props.title}</div>
+          <div className="text-2xl font-semibold mb-2">{props.title}</div>
           <img
             src={iconShare}
             className="w-10 h-10 ms-5 hover:cursor-pointer"

@@ -4,6 +4,7 @@ import ContactForm from "../Components/Item/ContactForm";
 import bgimg from "../images/Rectangle.png";
 import infoimg from "../images/Rectangle73.png";
 import finalimg from "../images/Rectangle77.png";
+import "./Contact.css";
 
 const Contact = () => {
 
@@ -25,27 +26,37 @@ const Contact = () => {
       </div>
       <div className="contact-info w-[100vw] h-[100vh] bg-[#F6FFF6] flex justify-center items-center">
         <div className="w-[80%] flex flex-col gap-10 justify-center items-center">
-          <div className="self-start text-4xl uppercase">
+          <div className="self-mid mb-10 text-4xl uppercase contact_information-title">
             {t("contact_information-title")}
           </div>
-          <div className="w-full flex flex-row justify-center items-center gap-16">
+          <div className="w-full flex flex-row justify-center  gap-16">
+            <div className="basis-[50%]">
+              {/* <img src={infoimg} alt="Not found" /> */}
+              <p className="contact-des">{t("contact_information-content")}</p>
+            </div>
             <div className=" basis-[50%]">
-              <div className="text-2xl font-serif max-w-sm flex flex-col justify-center items-start gap-8">
+              <div className="text-2xl font-serif flex flex-col justify-center items-start gap-8">
                 <div className="">
                   <i className="pr-3 w-8 fa-solid fa-location-pin"></i>
                   {t("contact_information-address")}
                 </div>
                 <a href="mailto:dinhdongphuong@gmail.com">
-                  <i className="pr-3 w-8 fa-solid fa-envelope"></i>{" "}
-                  dinhdongphuong@gmail.com
+                  <i className="pr-3 w-8 fa-solid fa-envelope"></i>
+                  {t("contact_information-email")}: dinhdongphuong@gmail.com
+                </a>
+                <a href="">
+                  <i className="pr-3 w-8 fa-solid fa-building-columns"></i> {t("contact_information-bank_account")}: Techcombank, 22296699, Smile Eye Charity
+                </a>
+                <a href="">
+                  <i className="pr-3 w-8 fa-solid fa-person"></i> {t("contact_information-representative")}: DINH THI DONG PHUONG
                 </a>
                 <a href="tel:+84962414125">
-                  <i className="pr-3 w-8 fa-solid fa-phone"></i> 0962 414 125
+                  <i className="pr-3 w-8 fa-solid fa-phone"></i> {t("contact_information-phone")}: 0962 414 125
+                </a>
+                <a href="tel:+">
+                  <i className="pr-3 w-8 fa-solid fa-sitemap"></i> {t("contact_information-organization")}: 4001273487 
                 </a>
               </div>
-            </div>
-            <div className="basis-[50%]">
-              <img src={infoimg} alt="Not found" />
             </div>
           </div>
         </div>

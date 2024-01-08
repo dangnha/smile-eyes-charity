@@ -197,6 +197,10 @@
   display: flex;
 }
 
+.volunteer-tel-wrapper {
+  padding-left: 6px;
+}
+
 /* Founder Section */
 
 .container-founder {

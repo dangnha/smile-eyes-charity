@@ -40,7 +40,7 @@ const About = () => {
 
                 <div className="volunteer-tel">
                   <i className="icon-tel fa-solid fa-phone"></i>
-                  <div>
+                  <div className="volunteer-tel-wrapper">
                     <p>{t("about-us-6")}</p>
                     <p>0962 414 125</p>
                   </div>
@@ -84,50 +84,50 @@ const About = () => {
           <div className="container-sponsor">
             <div className="sponsor-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-1")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="sponsor-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-1")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="sponsor-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-1")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="sponsor-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-1")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="sponsor-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-1")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="sponsor-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-1")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
           </div>
@@ -140,50 +140,50 @@ const About = () => {
           <div className="container-volunteer">
             <div className="volunteer-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-2")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="volunteer-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-2")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="volunteer-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-2")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="volunteer-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-2")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="volunteer-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-2")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
             <div className="volunteer-item">
               <UserItemsProfile
-                name="The Anh"
+                name="Dong Phuong"
                 url_Image="profile_user1.jpg"
                 position={t("profile-position-2")}
-                address="Nghe An"
+                address="Da Nang"
               />
             </div>
           </div>

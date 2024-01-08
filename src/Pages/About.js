@@ -43,7 +43,7 @@ const About = () => {
                   <i className="icon-tel fa-solid fa-phone"></i>
                   <div>
                     <p>Contact Us</p>
-                    <p>+123456789</p>
+                    <p>0962 414 125</p>
                   </div>
                 </div>
               </div>
@@ -57,15 +57,17 @@ const About = () => {
           </div>
           <div className="row-founder flex items-center justify-evenly">
             <div className="flex-founder basis-[45%] mt-8">
-              <p className="text-sub-founder p-12 text-left">
-                <i className="fa-solid fa-quote-left text-xl"></i>
-                We provide opportunity support for children living in the
-                highlands, mountains and disadvantaged areas in Nam Giang. Our
-                main goal is to improve the quality of life of children so that
-                they develop comprehensively physically, mentally and
-                educationally.
-                <i className="fa-solid fa-quote-right text-xl"></i>
-              </p>
+              <div className="text-sub-founder flex flex-col p-12 text-left">
+                <i className="fa-solid fa-quote-left fa-xl mr-auto"></i>
+                <p className="text-xl pl-10">
+                  We provide opportunity support for children living in the
+                  highlands, mountains and disadvantaged areas in Nam Giang. Our
+                  main goal is to improve the quality of life of children so
+                  that they develop comprehensively physically, mentally and
+                  educationally.
+                </p>
+                <i className="fa-solid fa-quote-right fa-xl ml-auto"></i>
+              </div>
             </div>
             <div className="flex-founder basis[50%] ">
               <div className="flex-founder-container -m-10">
@@ -189,6 +191,61 @@ const About = () => {
                 position="Volunteer"
                 address="Nghe An"
               />
+            </div>
+          </div>
+        </div>
+
+        <div className="container-achievement-main">
+          <p id="achievement-title">OUR MISSION</p>
+          <div className="achievement-content flex flex-row">
+            <div className="achievement-des">
+              <p id="achieved">Achieved</p>
+              <p id="achieved-des">
+                We register and regulate charities in England and Wales, to
+                ensure that the public can support charities with confidence. As
+                registrar, we are responsible for maintaining an accurate.
+              </p>
+              <p id="aim-title">Our strategic priorities up to 2025 are:</p>
+              <p id="achieved-des">
+                Protecting charities from abuse or mismanagement
+              </p>
+              <p id="achieved-des">
+                Enabling trustees to run their charities effectively
+              </p>
+              <p id="achieved-des">
+                Encouraging greater transparency and accountability
+              </p>
+              <div className="achievement-aim flex flex-row mt-10">
+                <div className="achievement-aim-des mr-10">
+                  <p id="number-achievement">132+</p>
+                  <p id="achieved-des">Primary School</p>
+                </div>
+                <div className="achievement-aim-des mr-10">
+                  <p id="number-achievement">10+</p>
+                  <p id="achieved-des">Hospitals</p>
+                </div>
+                <div className="achievement-aim-des mr-10">
+                  <p id="number-achievement">100+</p>
+                  <p id="achieved-des">Volunteers</p>
+                </div>
+                <div className="achievement-aim-des mr-10">
+                  <p id="number-achievement">20+</p>
+                  <p id="achieved-des">Awards</p>
+                </div>
+              </div>
+            </div>
+            <div className="achievement-image flex flex-col items-center">
+              <div className="achievement-image-up flex items-center mb-2">
+                <img src="./images/achievement-up.png" alt="abc"></img>
+              </div>
+              <div className="achievement-image-down flex flex-row justify-center">
+                <div className="achievement-image-down-1 mr-2">
+                  <img src="./images/achievement-down1.png" alt="abc"></img>
+                </div>
+                <div className="achievement-image-down-1">
+                  <img src="./images/achievement-down2.png" alt="abc"></img>
+                </div>
+              </div>
             </div>
           </div>
         </div>
